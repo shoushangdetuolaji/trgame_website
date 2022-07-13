@@ -1,0 +1,51 @@
+/*  초기화 CSS / 2012.10  / 백명훈(leonato@nowcom.co.kr) */
+
+html, body {margin:0; padding:0; font-size:.85em; font-family:'돋움', dotum, 'sans-serif'; line-height:1.3em; color:#888; background-color:#fff;}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset, p { margin:0; padding:0; list-style:none; font-size:1em; font-family:'돋움', dotum, 'sans-serif'; color:#888; font-weight:normal;}
+
+a:link		{color:#888; text-decoration:none;}
+a:visited	{color:#888; text-decoration:none;}
+a:hover	{color:#333; text-decoration:underline;}
+a:active	{color:#333; text-decoration:underline;}
+
+div, ul, li, p, tr, td {margin:0; padding:0; font-family:'돋움', dotum, arial, curier, seoul; font-size:1em; color:#888;}
+ul, li {list-style:none;}
+img {border:0;}
+.png24 {_tmp:expression(setPng24(this));}
+
+table {border-collapse:collapse; border-spacing:0;}
+caption {display: none;}
+hr, .hid {position:absolute; left:0; top:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; width:0; height:0;}
+
+
+fieldset, form, label, legend {margin:0; padding:0; border:0;}
+legend {display:none;}
+
+/*
+----- FORM
+<input type="text" style="ime-mode:active;">  (한글 모드)
+<input type="text" style="ime-mode:inactive;"> (영문 모드)
+<input type="text  style="ime-mode:disabled;">  (오직 영문 모드)
+*/
+
+.input_text {font-size:1.1em; color:#888; border:1px solid #dddddd; vertical-align:middle; padding:4px 5px 1px; height:15px; font-family:'돋움', dotum, arial, curier; background:#fff;}
+
+textarea {font-size:1em; font-family:'돋움', dotum, arial, curier, seoul; color: #666; line-height:1.5em; border:1px solid #ccc; overflow:auto;
+		scrollbar-face-color:#ffffff;
+		scrollbar-highlight-color:#ffffff;
+		scrollbar-shadow-color:#d8d8d8;
+		scrollbar-3dlight-color:#d8d8d8;
+		scrollbar-arrow-color:#989898;
+		scrollbar-track-color:#fff;
+		scrollbar-darkshadow-color:#fff;
+		scrollbar-base-color:red;
+}
+
+select { border:1px solid #d1d1d1; color:#888; font-size:1em; font-family:'돋움', dotum; height:20px; vertical-align:middle;}
+
+/* 버튼과함께해요 */
+.pagingwrap .Btn {float:right;}
+
+em {font-style:normal; font-weight:bold;}
+

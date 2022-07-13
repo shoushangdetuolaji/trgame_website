@@ -1,0 +1,268 @@
+html, body {
+  font-size: 0.85em;
+  padding: 0;
+  margin: 0;
+  font-size: .85em;
+  font-family: '돋움', dotum, 'sans-serif';
+  line-height: 1.3em;
+  color: #888;
+  background-color: #fff;
+}
+
+ul, li {
+  list-style: none;
+}
+
+#hangame_gnb_basic {
+  text-align: center;
+  min-width: 980px;
+  height: 50px;
+  position: relative;
+  z-index: 10000000;
+  zoom: 1;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  border-color: rgba(0, 0, 0, 0.07);
+  font-family: ng,'돋움',Dotum,'Apple SD Gothic Neo',sans-serif !important;
+  font-size: 12px;
+  color: #333;
+}
+
+#hangame_gnb_basic * {
+  font-family: ng,'돋움',Dotum,'Apple SD Gothic Neo',sans-serif !important;
+  letter-spacing: 0;
+  box-sizing: content-box;
+}
+
+#hangame_gnb_basic .hangame_gnb_inner {
+  position: relative;
+  width: 980px;
+  height: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  *zoom: 1;
+  box-sizing: border-box;
+}
+
+#hangame_gnb_basic .hangame_gnb_logo {
+  float: left;
+  width: 105px;
+  padding: 17px 0;
+}
+
+#hangame_gnb_basic .hangame_gnb_logo a {
+  width: 105px;
+  height: 16px;
+  background-position: 0 -28px;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  background-image: url(../../assets/images/hangame/gnb/reform/cssImg/sp_20190326.png);
+  background-repeat: no-repeat;
+}
+
+#hangame_gnb_basic .blind, #hangame_gnb_basic legend {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 100px;
+  white-space: nowrap;
+}
+
+#hangame_gnb_basic .hangame_gnb_spot_banner {
+  float: left;
+  margin-left: 30px;
+}
+
+#hangame_gnb_basic .hangame_gnb_spot_banner a {
+  display: block;
+}
+
+#hangame_gnb_basic .hangame_gnb_spot_banner img {
+  max-height: 50px;
+  border: 0 none;
+  vertical-align: top;
+}
+
+
+#main_in, .main_in {
+  height: 100%;
+  padding-bottom: 80px;
+  background-attachment: fixed !important;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  min-width: 1000px;
+}
+
+.main {
+  background-attachment: fixed;
+}
+
+#header {
+  position: relative;
+  height: 125px;
+  z-index: 1;
+}
+
+.inner {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.logo a {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 123px;
+  height: 78px;
+  background: url(../../assets/images/common/logo.png) no-repeat center top;
+  text-indent: -9999em;
+  z-index: 10;
+}
+
+.lnb_wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 125px;
+  padding: 0 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.lnb {
+  width: 1000px;
+  height: auto;
+  padding: 49px 0 22px 200px;
+  box-sizing: border-box;
+}
+
+.inner {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* lnb */
+#header.lnb_open {
+  z-index:100;
+}
+
+.lnb_wrap {
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:125px;
+  padding:0 0 0;
+  background-color:rgba(0,0,0,0);
+  transition:all 0.2s ease;
+}
+
+.lnb_wrap * {
+  box-sizing:border-box; 
+  -webkit-box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  -o-box-sizing:border-box;
+}
+
+.lnb_open .lnb_wrap {
+  background-color:rgba(0,0,0,.9);
+}
+
+.lnb_open .lnb_wrap:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:101px;
+  left:0;
+  width:100%;
+  height:1px;
+  background-color:rgba(255,255,255,.1);
+}
+
+.lnb {
+  width:1000px;
+  height:auto;
+  padding:49px 0 22px 200px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+}
+
+.lnb > ul {
+  display:flex;
+  justify-content: 
+  space-around;width:100%;
+  text-align:center;
+}
+
+
+.lnb > ul > li a {
+  display:block;
+  /* font-family:'Noto Sans KR','malgun gothic', '¸¼Àº °íµñ', 'µ¸¿ò', dotum, sans-serif; */
+  font-size:14px;color:#d2d2d2;
+}
+.lnb > ul > li a:hover {
+  color:#a5ff3b;
+}
+
+.lnb .depth01 > a {
+  margin-bottom:33px;
+  font-size:18px;
+  color:#fff;
+  text-shadow: 1px 0 1px rgba(0,0,0,.35);
+}
+
+.lnb li i {
+  display:inline-block;
+  width:11px;
+  height:11px;
+  background:url(../../assets/images/common/img_spr.png) no-repeat -41px -252px;
+  vertical-align:0;
+} 
+
+.lnb .depth02 {
+  display:block;padding-top:32px;
+}
+
+.lnb .depth02 li + li {
+  margin-top:14px;
+}
+
+.lnb .depth02 li i {
+  display:inline-block;
+  width:11px;
+  height:11px;
+  background:url(../../assets/images/common/img_spr.png) no-repeat -41px -252px;
+  vertical-align:0;
+}
+
+.lnb_line {
+  position:absolute;
+  top:97px;
+  left:0;
+  width:0;
+  height:4px;
+  background-color:#a5ff3b;
+  border-radius:2px;
+  opacity:0;
+}
+
+/* lnb */
