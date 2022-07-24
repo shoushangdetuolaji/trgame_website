@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,61 +11,350 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  <div id="evt_wrap" class="main lobby">
-    <div class="gnb-wrap">
-      <div class="gnb-area flex">
-        <span class="bi"><a href="/index.asp" onclick="gtag('event', 'GNB_bi_공홈', { 'event_category': '저컴_로비', 'event_label': '88' });">저승컴퍼니</a></span>
-  
-        <!-- [D] 현재 메뉴 li에 'current' 클래스 추가 / 새로운 컨텐츠 li에 'new' 클래스 추가-->
-        <ul class="gnb flex">
-          <li class="m1 current"><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_로비', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>로비</span></a>
-            <div class="lnb-area" style="display: block;">
-              <ul class="flex">
-                <li class="current"><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_0706', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>07.06</span></a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="m2 "><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_내정보실', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>내 정보실</span></a>
-            <div class="lnb-area flex" style="display: none;">
-              <ul class="flex">
-                <li class=""><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_사원정보', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>사원 정보</span></a></li>
-                <li class=""><a href="/event/JSCompany/Information/information_organization.asp" onclick="gtag('event', 'GNB_조직도', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>조직도</span></a></li>
-                <li class=""><a href="/event/JSCompany/Information/information_job_evaluation.asp" onclick="gtag('event', 'GNB_업무평가', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>업무 평가</span></a></li>
-              </ul>
-            </div>
-                  </li>
-          <li class="m3   "><a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'GNB_집중업무실', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>집중 업무실</span></a>
-            <div class="lnb-area flex" style="display: none;">
-              <ul class="flex">
-                <li class="  "><a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'GNB_일일업무', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>일일 업무</span></a></li>
-                <li class="  "><a href="/event/JSCompany/Office/office_main.asp?id=TeamM" onclick="gtag('event', 'GNB_팀업무성과', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>팀 업무 성과</span></a></li>
-                <li class="  "><a href="/event/JSCompany/Office/office_main.asp?id=weeklyM" onclick="gtag('event', 'GNB_주간업무', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>주간 업무</span></a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="m4 "><a href="javascript:alert('7월 20일 오픈 예정입니다.')" onclick="gtag('event', 'GNB_차사복지샵', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>차사 복지샵</span></a></li>
-          <li class="m5 "><a href="/event/JSCompany/Promotion/" onclick="gtag('event', 'GNB_회사홍보관', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>회사 홍보관</span></a></li>
-          <li class="m6 "><a href="/event/JSCompany/Director/" onclick="gtag('event', 'GNB_담연부장실', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>담연 부장실</span></a></li>
-        </ul>
-  
-        <div class="util-area">
-          <a href="/index.asp" class="btn btn-home" onclick="gtag('event', 'GNB_icon_공홈', { 'event_category': '저컴_로비', 'event_label': '88' });">테일즈런너</a>
-                  
-                  <button type="button" onclick="goLogout();gtag('event', 'GNB_퇴근하기', { 'event_category': '저컴_로비', 'event_label': '88' });" class="btn btn-login logout"><span>퇴근하기 LOGOUT</span></button>
-                  
+  <div class="evt_wrap" id="evt_wrap">
+    <div class="evt-header" id="evt-header">
+      <div class="inner hide">
+        <div class="logo">
+          <a href="#" title="테일즈런너 홈으로">테일즈런너</a>
         </div>
+        <p>신규, 복귀, 기존런너 모두모두~</p>
+        <h1>런너하이 이벤트</h1>
+        <p>이벤트 기간 : 6/22 오픈 후 ~ 8/30</p>
+        <div class="motion">
+          <span class="s1"></span>
+          <span class="s2"></span>
+          <span class="s3"></span>
+          <span class="s4"></span>
+          <span class="hand1"></span>
+          <span class="hand2"></span>
+        </div>
+        <div class="login-area">
+          <p>
+            <em>shoushangdetuolaji</em>
+            You are an existing runner! You know how I feel, right? (~￣³￣)~
+          </p>
+          <!-- <button type="button" class="btn btn-login" disabled="false">조회 완료</button> -->
+          <button type="button" class="btn btn-login">조회 완료</button>
+        </div>
+        <ul>
+          <ul>
+            <li>【신규 런너】 2022년 6월 1일 00시 이후 캐릭터를 처음 생성한 계정</li>
+            <li>【복귀 런너】 2022년 6월 1일부터 6월 21일까지 게임 접속 이력이 없는 계정</li>
+            <li>【기존 런너】 신규 또는 복귀 런너가 아닌 기존 계정</li>
+          </ul>
+        </ul>
       </div>
     </div>
-    <div class="evt-header" id="evt-header"></div>
-    <div class="evt-content"></div>
-    <div class="eve_comment"></div>
-    <div class="footer">
-      <p class="footer_copyright">
-        © Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.
-      </p>
+    <div class="evt-content">
+      <div class="content-body">
+        <div class="section01">
+          <div class="inner hide">
+            <h2>런하 일일 접속 미션</h2>
+            <p>이벤트 기간 중 매일 게임에 접속~ 보상 아이템 &amp; 하이 포인트를 획득해 보세요!</p>
+            <p>일자별 게임 접속만 했다면~ 보상받기 진행은 이벤트 기간 중 언제든지 OK!</p>
+            <button type="button" class="btn btn-caution">이벤트 참여 방법 &amp; 유의사항</button>
+            <div class="layer">
+              <h3>이벤트 참여 방법</h3>
+              <ul>
+                <li>- 이벤트 기간 중 매일 게임 접속 시 접속 일마다 보상받기 버튼이 활성화됩니다.<br>&nbsp;&nbsp;보상받기 버튼을 클릭하여 보상 아이템과 하이 포인트를 획득해 보세요.
+                </li>
+                <li>- 일자별 보상받기는 당일 게임 접속만 했다면 이벤트 기간 중 언제든지 진행하실 수 있습니다.</li>
+                <li><em>- 일자별 보상은 런너 타입과 평일/주말 여부에 따라 아래와 같이 획득하실 수 있습니다.</em></li>
+              </ul>
+              <table border="0" cellspacing="0" cellpadding="0">
+                <colgroup>
+                  <col width="195px">
+                  <col width="206px">
+                  <col width="206px">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">구분</th>
+                    <th scope="col">평일 보상</th>
+                    <th scope="col">주말 보상</th>
+                  </tr>
+                </thead>
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row" class="division">신규 / 복귀 런너
+                    </td>
+                    <td>보상 아이템 + 10P</td>
+                    <td>보상 아이템 + 20P</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="division">기존 런너
+                    </td>
+                    <td>보상 아이템 + 5P</td>
+                    <td>보상 아이템 + 10P</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul>
+                <li>- 획득한 보상 아이템은 게임 내 선물함에서 확인하실 수 있습니다.</li>
+                <li>- 획득한 하이 포인트는 페이지 하단 포인트 샵에서 확인 및 아이템을 교환하는 데 사용하실 수 있습니다.</li>
+              </ul>
+              <h3>이벤트 유의사항</h3>
+              <ul>
+                <li>- 일자별 보상은 계정당 1회에 한해 획득하실 수 있습니다.</li>
+                <li>- 일자별 보상받기는 당일 게임에 접속한 런너에 한해 진행하실 수 있습니다.</li>
+                <li>- 보상 아이템은 획득 일로부터 2주간 게임 내 선물함에 보관되며, 미수령 시 삭제됩니다.</li>
+                <li>- 부정한 방법으로 이벤트 참여 &amp; 아이템 수령 시 약관 및 정책에 따라 제재 혹은 회수될 수 있습니다.</li>
+              </ul>
+            </div>
+            <div class="tab-area">
+              <ul class="tab-list">
+                <li class=""><a href="#tab-cont1" class="btn-tab1">Weeks 1 to 2 6.22 (Wed) to 7.5 (Tue)</a></li>
+                <li class=""><a href="#tab-cont2" class="btn-tab2">Weeks 3 to 4 7.6 (Wed) to 7.19 (Tue)</a></li>
+                <li class="on"><a href="#tab-cont3" class="btn-tab3">Weeks 5 to 6 7.20 (Wed) to 8.2 (Tue)</a></li>
+                <li class="comingsoon"><a href="javascript:alert('해당 주차는 8월 3일 점검 후부터 확인하실 수 있습니다.')" class="btn-tab4">Weeks 7 to 8 8.3 (Wed) to 8.17 (Tue)</a></li>
+                <li class="comingsoon"><a href="javascript:alert('해당 주차는 8월 17일 점검 후부터 확인하실 수 있습니다.')" class="btn-tab5">Weeks 9 to 10 8.17 (Wed) to 8.30 (Tue)</a></li>		
+              </ul>
+              <section id="tab-cont1" class="tab-cont tab-cont1" style="display: none;">
+                <ul>
+                  <li class="">
+                    <p>2022-06-22 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-06-23 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-06-24 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-06-25 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-06-26 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-06-27 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-06-28 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-06-29 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-06-30 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-07-01 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-07-02 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-07-03 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-07-04 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                  <li class="">
+                    <p>2022-07-05 - </p>
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+
+                </ul>
+              </section>
+              <section id="tab-cont2" class="tab-cont tab-cont2" style="display: none;"></section>
+              <section id="tab-cont3" class="tab-cont tab-cont3" style="display: block;">
+                <ul>													
+							
+                  <li class="">
+                    <p>2022-07-20 - </p>                                                                  
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-21 - </p>                                                                  
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-22 - </p>                                                                  
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-23 - </p>                                                                  
+                    <button type="button" class="btn btn-reward" disabled="disabled">받기 완료</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-24 - </p>                                                                  
+                    <button type="button" class="btn btn-reward">받기 완료</button>
+                  </li>
+                
+                  <li class="today">
+                    <p>2022-07-25 - </p>                                                                  
+                    <button type="button" class="btn btn-unconnected">게임 미접속</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-26 - </p>                                                                  
+                    <button type="button" class="btn btn-next">-</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-27 - </p>                                                                  
+                    <button type="button" class="btn btn-next">-</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-28 - </p>                                                                  
+                    <button type="button" class="btn btn-next">-</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-29 - </p>                                                                  
+                    <button type="button" class="btn btn-next">-</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-30 - </p>                                                                  
+                    <button type="button" class="btn btn-next">-</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-07-31 - </p>                                                                  
+                    <button type="button" class="btn btn-next">-</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-08-01 - </p>                                                                  
+                    <button type="button" class="btn btn-next">-</button>
+                  </li>
+                
+                  <li class="">
+                    <p>2022-08-02 - </p>                                                                  
+                    <button type="button" class="btn btn-next">-</button>
+                  </li>
+  
+                </ul>
+              </section>
+              <section id="tab-cont4" class="tab-cont tab-cont4" style="display: none;"></section>
+              <section id="tab-cont5" class="tab-cont tab-cont5" style="display: none;"></section>
+            </div>
+          </div>
+        </div>
+        <div class="section02"></div>
+        <div class="section03">
+          <div class="inner hide">
+            <h2>런하 포인트 샵</h2>
+            <p>이벤트 기간 중 일일 접속 미션 &amp; 스페셜 미션 보상받기를 통해 열심히 모은 하이 포인트로~ 아래 아이템들을 교환해 보세요!</p>
+            <button type="button" class="btn btn-caution">이벤트 참여 방법 &amp; 유의사항</button>
+            <div class="layer">
+              <h3>이벤트 참여 방법</h3>
+              <ul>
+                <li>- 이벤트 기간 중 일일 접속 미션 &amp; 스페셜 미션 보상으로 획득한 하이 포인트는 아래 포인트 샵 내 다양한 아이템들을<br>&nbsp;&nbsp;교환하는 데 사용하실 수
+                  있습니다.</li>
+                <li>- 교환하기는 이벤트 기간 중 언제든지 진행하실 수 있습니다.</li>
+                <li>- 교환한 아이템은 게임 내 선물함에서 확인하실 수 있습니다.</li>
+                <li>- 아이템 교환 시 보유 중인 하이 포인트에서 교환에 사용한 하이 포인트만큼 차감됩니다.</li>
+                <li>- 하이런너 교환권 6종은 사용 시 다크 메르세데스 / 블랙크리드 / 피네스트라 / 데스나이츠 / 챌린저 / 커스나이츠 복장 중 하나를<br>&nbsp;&nbsp;선택하여 교환하실
+                  수 있습니다.</li>
+              </ul>
+              <h3>이벤트 유의사항</h3>
+              <ul>
+                <li>- 일부 아이템들은 계정당 교환 횟수에 제한이 있습니다.<br>
+                  &nbsp;&nbsp;* 300P 아이템들은 총 4종 중 원하는 아이템 1종에 한해 선택, 교환하실 수 있습니다.<br>
+                  &nbsp;&nbsp;* 200P 아이템들은 아이템당 최대 2회까지 교환하실 수 있습니다.<br>
+                  &nbsp;&nbsp;* 100P / 50P 아이템들은 횟수에 상관없이 교환하실 수 있습니다.</li>
+                <li>- 교환하기는 교환에 필요한 하이 포인트를 보유한 런너에 한해 진행하실 수 있습니다.</li>
+                <li>- 교환한 아이템은 획득 일로부터 2주간 게임 내 선물함에 보관되며, 미수령 시 삭제됩니다.</li>
+                <li>- 이벤트 종료 시 사용하지 않은 하이 포인트는 모두 초기화됩니다.</li>
+                <li>- 부정한 방법으로 이벤트 참여 &amp; 아이템 수령 시 약관 및 정책에 따라 제재 혹은 회수될 수 있습니다.</li>
+              </ul>
+            </div>
+
+            <div class="login-area">
+              <p>현재 보유 중인 하이 포인트 : <em>335P</em></p>
+              <button type="button" class="btn btn-point" onclick="popMyItemHistory(1, 1)">포인트 획득 &amp; 사용내역</button>
+            </div>
+            <div class="point-area">
+              <p>아래 아이템 4종 중 원하는 아이템 1종을 선택, 교환하실 수 있어요!</p>
+
+              <ul class="point-list">
+                <li>300P 썸머 피크닉 남성 패키지<button type="button" class="btn btn-exchange"
+                    onclick="fnGetItem(201)">교환하기</button></li>
+                <li>300P 썸머 피크닉 여성 패키지<button type="button" class="btn btn-exchange"
+                    onclick="fnGetItem(202)">교환하기</button></li>
+                <li>300P 썸머 스위밍 남성 패키지<button type="button" class="btn btn-exchange"
+                    onclick="fnGetItem(203)">교환하기</button></li>
+                <li>300P 썸머 스위밍 여성 패키지<button type="button" class="btn btn-exchange"
+                    onclick="fnGetItem(204)">교환하기</button></li>
+              </ul>
+
+              <p>아래 아이템 6종은 아이템마다 최대 2회까지 교환하실 수 있어요!</p>
+
+              <ul class="point-list2">
+                <li>200P 하이런너 헤어 교환권 1개<p class="exchange-check">교환 횟수 : <em>0</em> / 2</p><button type="button"
+                    class="btn btn-exchange" onclick="fnGetItem(205)">교환하기</button></li>
+                <li>200P 하이런너 크라운 교환권 1개<p class="exchange-check">교환 횟수 : <em>0</em> / 2</p><button type="button"
+                    class="btn btn-exchange" onclick="fnGetItem(206)">교환하기</button></li>
+                <li>200P 하이런너 윙 교환권 1개<p class="exchange-check">교환 횟수 : <em>0</em> / 2</p><button type="button"
+                    class="btn btn-exchange" onclick="fnGetItem(207)">교환하기</button></li>
+                <li>200P 하이런너 슈즈 교환권 1개<p class="exchange-check">교환 횟수 : <em>0</em> / 2</p><button type="button"
+                    class="btn btn-exchange" onclick="fnGetItem(208)">교환하기</button></li>
+                <li>200P 하이런너 수트 교환권 1개<p class="exchange-check">교환 횟수 : <em>0</em> / 2</p><button type="button"
+                    class="btn btn-exchange" onclick="fnGetItem(209)">교환하기</button></li>
+                <li>200P 하이런너 글러브 교환권 1개<p class="exchange-check">교환 횟수 : <em>0</em> / 2</p><button type="button"
+                    class="btn btn-exchange" onclick="fnGetItem(210)">교환하기</button></li>
+              </ul>
+
+
+
+              <p>아래 아이템 4종은 횟수에 상관없이 원하는 만큼 교환하실 수 있어요!</p>
+
+              <ul class="point-list">
+                <li>100P 삐에로의 깜짝 상자 2개<button type="button" class="btn btn-exchange"
+                    onclick="fnGetItem(211)">교환하기</button></li>
+                <li>100P 손상된 3등급 데이터 1개<button type="button" class="btn btn-exchange"
+                    onclick="fnGetItem(212)">교환하기</button></li>
+                <li>50P 열쇠 교환티켓 1개<button type="button" class="btn btn-exchange" onclick="fnGetItem(213)">교환하기</button>
+                </li>
+                <li>50P 200 마우 <button type="button" class="btn btn-exchange" onclick="fnGetItem(214)">교환하기</button>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
