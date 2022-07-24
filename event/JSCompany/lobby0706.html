@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2022/06/04</title>
+  <script src="../../assets/common/js/jquery-1.7.2.js"></script>
+  <link rel="stylesheet" href="../../assets/common/css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="evt_wrap" class="main lobby">
+    <div class="gnb-wrap">
+      <div class="gnb-area flex">
+        <span class="bi"><a href="/index.asp" onclick="gtag('event', 'GNB_bi_공홈', { 'event_category': '저컴_로비', 'event_label': '88' });">저승컴퍼니</a></span>
+  
+        <!-- [D] 현재 메뉴 li에 'current' 클래스 추가 / 새로운 컨텐츠 li에 'new' 클래스 추가-->
+        <ul class="gnb flex">
+          <li class="m1 current"><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_로비', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>로비</span></a>
+            <div class="lnb-area" style="display: block;">
+              <ul class="flex">
+                <li class="current"><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_0706', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>07.06</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="m2 "><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_내정보실', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>내 정보실</span></a>
+            <div class="lnb-area flex" style="display: none;">
+              <ul class="flex">
+                <li class=""><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_사원정보', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>사원 정보</span></a></li>
+                <li class=""><a href="/event/JSCompany/Information/information_organization.asp" onclick="gtag('event', 'GNB_조직도', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>조직도</span></a></li>
+                <li class=""><a href="/event/JSCompany/Information/information_job_evaluation.asp" onclick="gtag('event', 'GNB_업무평가', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>업무 평가</span></a></li>
+              </ul>
+            </div>
+                  </li>
+          <li class="m3   "><a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'GNB_집중업무실', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>집중 업무실</span></a>
+            <div class="lnb-area flex" style="display: none;">
+              <ul class="flex">
+                <li class="  "><a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'GNB_일일업무', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>일일 업무</span></a></li>
+                <li class="  "><a href="/event/JSCompany/Office/office_main.asp?id=TeamM" onclick="gtag('event', 'GNB_팀업무성과', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>팀 업무 성과</span></a></li>
+                <li class="  "><a href="/event/JSCompany/Office/office_main.asp?id=weeklyM" onclick="gtag('event', 'GNB_주간업무', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>주간 업무</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="m4 "><a href="javascript:alert('7월 20일 오픈 예정입니다.')" onclick="gtag('event', 'GNB_차사복지샵', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>차사 복지샵</span></a></li>
+          <li class="m5 "><a href="/event/JSCompany/Promotion/" onclick="gtag('event', 'GNB_회사홍보관', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>회사 홍보관</span></a></li>
+          <li class="m6 "><a href="/event/JSCompany/Director/" onclick="gtag('event', 'GNB_담연부장실', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>담연 부장실</span></a></li>
+        </ul>
+  
+        <div class="util-area">
+          <a href="/index.asp" class="btn btn-home" onclick="gtag('event', 'GNB_icon_공홈', { 'event_category': '저컴_로비', 'event_label': '88' });">테일즈런너</a>
+                  
+                  <button type="button" onclick="goLogout();gtag('event', 'GNB_퇴근하기', { 'event_category': '저컴_로비', 'event_label': '88' });" class="btn btn-login logout"><span>퇴근하기 LOGOUT</span></button>
+                  
+        </div>
+      </div>
+    </div>
+    <div class="evt-header" id="evt-header"></div>
+    <div class="evt-content"></div>
+    <div class="eve_comment"></div>
+    <div class="footer">
+      <p class="footer_copyright">
+        © Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
