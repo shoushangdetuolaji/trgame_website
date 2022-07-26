@@ -53,11 +53,40 @@ window.onload = function() {
 function SetPageNumber(index) {
 	var page;
 	page = index + 1;
-
-	if(page == 3)
-	{
+	if (page == 3) {
 			$('span[data-type="title"]');
-
 			$($(".popup" + this.$popup.selector + " .btn-guide-reward")[0]).attr("disabled", false);
+	}
+}
+
+// Popup
+var $popup;
+function popup(obj, url) {
+	$popup = $(obj);
+	var targetY = $(window).scrollTop() + 100;
+	var h = $popup.outerHeight() / 2;
+	var w = $popup.outerWidth() / 2;
+	$('body').addClass('dimmed');
+	$popup.addClass('show').css({
+		top: targetY,
+		opacity: 1
+	});
+}
+
+// PopupClose
+function popupClose(that) {
+	$('body').removeClass('dimmed').unbind('touchmove');
+	var type = typeof(that); //this == "object"
+	if ( type == "object" ) {
+		$(that).parents('.popup').removeAttr("style").removeClass("show");
+		$(that).parents('.popup').find(".iframe iframe").remove();
+
+		if ( $(that).parents('.popup').attr('data-popup-id') == 'item') {
+			if ( $(that).parents('.popup').attr('data-popup-re') != 're') {
+				document.location.reload();
+			}
+		}
+	} else {
+		$(that).parents('.popup').removeAttr("style").removeClass("show");
 	}
 }
