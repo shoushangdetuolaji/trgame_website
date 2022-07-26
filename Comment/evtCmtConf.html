@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>尽情玩耍吧 超级跑跑</title>
+  <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="commentPopup">
+      <div class="commentPopupImg">
+        <img src="./images/reply_popup.jpg" width="271" height="180" alt="">
+      </div>
+    </div>
+    <div class="commentWrite">
+      <form name="fm" method="post" onsubmit="return false">
+        <!-- 一些表单信息 -->
+        <input type="hidden" name="evtCod" value="123">
+        <input type="text" name="evtIDX">
+        <ul>
+          <li class="usrNickName">
+            <img src="../assets/images/common/levels/Lv112.gif">
+            <strong>shoushangdetuolaji</strong>
+          </li>
+          <li class="usrComment">
+            <input type="text" name="comment" class="comment message" onkeydown="fnKeyCheck(this);">
+            <a href="javascript:fnCommentWrite();"></a>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="commentList">
+      <table border="0">
+        <caption>이벤트 댓글</caption>
+        <colgroup>
+          <col width="130px">
+          <col width="570px">
+          <col width="100px">
+        </colgroup>
+        <!--<thead>
+          <tr>
+            <th>내용1</th>
+            <th>내용2</th>
+            <th>내용3</th>
+          </tr>
+        </thead>-->
+        <tbody>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv88.gif"> <span class="vip_red"><a href="javascript:fnSquare('174265363');"><strong>WaltzForZizi</strong></a></span></td>
+            <td class="commentStyle">
+            런하~ <a href="javascript:fnCommentDelete(18524407);"><img src="//tr-image.game.onstove.com/web/Common/Button/btn_delete_02.gif"></a>
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv90.gif"> <span class="vip_red"><a href="javascript:fnSquare('56230331');"><strong>히또츠</strong></a></span></td>
+            <td class="commentStyle">
+            런하~
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv71.gif"> <span class="vip_orange"><a href="javascript:fnSquare('52778094');"><strong>옐로레몬양</strong></a></span></td>
+            <td class="commentStyle">
+            런하~
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv86.gif"> <span class="vip_red"><a href="javascript:fnSquare('170989014');"><strong>수수쿠루</strong></a></span></td>
+            <td class="commentStyle">
+            런하~
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv64.gif"> <span class="vip_orange"><a href="javascript:fnSquare('204892246');"><strong>겸덍</strong></a></span></td>
+            <td class="commentStyle">
+            런하~
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv93.gif"> <span class="vip_orange"><a href="javascript:fnSquare('43645586');"><strong>비왕</strong></a></span></td>
+            <td class="commentStyle">
+            런하~
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv72.gif"> <span class="vip_red"><a href="javascript:fnSquare('196802394');"><strong>히든쟈니</strong></a></span></td>
+            <td class="commentStyle">
+            런하~
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv86.gif"> <span class="vip_orange"><a href="javascript:fnSquare('43287087');"><strong>내가남자임</strong></a></span></td>
+            <td class="commentStyle">
+            런하~
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+          <tr height="25">
+            <td><img src="//tr-image.game.onstove.com/web/Common/Levels/Lv72.gif"> <span class="vip_green"><a href="javascript:fnSquare('136814807');"><strong>마라엽떡</strong></a></span></td>
+            <td class="commentStyle">
+            런하~
+            </td>
+            <td class="regDte">2022-07-27</td>
+          </tr>
+          <tr height="1"><td colspan="3" bgcolor="#e3e3e3"></td></tr>
+          
+        </tbody>
+        </table>
+    </div>
+    <div class="commentPaging">
+	
+
+      <!-- <script language="javascript">
+        function goPage(page)
+        {
+            document.location.href = "/event/2022/06/04_welcome_benefit/Comment/evtCmtConf.asp?page=" + page + "";
+        }
+      </script> -->
+      
+        <a class="on" href="javascript:goPage(1)">1</a><a href="javascript:goPage(2)">2</a><a href="javascript:goPage(3)">3</a><a href="javascript:goPage(4)">4</a><a href="javascript:goPage(5)">5</a><a href="javascript:goPage(6)">6</a><a href="javascript:goPage(7)">7</a><a href="javascript:goPage(8)">8</a><a href="javascript:goPage(9)">9</a><a href="javascript:goPage(10)">10</a>
+        <a class="next" href="javascript:goPage(11);">다음</a>
+        
+        </div>
+  </div>
+</body>
+</html>
