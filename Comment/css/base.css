@@ -1,59 +1,293 @@
-body {background-color:;}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td,p { margin:0; padding:0; }
-table { border-collapse:collapse; border-spacing:0; }
-fieldset,img { border:0; }
-img {vertical-align:middle;}
-address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
-ol,ul { list-style:none; }
-caption,th { text-align:left; }
-h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
-q:before,q:after { content:''; }
-abbr,acronym { border:0; }
-body, td, li, p { color: #000; font: normal 12px 돋움; }
+body {
+  background-color: ;
+}
 
-* html { overflow-x: hidden; }
-*+html { overflow-x: hidden; }
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+th,
+td,
+p {
+  margin: 0;
+  padding: 0;
+}
 
-a:link, a:visited { color: #000; text-decoration: none; }
-a:hover { color: #000; text-decoration: underline; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-#wrapper { position: relative; top: 0; left: 0; z-index: 1; width: 800px; margin: 0 auto;background-color:; }
+fieldset,
+img {
+  border: 0;
+}
 
-#commentPopup {position:absolute; z-index:2; width:700px; height:300px; top:10px; left:50px; display:none;}
+img {
+  vertical-align: middle;
+}
 
-.commentPopupImg {position:absolute; z-index:1; top:55px; left:230px;}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
 
-.commentWrite {position: relative; width:800px; height:40px; margin:0 auto; background-color:;padding:5px 0;  overflow:hidden;}
-.commentWrite ul {width:800px; }
-.commentWrite ul li {float:left;}
-.commentWrite ul li.usrNickName{padding: 12px 0 0 0;width:130px;vertical-align:middle; text-align:center;}
-.commentWrite ul li.usrNickName strong{font-weight:bold;}
-.commentWrite ul li.usrNickName img{vertical-align:middle; position:relative; top:-2px;}
-.commentWrite ul li.usrComment{padding: 5px 0 0 0;width:665px; vertical-align:middle;}
-.commentWrite input.comment {padding: 7px 5px 0px 2px; width:510px; height:20px; font-size:11px;vertical-align:middle; border:1px solid #c9c9c9;}
-.commentWrite input.message {background:transparent url(//tr-image.game.onstove.com/web/common/reply_input_txt.jpg) no-repeat scroll 10px 6px; background-color:#ffffff;}
-.commentWrite .writeBtn {padding:0 0 0 7px;}
-.commentWrite p {margin: 5 auto; }
+ol,
+ul {
+  list-style: none;
+}
 
-.commentList {position: relative; width:800px; margin:10px auto; }
-.commentList table{width:100%;table-layout:fixed} /* 2012-11-07 추가 */
-.commentList caption {display:none}
-.commentList strong{font-weight:bold;}
-.commentList td.commentStyle {padding:5px 0; word-wrap:break-word; word-break:break-all; overflow:hidden; *padding:2px 0;}
-.commentList td.regDte {text-align:center;}
+caption,
+th {
+  text-align: left;
+}
 
-.commentPaging {clear: both;  padding:5px 0; text-align: center;}
-.commentPaging a.prev { padding: 1px 20px 0 15px; background: transparent url(//tr-image.game.onstove.com/web/Common/Button/btn_prev.gif) no-repeat scroll 0 0; }
-.commentPaging a.next { padding: 1px 15px 0 20px; background: transparent url(//tr-image.game.onstove.com/web/Common/Button/btn_next.gif) no-repeat scroll 100% 0; }
-.commentPaging a { padding: 0 3px; }
-.commentPaging a.on { font-weight: bold; text-decoration: underline; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
 
-.txtAlignCenter {text-align:center;margin:5px 0 0 0;}
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+body,
+td,
+li,
+p {
+  color: #000;
+  font: normal 12px 돋움;
+}
+
+* html {
+  overflow-x: hidden;
+}
+
+*+html {
+  overflow-x: hidden;
+}
+
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 800px;
+  margin: 0 auto;
+  background-color: ;
+}
+
+#commentPopup {
+  position: absolute;
+  z-index: 2;
+  width: 700px;
+  height: 300px;
+  top: 10px;
+  left: 50px;
+  display: none;
+}
+
+.commentPopupImg {
+  position: absolute;
+  z-index: 1;
+  top: 55px;
+  left: 230px;
+}
+
+.commentWrite {
+  position: relative;
+  width: 800px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: ;
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+.commentWrite ul {
+  width: 800px;
+}
+
+.commentWrite ul li {
+  float: left;
+}
+
+.commentWrite ul li.usrNickName {
+  padding: 12px 0 0 0;
+  width: 130px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.commentWrite ul li.usrNickName strong {
+  font-weight: bold;
+}
+
+.commentWrite ul li.usrNickName img {
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+.commentWrite ul li.usrComment {
+  padding: 5px 0 0 0;
+  width: 665px;
+  vertical-align: middle;
+}
+
+.commentWrite input.comment {
+  padding: 7px 5px 0px 2px;
+  width: 510px;
+  height: 20px;
+  font-size: 11px;
+  vertical-align: middle;
+  border: 1px solid #c9c9c9;
+}
+
+.commentWrite input.message {
+  background: transparent url(../images/reply_input_txt.jpg) no-repeat scroll 10px 6px;
+  background-color: #ffffff;
+}
+
+.commentWrite .writeBtn {
+  padding: 0 0 0 7px;
+}
+
+.commentWrite p {
+  margin: 5 auto;
+}
+
+.commentList {
+  position: relative;
+  width: 800px;
+  margin: 10px auto;
+}
+
+.commentList table {
+  width: 100%;
+  table-layout: fixed
+}
+
+/* 2012-11-07 추가 */
+.commentList caption {
+  display: none
+}
+
+.commentList strong {
+  font-weight: bold;
+}
+
+.commentList td.commentStyle {
+  padding: 5px 0;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  *padding: 2px 0;
+}
+
+.commentList td.regDte {
+  text-align: center;
+}
+
+.commentPaging {
+  clear: both;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.commentPaging a.prev {
+  padding: 1px 20px 0 15px;
+  background: transparent url(../images/btn_prev.gif) no-repeat scroll 0 0;
+}
+
+.commentPaging a.next {
+  padding: 1px 15px 0 20px;
+  background: transparent url(../images/btn_next.gif) no-repeat scroll 100% 0;
+}
+
+.commentPaging a {
+  padding: 0 3px;
+}
+
+.commentPaging a.on {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.txtAlignCenter {
+  text-align: center;
+  margin: 5px 0 0 0;
+}
 
 
 /* 게시판 닉네임 색상 for VIP멤버쉽*/
-.vip_purple, .vip_purple a {color:#bb00d1 !important;}
-.vip_red , .vip_red a {color:#d50000 !important;}
-.vip_green , .vip_green a {color:#056d00 !important;}
-.vip_orange , .vip_orange a {color:#ef7000 !important;}
-.vip_black , .vip_black a {color:#000 !important;}
+.vip_purple,
+.vip_purple a {
+  color: #bb00d1 !important;
+}
+
+.vip_red,
+.vip_red a {
+  color: #d50000 !important;
+}
+
+.vip_green,
+.vip_green a {
+  color: #056d00 !important;
+}
+
+.vip_orange,
+.vip_orange a {
+  color: #ef7000 !important;
+}
+
+.vip_black,
+.vip_black a {
+  color: #000 !important;
+}
