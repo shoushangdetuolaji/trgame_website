@@ -7,21 +7,43 @@
   <title>2022/06/04</title>
   <script src="../../assets/common/js/jquery-1.7.2.js"></script>
   <link rel="stylesheet" href="../../assets/common/css/base.css">
+
+  /8*
+  
   <link rel="stylesheet" href="./css/common.css">
+   21 21
+  <link rel="stylesheet" href="./css/gnbWrapDiv.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <div class="gnbWrapDiv">
+    <div id="hangame_gnb_basic"></div>
+  </div>
   <div id="evt_wrap" class="main lobby">
     <div class="gnb-wrap">
       <div class="gnb-area flex">
         <span class="bi"><a href="/index.asp" onclick="gtag('event', 'GNB_bi_공홈', { 'event_category': '저컴_로비', 'event_label': '88' });">저승컴퍼니</a></span>
   
-        <!-- [D] 현재 메뉴 li에 'current' 클래스 추가 / 새로운 컨텐츠 li에 'new' 클래스 추가-->
+        <!-- [D] 向当前菜单 li 添加" current" 类 / 向新内容 li 添加" new" 类-->
         <ul class="gnb flex">
           <li class="m1 current"><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_로비', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>로비</span></a>
             <div class="lnb-area" style="display: block;">
               <ul class="flex">
-                <li class="current"><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_0706', { 'event_category': '저컴_로비', 'event_label': '88' });"><span>07.06</span></a></li>
+                <li class="">
+                  <a href="/event/JSCompany/Lobby0803.asp" onclick="gtag('event', 'GNB_0803', { 'event_category': '저컴_로비', 'event_label': '89' });">
+                    <span>08.03</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="/event/JSCompany/Lobby0720.asp" onclick="gtag('event', 'GNB_0720', { 'event_category': '저컴_로비', 'event_label': '89' });">
+                    <span>07.20</span>
+                  </a>
+                </li>
+                <li class="current">
+                  <a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_0706', { 'event_category': '저컴_로비', 'event_label': '89' });">
+                    <span>07.06</span>
+                  </a>
+                </li>                            
               </ul>
             </div>
           </li>
@@ -49,20 +71,67 @@
         </ul>
   
         <div class="util-area">
-          <a href="/index.asp" class="btn btn-home" onclick="gtag('event', 'GNB_icon_공홈', { 'event_category': '저컴_로비', 'event_label': '88' });">테일즈런너</a>
-                  
-                  <button type="button" onclick="goLogout();gtag('event', 'GNB_퇴근하기', { 'event_category': '저컴_로비', 'event_label': '88' });" class="btn btn-login logout"><span>퇴근하기 LOGOUT</span></button>
-                  
+          <a href="/index.asp" class="btn btn-home" onclick="gtag('event', 'GNB_icon_공홈', { 'event_category': '저컴_로비', 'event_label': '88' });">테일즈런너</a>    
+          <button type="button" onclick="goLogout();gtag('event', 'GNB_퇴근하기', { 'event_category': '저컴_로비', 'event_label': '88' });" class="btn btn-login logout"><span>퇴근하기 LOGOUT</span></button>
+          <button type="button" class="btn btn-gamestart" onclick="fnmainGameStart(); fnStoveLogClick('SUB', 'JSCOMPANY_GAMESTART_BTN', 'http://' + location.host + '/global/common/lib/game_cab_execute.asp', window.event); gtag('event', '게임시작버튼', { 'event_category': '저컴_로비'});"><span>게임 시작</span></button>
+          <div class="arrow_box" id="gameStartLayer" style="display: block;">
+            <p>게임을 시작하기 위해선<br>먼저 테일즈런너 클라이언트 설치가<br>되어 있어야 합니다.</p>
+            <a href="#" onclick="fnGameDown()" class="btn btn-Install"><span>STOVE 클라이언트 설치</span></a>
+            <button type="button" class="btnX" onclick="$('#gameStartLayer').hide()"><span>닫기</span></button>
+          </div>
+            
         </div>
       </div>
     </div>
-    <div class="evt-header" id="evt-header"></div>
-    <div class="evt-content"></div>
-    <div class="eve_comment"></div>
-    <div class="footer">
-      <p class="footer_copyright">
-        © Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.
-      </p>
+    <div class="evt-header" style="height: 764px;">
+      <div class="inner">
+        <h1 class="title">
+          <span>저승에 입사한 것을 환영합니다</span>
+        </h1>
+        <div class="user-type flex">
+          <p><strong>shoushangdetuolaji 님!</strong> 퇴근 전 <strong>저승관리</strong>팀 <a href="/event/JSCompany/Office/office_main.asp?id=daily">[업무 성과]</a>도 꼭 확인하세요!</p>
+        </div>
+      </div>
+    </div>
+    <div class="evt-content">
+      <span class="pattern"></span>
+      <div class="content-body inner" style="z-index: 0; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+        <div class="box-area flex flex-wrap">
+          <div class="box" data-box-num="1">
+            <a href="/event/2022/06/06_new_character/event_p.asp" onclick="gtag('event', 'BT_1차_담연예판', { 'event_category': '저컴_로비', 'event_label': '89' });"></a>
+            <h2>불이 꺼지지 않는 <br>사무실의 주인, 담연</h2><!-- 20220701 수정 -->
+          </div>
+          <div class="box" data-box-num="2">
+            <a href="/event/2022/07/06_runners_closet/event.asp" onclick="gtag('event', 'BT_1차_옷장', { 'event_category': '저컴_로비', 'event_label': '89' });"></a>
+            <h2>HIP의 완성은 <br>LOOK</h2>
+          </div>
+          <div class="box" data-box-num="3">
+            <a href="https://www.youtube.com/watch?v=oxW_SrDa1pE" target="_blank" onclick="gtag('event', 'BT_1차_오리엔터이션', { 'event_category': '저컴_로비', 'event_label': '89' });"></a>
+            <h2>신규 입사자를 위한 <br>오리엔테이션</h2>
+          </div>
+          <div class="box" data-box-num="4">
+            <a href="/event/JSCompany/TeamChoice/Intro.asp" onclick="gtag('event', 'BT_1차_팀배치', { 'event_category': '저컴_로비', 'event_label': '89' });"></a>
+            <h2>아직 정식 차사가 <br>아니라면!</h2>
+          </div>
+          <div class="box" data-box-num="5">
+            <a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'BT_1차_집중업무실', { 'event_category': '저컴_로비', 'event_label': '89' });"></a>
+            <h2>집중 업무 : 허둥지둥 출근길 <br>&amp; 식스센스 훈련소</h2><!-- 20220705 수정 -->
+          </div>
+          <div class="box-group flex flex-wrap">
+            <div class="box" data-box-num="6">
+              <a href="/news/piero.asp?seq=8615107" onclick="gtag('event', 'BT_1차_칼퇴', { 'event_category': '저컴_로비', 'event_label': '89' });"></a>
+              <h2>첫 출근이지만 <br>칼퇴 해도 괜찮을까요?</h2><!-- 20220615 수정 -->
+            </div>
+            <div class="box" data-box-num="7">
+              <a href="/news/develop.asp?seq=8615106" onclick="gtag('event', 'BT_1차_웹툰', { 'event_category': '저컴_로비', 'event_label': '89' });"></a>
+              <h2>당신이 저승컴퍼니에 <br>입사해야 하는 이유</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer flex">
+      <p class="copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
     </div>
   </div>
   <script src="./js/main.js"></script>
