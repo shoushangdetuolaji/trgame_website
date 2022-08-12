@@ -1,3 +1,18 @@
+initHeight();
+function initHeight() {
+	$('#evt_wrap').css({
+		'min-height': 'calc(100% - ' + $('#evt_wrap').offset().top + 'px)'
+	});
+}
+
+var titleMotion = new TimelineMax({}).add([
+  TweenMax.fromTo( $('.intro .title'), .8, {opacity:0, height:'0%'}, {opacity:1, height:'348px', ease:Power1.easeOut, delay:1.2}),
+  TweenMax.fromTo( $('.intro .ceo-list li'), .8, {opacity:0, scale:1.2}, {opacity:1, scale:1, ease:Power1.easeOut, delay:0.5}),
+]);
+
+
+
+
 // 按标签分类的 YouTube id 值
 var youtubeId = ['h_GGnLkTdqU', 'T70pLRzEFjA', 'CIZ9L7mfMeI', '274U-kYlXDQ', '3FYlXy30NyA' ,'YB6Xo0VbtdM'];
 
