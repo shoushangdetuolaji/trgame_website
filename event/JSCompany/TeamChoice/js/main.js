@@ -35,6 +35,7 @@ function tabView(index, btn, that) {
 // 嵌入油管链接
 function insertYoutube(obj, url) {
   $(obj).find('.iframe').empty().append('<iframe src="https://www.youtube.com/embed/'+url+'?autoplay=0&rel=0&amp;controls=1&amp;showinfo=0&amp;color=white" allow="autoplay; encrypted-media" width="100%" height="100%" allowfullscreen></iframe>')
+  console.log(obj, url);
 }
 
 // 
@@ -65,3 +66,12 @@ function fnTeamChoice(val) {
 }
 
 fnTeamChoice(2)
+
+
+
+// TeamChoice_direct Page
+function fnTeamChoiceInsert() {
+  // 判断有无登录状态信息
+  // 这里就直接显示已经选好队伍了
+  alert('런너님께서는 이미 소속 팀을 선택하셨습니다.Runner已经选好了所属队')
+}

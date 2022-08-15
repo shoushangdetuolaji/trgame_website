@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teamChoice_Test_Result</title>
+  <script src="../../../assets/common/js/jquery-1.7.2.js"></script>
+  <script src="../../../assets/common/js/jquery.slides.min.js"></script>
+  <script src="../../../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../css/gnbWrapDiv.css">
+  <link rel="stylesheet" href="./css/event.css">
+</head>
+<body>
+  <div class="gnbWrapDiv">
+    <div id="hangame_gnb_basic"></div>
+  </div>
+  <div id="evt_wrap" class="result">
+    <div class="evt-header">
+      <div class="inner hide">
+        <div class="logo"><a href="/index.asp" title="테일즈런너 홈으로">테일즈런너</a></div>
+        <a href="/event/JSCompany/gate.asp" class="ico btn-direct">바로가기</a>
+        <h1>테스트 후 소속 팀 선택하기</h1>
+        <p>차사 성향 테스트 진행 &amp; 결과를 확인하신 후 추천 팀 2팀 중 함께 하고 싶은 팀을 선택해 보세요!</p>
+      </div>
+    </div>
+    <div class="evt-content">
+      <div class="content-body">
+        <div class="inner">
+  
+          <div class="result-wrap">
+            <h2 class="hide">차사 성향 테스트 결과</h2>					
+            <div class="image">
+              <!-- <img src="//tr-image.game.onstove.com/event/202207/06_tendency_test/images/hv3mnvcs9t.jpg" alt="벼락치기왕 바다형"> -->
+            </div>
+  
+            <div class="youtube-area">
+              <ul class="flex">
+                <li>
+                  <div class="iframe">
+                    <!-- <iframe src="https://www.youtube.com/embed/Fk6b9Mv5Aoc?autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;color=white" allow="autoplay; encrypted-media" width="100%" height="100%" allowfullscreen=""></iframe> -->
+                  </div>
+                  <button type="button" class="ico btn-myteam" onclick="fnTeamChoice(4);">소속 팀으로 선택하기</button>
+                </li>
+                <li>
+                  <div class="iframe">
+                    <!-- <iframe src="https://www.youtube.com/embed/Rl0yMfRb9yk?autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;color=white" allow="autoplay; encrypted-media" width="100%" height="100%" allowfullscreen=""></iframe> -->
+                  </div>
+                  <button type="button" class="ico btn-myteam" onclick="fnTeamChoice(2);">소속 팀으로 선택하기</button>
+                </li>
+              </ul>
+  
+              <a href="Intro.html" class="ico btn-later3">나중에 선택하기</a>
+            </div>
+  
+            <div class="btn-area">
+              <a href="information_organization.html" target="_blank" class="ico btn-organization">조직도 보러 가기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    // 结果 按类型显示信息 - 开发图像随机化名时更改为绝对路径
+    // 6个部门 1个结果提供2个部门选择 所以resultType有15种 根据选择来的 暂时匹配不到全部
+    var resultType = {
+      2: {
+        img: '<img src="./images/p5gbuk7idv.jpg" alt="용의주도 전략가 하루형">',
+        url1: 'aqEupVw_oT0',
+        url2: 'Rl0yMfRb9yk',
+      },
+      3: {
+        img: '<img src="./images/24jjvwywnv.jpg" alt="평화주의자 시호형">',
+        url1: 'Rl0yMfRb9yk',
+        url2: '4s70pvY4lF8',
+      },
+      13: {
+        img: '<img src="./images/hv3mnvcs9t.jpg" alt="벼락치기왕 바다형">',
+        url1: 'Fk6b9Mv5Aoc',
+        url2: 'Rl0yMfRb9yk',
+      },
+      14: {
+        img: '<img src="./images/faw067c0s5.jpg" alt="원칙주의자 라라형">',
+        url1: 'Fk6b9Mv5Aoc',
+        url2: 'aqEupVw_oT0',
+      },
+      15: {
+        img: '<img src="./images/759tpmm97e.jpg" alt="낙천적인 중재자 미호형">',
+        url1: 'Rl0yMfRb9yk',
+        url2: 'L1PCXPgP6qY',
+      }
+    };
+
+    $(function() {
+      // 随机生成结果测试页
+      let arr = []
+      for (let key in resultType) {
+        console.log(key)
+        arr.push(key)
+      }
+      console.log(arr)
+      if (arr.length) {
+        var index = getRandomInt(0, arr.length - 1)
+        console.log(index)
+        drawResult(arr[index]);
+      }
+    });
+    // 获取随机数[ , ]
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random()*(max - min +  1)) + min;
+    }
+    function drawResult(typeNum) {
+      var imgName = resultType[typeNum]['img'];
+      var url1 = resultType[typeNum]['url1'];
+      var url2 = resultType[typeNum]['url2'];
+
+      $('.result-wrap').find('.image').empty().html(imgName);
+      $('.youtube-area').find('.iframe').empty();
+      insertYoutube($('.youtube-area li').eq(0), url1);
+      insertYoutube($('.youtube-area li').eq(1), url2);
+    }
+    function fnTeamChoice(typeNum) {
+      fnTeamChoiceInsert()
+    }
+    function fnTeamChoiceInsert() {
+      // 判断有无登录状态信息
+      // 这里就直接显示已经选好队伍了
+      alert('런너님께서는 이미 소속 팀을 선택하셨습니다.Runner已经选好了所属队')
+    }
+
+    // 嵌入油管链接
+    function insertYoutube(obj, url) {
+      $(obj).find('.iframe').empty().append('<iframe src="https://www.youtube.com/embed/'+url+'?autoplay=0&rel=0&amp;controls=1&amp;showinfo=0&amp;color=white" allow="autoplay; encrypted-media" width="100%" height="100%" allowfullscreen></iframe>')
+      console.log(obj, url);
+    }
+    
+  </script>
+</body>
+</html>
