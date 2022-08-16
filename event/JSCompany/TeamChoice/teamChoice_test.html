@@ -7,16 +7,16 @@
   <title>teamChoice_test</title>
   <script src="../../../assets/common/js/jquery-1.7.2.js"></script>
   <script src="../../../assets/common/js/jquery.slides.min.js"></script>
-  <script src="../../../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../../../assets/common/css/swiper.min.css">
   <link rel="stylesheet" href="../css/gnbWrapDiv.css">
   <link rel="stylesheet" href="./css/event.css">
 </head>
 <body>
-  <form name="form1" method="post">
+  <form name="form1" method="post" style="height: 100%;">
     <div class="gnbWrapDiv">
       <div id="hangame_gnb_basic"></div>
     </div>
-    <div id="evt_wrap" class="test">
+    <div id="evt_wrap" class="test" style="min-height: calc(100% - 50px);">
       <div class="evt-header">
         <div class="inner hide">
           <div class="logo">
@@ -38,7 +38,7 @@
                         
             </div>
             <div class="btn-area">
-              <button type="button" class="ico btn-start" onclick="fnTeamChoice_test_pop();swiper.slideTo(0,0);gtag('event', '테스트하기', { 'event_category':'저컴_오리엔테이션','event_label':'89'});">차사 성향 테스트 시작하기</button>
+              <button type="button" class="ico btn-start" onclick="fnTeamChoice_test_pop();">차사 성향 테스트 시작하기</button>
               <a href="Intro.html" class="ico btn-later2">나중에 선택하기</a>
             </div>
             
@@ -49,6 +49,156 @@
         <p class="footer_copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
       </div>
     </div>
+    <!-- popup Type Test Pop-up -->
+    <div class="popup" data-popup-id="test">
+      <button type="button" class="ico btn-close" onclick="popupClose(this)">닫기</button>
+      <div class="popup-inner">
+        <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="swiper">
+          <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+    
+                    
+            <div class="swiper-slide swiper-slide-active" style="width: 800px;">
+              <div class="img"><img src="./images/izaarwjwaf.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('10', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('10', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide swiper-slide-next" style="width: 800px;">
+              <div class="img"><img src="./images/vnchf9fvid.jpg" alt="" title="" style=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('9', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('9', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/z3w98jqt7a.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('4', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('4', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/b2xyydmxbf.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('8', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('8', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/gf27mfoe61.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('6', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('6', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/vtat8jnc79.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('3', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('3', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/6rh37y4118.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('1', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('1', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/3q5qn3284z.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('12', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('12', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/z0fxwda9pk.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('11', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('11', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/yzduhk1onj.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('5', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('5', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/zenusuq5n1.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswer('7', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswer('7', 2);"></button></li>
+    
+                            
+              </ul>
+            </div>
+                    
+            <div class="swiper-slide" style="width: 800px;">
+              <div class="img"><img src="./images/f0q7yj9n8f.jpg" alt=""></div>
+              <ul class="btn-list">
+                            
+                <li><button type="button" class="btn-answer answer1" onclick="viewNextSlide();fnSetAnswerEnd('2', 1);"></button></li>
+                <li><button type="button" class="btn-answer answer2" onclick="viewNextSlide();fnSetAnswerEnd('2', 2);"></button></li>
+                            
+              </ul>
+            </div>
+                    
+    
+          </div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        <div class="swiper-pagination swiper-pagination-fraction"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">12</span></div>
+    
+        <p class="txt-start-msg">※ 선택지 2개 중 1개를 클릭(선택)하시면 다음 질문으로 넘어갑니다.</p>
+        <button type="button" class="ico btn-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true" style="display: none;">이전 질문 보기</button>
+      </div>
+    </div>
   </form>
+  <script src="../../../assets/common/js/librarys.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
