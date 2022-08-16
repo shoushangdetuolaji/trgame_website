@@ -100,8 +100,10 @@ $('.gnb > li.current').each(function() {
 });
 
 
+//gnb 높이 가변에 따른 lnb 상단 고정(window.onload로 해야 stove랑 미충돌)
 var gnbTop;
 window.onload = function() {
+  console.log('onload ...')
 	gnbTop = $(".gnb-wrap").offset().top;
 	$(this).scrollTop() > gnbTop ? $('body').addClass('scroll') : $('body').removeClass('scroll')
 	
@@ -118,7 +120,7 @@ window.onload = function() {
 
 function gnbResize() {
 	//gnb fixed 여부에 따른 스타일 분기
-	var isScroll = $('body').hasClass('scroll') ? -$(window).scrollLeft() : 0
+	var isScroll = $('body').hasClass('scroll') ? - $(window).scrollLeft() : 0
 	$('.gnb-wrap').css({
 		left: isScroll,
 		width: $('#evt_wrap').width()
