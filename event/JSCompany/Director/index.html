@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Director</title>
+  <script src="../../../assets/common/js/jquery-1.7.2.js"></script>
+  <script src="../../../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/gnbWrapDiv.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/director.css">
+</head>
+<body>
+  <div class="gnbWrapDiv">
+    <div id="hangame_gnb_basic"></div>
+  </div>
+  <div id="evt_wrap" class="sub director">
+    <div class="gnb-wrap">
+      <div class="gnb-area flex">
+        <span class="bi"><a href="/index.asp" onclick="gtag('event', 'GNB_bi_공홈', { 'event_category': '저컴_로비', 'event_label': '' });">저승컴퍼니</a></span>
+  
+        <!-- [D] 현재 메뉴 li에 'current' 클래스 추가 / 새로운 컨텐츠 li에 'new' 클래스 추가-->
+        <ul class="gnb flex">
+          <li class="m1 "><a href="/event/JSCompany/Lobby0803.asp" onclick="gtag('event', 'GNB_로비', { 'event_category': '저컴_로비', 'event_label': '' });"><span>로비</span></a>
+            <div class="lnb-area" style="display: none;">
+              <ul class="flex">
+                              <li class=""><a href="/event/JSCompany/Lobby0803.asp" onclick="gtag('event', 'GNB_0803', { 'event_category': '저컴_로비', 'event_label': '' });"><span>08.03</span></a></li>
+                              <li class=""><a href="/event/JSCompany/Lobby0720.asp" onclick="gtag('event', 'GNB_0720', { 'event_category': '저컴_로비', 'event_label': '' });"><span>07.20</span></a></li>
+                <li class=""><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_0706', { 'event_category': '저컴_로비', 'event_label': '' });"><span>07.06</span></a></li>                            
+              </ul>
+            </div>
+          </li>
+          <li class="m2 "><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_내정보실', { 'event_category': '저컴_로비', 'event_label': '' });"><span>내 정보실</span></a>
+            <div class="lnb-area flex" style="display: none;">
+              <ul class="flex">
+                <li class=""><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_사원정보', { 'event_category': '저컴_로비', 'event_label': '' });"><span>사원 정보</span></a></li>
+                <li class=""><a href="/event/JSCompany/Information/information_organization.asp" onclick="gtag('event', 'GNB_조직도', { 'event_category': '저컴_로비', 'event_label': '' });"><span>조직도</span></a></li>
+                <li class=""><a href="/event/JSCompany/Information/information_job_evaluation.asp" onclick="gtag('event', 'GNB_업무평가', { 'event_category': '저컴_로비', 'event_label': '' });"><span>업무 평가</span></a></li>
+              </ul>
+            </div>
+                  </li>
+          <li class="m3  new "><a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'GNB_집중업무실', { 'event_category': '저컴_로비', 'event_label': '' });"><span>집중 업무실</span></a>
+            <div class="lnb-area flex" style="display: none;">
+              <ul class="flex">
+                <li class=" new "><a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'GNB_일일업무', { 'event_category': '저컴_로비', 'event_label': '' });"><span>일일 업무</span></a></li>
+                <li class=" new "><a href="/event/JSCompany/Office/office_main.asp?id=TeamM" onclick="gtag('event', 'GNB_팀업무성과', { 'event_category': '저컴_로비', 'event_label': '' });"><span>팀 업무 성과</span></a></li>
+                <li class="  "><a href="/event/JSCompany/Office/office_main.asp?id=weeklyM" onclick="gtag('event', 'GNB_주간업무', { 'event_category': '저컴_로비', 'event_label': '' });"><span>주간 업무</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="m4 "><a href="/event/JSCompany/Shop/" onclick="gtag('event', 'GNB_차사복지샵', { 'event_category': '저컴_로비', 'event_label': '' });"><span>차사 복지샵</span></a></li>
+          <li class="m5 "><a href="/event/JSCompany/Promotion/index.html"><span>회사 홍보관</span></a></li>
+          <li class="m6 current"><a href="/event/JSCompany/Director/index.html"><span>담연 부장실</span></a></li>
+        </ul>
+  
+        <div class="util-area">
+                  <a href="/index.asp" class="btn btn-home" onclick="gtag('event', 'GNB_icon_공홈', { 'event_category': '저컴_로비', 'event_label': '' });">테일즈런너</a>
+  
+                  
+                  <button type="button" onclick="goLogout();gtag('event', 'GNB_퇴근하기', { 'event_category': '저컴_로비', 'event_label': '' });" class="btn btn-login logout"><span>퇴근하기 LOGOUT</span></button>
+                  
+  
+          <button type="button" class="btn btn-gamestart" onclick="fnmainGameStart(); fnStoveLogClick('SUB', 'JSCOMPANY_GAMESTART_BTN', 'http://' + location.host + '/global/common/lib/game_cab_execute.asp', window.event); gtag('event', '게임시작버튼', { 'event_category': '저컴_로비'});"><span>게임 시작</span></button> 
+                  
+                  
+          <div class="arrow_box" id="gameStartLayer" style="display: none;">
+            <p>게임을 시작하기 위해선<br>먼저 테일즈런너 클라이언트 설치가<br>되어 있어야 합니다.</p>
+            <a href="#" onclick="fnGameDown()" class="btn btn-Install"><span>STOVE 클라이언트 설치</span></a>
+            <button type="button" class="btnX" onclick="$('#gameStartLayer').hide()"><span>닫기</span></button>
+          </div>      
+                  
+        </div>
+      </div>
+    </div>
+    <div class="evt-content">
+      <div class="content-body inner">
+        <!-- title -->
+        <div class="title-area">
+          <h2 class="tit tit-director">담연 부장실</h2>
+        </div>
+  
+        <div class="director-wrap official">
+          <div class="director-area">
+            <div class="video-area">
+              <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                <source src="./images/video_official.mp4" type="video/mp4">
+              </video>
+            </div>
+            <p class="desc">저승컴퍼니 담연 부장입니다. 지금은 정식 판매 일정으로 부재중이오니 급한 용무가 있으실 경우 아래 버튼을 통해 저 담연을 찾아와 주세요!</p>
+            <a href="../../2022/07/01_new_character/event.html" target="_blank" class="btn btn-official"><span>정식 판매 이벤트 방문하기</span></a>
+          </div>
+        </div>	
+      </div>
+    </div>
+    <div class="footer flex">
+      <p class="copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

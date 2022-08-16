@@ -1,0 +1,43 @@
+
+body {background-color:#06232b;}
+
+/* 담연 부장실 */
+#evt_wrap.director {background:#06232b url('../images/bg_director.jpg') no-repeat 50% 0;}
+.title-area {position:relative;height:53px;padding:0 20px;}
+.title-area h2.tit {height:100%;text-indent:-9999em;}
+.title-area .tooltip-area {position:absolute;left:0;top:0;}
+h2.tit-director {background:url('../images/tit_director.png') no-repeat;}
+
+.director-wrap {position:relative;height:630px;margin:0 auto;animation:open-rolling 0.6s ease-in;}
+.director-wrap::before,
+.director-wrap::after {z-index:2;content:'';position:absolute;top:-34px;width:48px;height:692px;background:url('../images/bg_director_side.png') no-repeat -9999em 0;}
+.director-wrap::before {left:-33px;}
+.director-wrap::after {right:-33px;}
+.director-wrap .director-area {overflow:hidden;position:absolute;left:0;top:0;width:100%;height:100%;}
+.director-wrap .btn {opacity:0;position:absolute;left:50%;bottom:40px;margin-left:111px;animation:fadeIn 0.6s 2.2s ease-out forwards;transform:scale(0);}
+.director-wrap .desc {opacity:0;position:absolute;left:602px;top:100px;width:500px;height:400px;animation:slideDown 1s 1s linear forwards;transform:scaleY(0);text-indent:-9999em;}
+.director-wrap .video-area {position:absolute;left:124px;top:67px;width:400px;height:500px;}
+.director-wrap .video-area video {width:100%;height:100%;}
+
+.director-wrap.official::before {background-position-x:-116px;}
+.director-wrap.official::after {background-position-x:-174px;}
+.director-wrap.official .director-area {background:url('../images/bg_director_official.png') no-repeat 0 0;}
+.director-wrap.official .desc {background:url('../images/txt_director_official.png') no-repeat 0 0;}
+.director-wrap.official .video-area {background-color:#dad4cb;}
+
+@keyframes open-rolling {
+	0% {width:30px;}
+	100% {width:100%;}
+}
+@keyframes fadeIn {
+	0% {opacity:0;transform:scale(1);}
+	100% {opacity:1;transform:scale(1);}
+}
+@keyframes slideDown {
+	0% {opacity:1;height:0;transform:scaleY(1);}
+	100% {opacity:1;height:450px;transform:scaleY(1);}
+}
+
+/* button */
+.btn-official {display:inline-block;width:246px;height:60px;background:url('../images/btn_visit_official.png');text-indent:-9999em;}
+
