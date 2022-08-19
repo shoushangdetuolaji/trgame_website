@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>characterinfo</title>
+  <script src="../assets/common/js/jquery-1.7.2.js"></script>
+  <script src="../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../assets/common/css/common.css">
+  <link rel="stylesheet" href="./css/character.css">
+</head>
+<body>
+  <div id="wrapper" class="sub">
+    <header id="header">
+      <div class="inner flex">
+        <span class="bi-tr"><a href="/index.asp">테일즈런너</a></span>
+        <h1 class="bi-character">테일즈런너 캐릭터 소개</h1>
+        <a href="/index.asp" class="btn btn-homepage">homepage</a>
+      </div>
+    </header>
+    <div id="container">
+      <div class="inner">
+        <div class="contents">
+  
+          <!-- 캐릭터 정보 -->
+          <div class="info-wrap">
+            <h2 class="character-name"></h2>
+            <div class="info-area">
+              <p class="desc"></p>
+              <ul class="profile"></ul>
+              <div class="chart">
+                <ul ></ul>
+              </div>
+              <button class="btn btn-default btn-motion-time" onclick="popup('[data-popup-id=motion]')"><span>캐릭터 모션 시간 자세히 보기</span></button>
+            </div>
+            <div class="character-img">
+              <i></i>
+              <span ></span>
+            </div>
+          </div>
+          <!-- //캐릭터 정보 -->
+  
+        </div>
+      </div>
+  
+      <div class="container-bottom">
+        <div class="multimedia-wrap">
+          <div class="multimedia-area"><!-- multimedia - json 삽입 영역 --></div>
+        </div>
+        <div class="inner">
+          <!-- 캐릭터 리스트 -->
+          <div class="character-wrap runner">
+            <h2 class="tit-character"><span>런너 캐릭터</span></h2>
+            <ul class="character-list">
+              <li class="li1"> <a href="#n" onclick="insertData(0,1);"><i></i></a> <span>초원</span></li>
+              <li class="li2"> <a href="#n" onclick="insertData(0,2);"><i></i></a> <span>밍밍</span></li>
+              <li class="li3"> <a href="#n" onclick="insertData(0,3);"><i></i></a> <span>리나</span></li>
+              <li class="li4"> <a href="#n" onclick="insertData(0,4);"><i></i></a> <span>빅보</span></li>
+              <li class="li5"> <a href="#n" onclick="insertData(0,5);"><i></i></a> <span>DnD</span></li>
+              <li class="li6"> <a href="#n" onclick="insertData(0,6);"><i></i></a> <span>나르시스</span></li>
+              <li class="li7"> <a href="#n" onclick="insertData(0,7);"><i></i></a> <span>마키</span></li>
+              <li class="li8"> <a href="#n" onclick="insertData(0,8);"><i></i></a> <span>러프</span></li>
+              <li class="li9"> <a href="#n" onclick="insertData(0,9);"><i></i></a> <span>히든러프</span></li>
+              <li class="li10"><a href="#n" onclick="insertData(0,10);"><i></i></a> <span>바다</span></li>
+              <li class="li11"><a href="#n" onclick="insertData(0,11);"><i></i></a> <span>카이</span></li>
+              <li class="li12"><a href="#n" onclick="insertData(0,12);"><i></i></a> <span>유키</span></li>
+              <li class="li13"><a href="#n" onclick="insertData(0,13);"><i></i></a> <span>쿠로</span></li>
+              <li class="li14"><a href="#n" onclick="insertData(0,14);"><i></i></a> <span>아벨</span></li>
+              <li class="li15"><a href="#n" onclick="insertData(0,15);"><i></i></a> <span>하루</span></li>
+              <li class="li16"><a href="#n" onclick="insertData(0,16);"><i></i></a> <span>베라</span></li>
+              <li class="li17"><a href="#n" onclick="insertData(0,17);"><i></i></a> <span>손오공</span></li>
+              <li class="li18"><a href="#n" onclick="insertData(0,18);"><i></i></a> <span>시호</span></li>
+              <li class="li19"><a href="#n" onclick="insertData(0,19);"><i></i></a> <span>루시</span></li>
+              <li class="li20"><a href="#n" onclick="insertData(0,20);"><i></i></a> <span>미호</span></li>
+              <li class="li21"><a href="#n" onclick="insertData(0,21);"><i></i></a> <span>R</span></li>
+              <li class="li22"><a href="#n" onclick="insertData(0,22);"><i></i></a> <span>하랑</span></li>
+              <li class="li23"><a href="#n" onclick="insertData(0,23);"><i></i></a> <span>라라</span></li>
+              <li class="li24"><a href="#n" onclick="insertData(0,24);"><i></i></a> <span>연오</span></li>
+              <li class="li25"><a href="#n" onclick="insertData(0,25);"><i></i></a> <span>블러디 베라</span></li>
+              <li class="li26"><a href="#n" onclick="insertData(0,26);"><i></i></a> <span>시오넬</span></li>
+              <li class="li27"><a href="#n" onclick="insertData(0,27);"><i></i></a> <span>담연</span></li>
+            </ul>
+          </div>
+          
+          <div class="character-wrap story">
+            <h2 class="tit-character"><span>스토리 캐릭터</span></h2>
+            <ul class="character-list">
+              <li class="li1"><a href="#n" onclick="insertData(1,1);"><i></i></a> <span>엘림스 스마일</span></li>
+              <li class="li2"><a href="#n" onclick="insertData(1,2);"><i></i></a> <span>카인</span></li>
+              <li class="li3"><a href="#n" onclick="insertData(1,3);"><i></i></a> <span>로로아</span></li>
+            </ul>
+          </div>
+    
+          <!-- button -->
+          <div class="btn-area">
+            <a href="/guide/character.html" class="btn btn-default btn-list-all"><i class="ico ico-list"></i><span>전체 캐릭터 목록</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="inner">
+        <p class="copyright"><span>© Smilegate Megaport. All Rights Reserved.</span> <span>© RHAON Entertainment. All Rights Reserved.</span></p>
+      </div>
+    </footer>
+  </div>
+  <div class="popup" data-popup-id="motion">
+    <button type="button" class="btn-popclose" onclick="popupClose(this)"><i class="ico ico-popup-x">닫기</i></button>
+    <p class="popup-name" style="background-image:url(&quot;https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/tit_character_popup.png&quot;)">캐릭터 모션 시간</p>
+    <table>
+      <colgroup><col width="296"><col></colgroup>
+      <thead>
+        <tr><th scope="col">구분</th><th scope="col">시간(초)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>부활(리스폰) 시간 <sup class="color1">1)</sup></th>
+          <td>1.1</td>
+        </tr>
+        <tr>
+          <th>장애물 충돌 시 일어나는 시간</th>
+          <td>1.6</td>
+        </tr>
+        <tr>
+          <th>착지 대시 실패 시 일어나는 시간 <sup class="color1">1)</sup></th>
+          <td>1.9</td>
+        </tr>
+        <tr>
+          <th>분노 변신 시간</th>
+          <td>3.3</td>
+        </tr>
+        <tr>
+          <th>수영 중 분노 변신 시간</th>
+          <td>1.6</td>
+        </tr>
+        <tr>
+          <th>벌통 시간</th>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <th>전기 감전 시간 <sup class="color2">2)</sup></th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>머리 밟히고 스턴 시간 <sup class="color1">1)</sup></th>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="popup-notice">
+      <ul>
+        <li><sup class="color1">1)</sup> 등수에 따라 시간의 50% 빠른 재생(중간 ~ 최하 등수까지)</li>
+        <li><sup class="color2">2)</sup> 방향키 좌우 조작에 따라 50% 빠른 재생(좌우 연타 없을 시 100%)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup" data-popup-type="media" data-popup-id="illust">
+    <button type="button" class="btn-popclose" onclick="popupClose(this)"><i class="ico ico-popup-x">닫기</i></button>
+    <div class="popup-inner">
+      <div class="illust"><img src="https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/illust_04.jpg" alt="illust image"></div>
+    </div>
+  </div>
+  <div class="popup" data-popup-type="media" data-popup-id="youtube">
+    <button type="button" class="btn-popclose" onclick="popupClose(this)"><i class="ico ico-popup-x">닫기</i></button>
+    <div class="popup-inner">
+      <div class="iframe"></div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
