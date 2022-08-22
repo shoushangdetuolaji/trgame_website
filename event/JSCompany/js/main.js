@@ -51,19 +51,33 @@ var swiperData = {
   },
 }
 
-
-
-initHeight();
 setSwiper();
 
 // 当页面加载完元素
-if ($('.main').length > 0) {
-  // TimelineMax 来自librarys的动画工具函数
-  var titleMotion = new TimelineMax({ repeat: 2, delay: 0. }).add([
-    TweenMax.fromTo( $('.evt-header'), 1, { height:844 }, { height: 764, ease: Elastic.easeOut.config(1,0.4) } ),
-    TweenMax.fromTo( $('.content-body'), 1.4, { y:100, opacity:1 }, { y:0, opacity: 1, ease: Elastic.easeOut.config(1,0.4) } ),
-  ]);
+$(window).load(function() {
+	//main
+	if ($('.main').length > 0) {
+		// TimelineMax 来自librarys的动画工具函数
+		var titleMotion = new TimelineMax({repeat:0, delay:0.1}).add([
+			TweenMax.fromTo( $('.evt-header'), 1, {height:844}, {height:764, ease:Elastic.easeOut.config(1,0.4) } ),
+			TweenMax.fromTo( $('.content-body'), 1.4, {y:100, opacity:1}, {y:0, opacity:1, ease:Elastic.easeOut.config(1,0.4) } ),
+		]);
+	}
+	//sub
+	else {
+		//내 정보실
+		if ($('#evt_wrap.information').length > 0) trJSC.information();
+	}
+	initHeight();
+});
+
+
+// tab
+function tabView(index, btn, that) {
+	$(btn).removeClass('current').eq(index).addClass('current');
+	$(that).removeClass('current').eq(index).addClass('current');
 }
+
 
 //gnb 메뉴별 활성화 제어
 //gnb 菜单移入移出效果
@@ -280,5 +294,53 @@ function popupClose(that) {
 		}
 	} else {
 		$(that).parents('.popup').removeAttr("style").removeClass("show");
+	}
+}
+
+
+function popupYoutube(obj, url, msgNum, isOpend) {
+	$popup = $(obj);
+	$popup.attr('tabindex', 0).addClass('show').focus();
+	$popup.blur(function() {
+		$(this).removeAttr('tabindex');
+	});
+	var targetY = $(window).scrollTop()+100;
+		h = $popup.outerHeight()/2, w = $popup.outerWidth()/2;
+		
+	$('body').addClass('dimmed');
+	$popup.find('.popup-msg').html(msgNum);
+	$popup.addClass("show").css({top:targetY,opacity:1});
+	$popup.find('.iframe').empty().append('<iframe src="https://www.youtube.com/embed/'+url+'?autoplay=0&rel=0&amp;controls=1&amp;showinfo=0&amp;color=white" allow="autoplay; encrypted-media" width="100%" height="100%" allowfullscreen></iframe>');
+	$popup.attr('data-popup-re','').attr('data-popup-re',isOpend);
+	return false;
+}
+
+
+var trJSC = {
+	//내 정보실	
+	information: function() {	
+		//사원정보 - 발령이력 TAB
+		$(document).on('click', '.record .tab li', function() {
+			tabView($(this).index(), $('.record .tab li'), $('.record .tab-content'));
+		});
+		//팀 전배신청 POPUP TAB
+		$(document).on('click', '[data-popup-id="team-move"] .tab li', function() {
+			tabView($(this).index(), $('[data-popup-id="team-move"] .tab li'), $('[data-popup-id="team-move"] .tab-content'));
+		});
+		//캡쳐 다운로드 	
+		$('.btns button').click(function() {	
+			$('.btns button').removeClass('on');
+			$(this).addClass('on');
+		});			
+		$('.btns .btn1').click(function() {					
+			$('#downloadImage').addClass('employee-Id');
+			$('#downloadImage').removeClass('character-box');
+			return false;
+		});
+		$('.btns .btn2').click(function() {					
+			$('#downloadImage').addClass('character-box');
+			$('#downloadImage').removeClass('employee-Id');
+			return false;
+		});
 	}
 }
