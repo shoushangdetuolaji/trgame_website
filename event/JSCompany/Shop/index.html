@@ -100,6 +100,7 @@
             <div class="clock"></div>
           </div>
           <div class="today-item">
+            <!-- <div class="sold-out1 hide"></div> -->
             <img src="./images/w0ja6ckab9.png">
           </div>
           <button type="button" class="ico btn-purchase" onclick="fnBuyHotDealItem()">구매 하기</button>
@@ -651,7 +652,12 @@
   <script>
     var myshopDisplayYN = 'Y';
     $(document).ready(function() {
-      dDay('.clock', '2022.08.18' + '.23:59:00');
+      var date = new Date()
+      var year = date.getFullYear()
+      var month = (date.getMonth() + 1) < 10 ? '0' +(date.getMonth() + 1) : (date.getMonth() + 1)
+      var day = date.getDate() < 10 ? '0' + date.getDate() : date.getDate()
+      var dateInit = `${year}.${month}.${day}`
+      dDay('.clock', dateInit + '.23:59:00');
       if (myshopDisplayYN == 'Y') {
         $('.myshop-login').hide()
       }
@@ -771,6 +777,9 @@
     
     function fnBuyHotDealItem() {
       alert('祝你购买成功')
+      // $('.sold-out1').addClass('show');
+      $('.today-item').append('<div class="sold-out1 hide"></div>');
+      $('.btn-purchase').attr('disabled', true);
     }
 
     // 卡片翻转
