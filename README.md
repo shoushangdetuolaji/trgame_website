@@ -4,13 +4,10 @@
 
 - started on 2022/07/12
 
-
-
 ### 变动
 
 - 2022/09/06 css文件通过sass处理了，不能直接扒，需要找源文件并美化
-
-
+- [aos.js](https://michalsnik.github.io/aos/)   css3页面滚动动画插件
 
 ### 更近
 
