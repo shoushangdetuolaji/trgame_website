@@ -13,166 +13,188 @@
   <link rel="stylesheet" href="./css/gnbWrapDiv.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
   <div class="gnbWrapDiv">
     <div id="hangame_gnb_basic"></div>
   </div>
   <div id="evt_wrap">
-    <div class="evt-header">
-      <div class="inner hide">
-        <div class="logo"><a href="/index.asp" title="테일즈런너 홈으로">테일즈런너</a></div>
-        <h1>테런 If...! 테일즈 버스데이</h1>
-        <p>테일즈런너 캐릭터들이 현대에서는 어떤 모습을 하고 있을까요? 동화나라가 아닌 다른 세계의 부캐를 만나 생일을 축하해 주세요!</p>
-  
-        <div class="tab-area aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-          <ul class="tab-list">
-            <li class="current"><button type="button" onclick="tabView(0,$('.tab-list li'),$('.tab-content'))">Web Event. 캐릭터 칭호 획득 방법</button></li>
-            <li class=""><button type="button" onclick="tabView(1,$('.tab-list li'),$('.tab-content'))">Game Event. 캐릭터 보이스 획득 방법</button></li>
-          </ul>
-          <div class="tab-content hide current">
-            <h2>캐릭터 칭호 획득 방법</h2>
-            <ol>
-              <li>매월 게임 내 생일 캐릭터와 함께 Web Event에서 다른 세계의 부캐를 만나보실 수 있어요.</li>
-              <li>Web Event에서 다른 세계의 부캐에게 TR을 선물하고 호감도를 상승시키세요. (캐릭터별 30회 선물 시 호감도 Max)</li>
-              <li>호감도 Max 달성 시 증표를 받으실 수 있습니다.</li>
-              <li>누적 획득 증표 수에 따라 컴플리트 보상도 있으니 잊지 말고 참여하세요!</li>
-            </ol>
-          </div>
-          <div class="tab-content hide">
-            <h2>캐릭터 보이스 획득 방법</h2>
-            <ol>
-              <li>게임 내 공원에 있는 생일 삐에로를 찾아가세요!</li>
-              <li>매월 첫 번째 패치마다, 그달에 생일인 캐릭터들의 이벤트가 진행됩니다.</li>
-              <li>이벤트 보상으로 특정 캐릭터 전용 [리메이크 보이스 아이템] 을 획득할 수 있다.</li>
-            </ol>
+    <div id="evt_wrap">
+      <div class="evt-header">
+        <div class="inner hide">
+          <div class="logo"><a href="/index.asp" title="테일즈런너 홈으로">테일즈런너</a></div>
+          <h1>테런 If...! 테일즈 버스데이</h1>
+          <p>테일즈런너 캐릭터들이 현대에서는 어떤 모습을 하고 있을까요? 동화나라가 아닌 다른 세계의 부캐를 만나 생일을 축하해 주세요!</p>
+    
+          <div class="tab-area " data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+            <ul class="tab-list">
+              <li class="current"><button type="button" onclick="tabView(0,$('.tab-list li'),$('.tab-content'))">Web Event. 캐릭터 칭호 획득 방법</button></li>
+              <li class=""><button type="button" onclick="tabView(1,$('.tab-list li'),$('.tab-content'))">Game Event. 캐릭터 보이스 획득 방법</button></li>
+            </ul>
+            <div class="tab-content hide current">
+              <h2>캐릭터 칭호 획득 방법</h2>
+              <ol>
+                <li>매월 게임 내 생일 캐릭터와 함께 Web Event에서 다른 세계의 부캐를 만나보실 수 있어요.</li>
+                <li>Web Event에서 다른 세계의 부캐에게 TR을 선물하고 호감도를 상승시키세요. (캐릭터별 30회 선물 시 호감도 Max)</li>
+                <li>호감도 Max 달성 시 증표를 받으실 수 있습니다.</li>
+                <li>누적 획득 증표 수에 따라 컴플리트 보상도 있으니 잊지 말고 참여하세요!</li>
+              </ol>
+            </div>
+            <div class="tab-content hide">
+              <h2>캐릭터 보이스 획득 방법</h2>
+              <ol>
+                <li>게임 내 공원에 있는 생일 삐에로를 찾아가세요!</li>
+                <li>매월 첫 번째 패치마다, 그달에 생일인 캐릭터들의 이벤트가 진행됩니다.</li>
+                <li>이벤트 보상으로 특정 캐릭터 전용 [리메이크 보이스 아이템] 을 획득할 수 있다.</li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="evt-content">
-      <div class="content-body">
-        <div class="section01 aos-init aos-animate" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-          <div class="inner">
-            <h2 class="hide">9월 생일을 축하해 주세요!</h2>
-            <p class="hide">친해지고 싶은 부캐를 선택하여 호감도를 올려주세요!</p>
-            <button type="button" class="btn btn-caution" onclick="popup('[data-popup-id=caution]')">이벤트 유의사항</button>
-  
-            <div class="character-wrap">
-              <div class="character-list">
+      <div class="evt-content">
+        <div class="content-body">
+          <div class="section01 " data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+            <div class="inner">
+              <h2 class="hide">9월 생일을 축하해 주세요!</h2>
+              <p class="hide">친해지고 싶은 부캐를 선택하여 호감도를 올려주세요!</p>
+              <button type="button" class="btn btn-caution" onclick="popup('[data-popup-id=caution]')">이벤트 유의사항</button>
+    
+              <div class="character-wrap">
+                <div class="character-list">
+                  <ul>
+                    <li><button type="button">아벨</button></li>
+                    <li><button type="button">마키</button></li>
+                  </ul>
+                </div>
+                <p class="txt-desc">* 획득한 증표는 추후 칭호 시스템 업데이트 시 게임에서 교환할 수 있습니다.</p>
+    
+                <!-- 아벨 -->
+                <div class="character-content char1 current" data-step="" data-range="1">
+                  <div class="character">
+                    <i class="bg-frame" ></i>
+                    <div class="bg-character"><span></span></div>
+                    <div class="img-character"></div>
+                    <div class="balloon"><p></p></div>
+                  </div>
+    
+                  <div class="gauge-wrap">
+                    <p>학생회장 아벨이 느끼는 <strong>groovypark</strong>님의 호감도</p>
+                    <div class="gauge-area">
+                      <div class="gauge"><span class="bar"><i>6</i></span></div>
+                      <div class="gauge-num">MAX</div>
+                    </div>
+                    <p>호감도 <strong class="gauge-step"></strong> / 30</p>
+                  </div>
+                  
+                  <div class="reward-area">
+                    <!-- [D] 버튼 활성화 시 li에 'on' 클래스 추가 -->
+                    <ul>
+                      <li class="on"><button type="button" class="ico btn-give">선물하기</button></li>
+                      <li class=""><button type="button" class="ico btn-give2">선물하기</button></li>
+                      <li class=""><button type="button" class="ico btn-receive">받기</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 마키 -->
+                <div class="character-content char2" data-step="" data-range="1">
+                  <div class="character">
+                    <i class="bg-frame"></i>
+                    <div class="bg-character"><span></span></div>
+                    <div class="img-character"></div>
+                    <div class="balloon"><p></p></div>
+                  </div>
+    
+                  <div class="gauge-wrap">
+                    <p>유령이 보이지 않는 학생 마키가 느끼는 <strong>groovypark</strong>님의 호감도</p>
+                    <div class="gauge-area">
+                      <div class="gauge"><span class="bar"><i>6</i></span></div>
+                      <div class="gauge-num">MAX</div>
+                    </div>
+                    <p>호감도 <strong class="gauge-step"></strong> / 30</p>
+                  </div>
+                  
+                  <div class="reward-area">
+                    <!-- [D] 버튼 활성화 시 li에 'on' 클래스 추가 -->
+                    <ul>
+                      <li class=""><button type="button" class="ico btn-give">선물하기</button></li>
+                      <li class=""><button type="button" class="ico btn-give2">선물하기</button></li>
+                      <li class=""><button type="button" class="ico btn-receive">받기</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="section02 " data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+            <div class="inner hide">
+              <h2 class="hide">컴플리트 보상</h2>
+              <p class="hide">증표 획득 현황에 따라 컴플리트 보상을 받을 수 있습니다.</p>
+              <div class="complete-area">
                 <ul>
-                  <li class="current"><button type="button">아벨</button></li>
-                  <li class=""><button type="button">마키</button></li>
+                  <li>22년 11월 공개!</li>
+                  <li>23년 2월 공개!</li>
+                  <li>23년 5월 공개!</li>
                 </ul>
               </div>
-              <p class="txt-desc">* 획득한 증표는 추후 칭호 시스템 업데이트 시 게임에서 교환할 수 있습니다.</p>
-  
-              <!-- 아벨 -->
-              <div class="character-content char1 current" data-step="" data-range="1">
-                <div class="character">
-                  <i class="bg-frame" style="opacity: 0; transform: matrix(-1, 0, 0, -1, -274, -274);"></i>
-                  <div class="bg-character"><span style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></span></div>
-                  <div class="img-character" style="opacity: 1;"></div>
-                  <div class="balloon" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><p>반갑습니다. <br>학생회장 아벨입니다.</p></div>
-                </div>
-  
-                <div class="gauge-wrap">
-                  <p>학생회장 아벨이 느끼는 <strong>WaltzForZizi</strong>님의 호감도</p>
-                  <div class="gauge-area">
-                    <div class="gauge" style="opacity: 1;"><span class="bar" style="width: 6%; overflow: hidden;"><i>6</i></span></div>
-                    <div class="gauge-num">MAX</div>
-                  </div>
-                  <p>호감도 <strong class="gauge-step">2</strong> / 30</p>
-                </div>
-                
-                <div class="reward-area">
-                  <!-- [D] 버튼 활성화 시 li에 'on' 클래스 추가 -->
-                  <ul>
-                    <li class=""><button type="button" class="ico btn-give">선물하기</button></li>
-                    <li class=""><button type="button" class="ico btn-give2">선물하기</button></li>
-                    <li class=""><button type="button" class="ico btn-receive">받기</button></li>
-                  </ul>
-                </div>
-              </div>
-              <!-- 마키 -->
-              <div class="character-content char2" data-step="" data-range="1">
-                <div class="character">
-                  <i class="bg-frame" style="opacity: 0; transform: matrix(-1, 0, 0, -1, -274, -274);"></i>
-                  <div class="bg-character"><span style="opacity: 1.04792; transform: translate3d(0px, 0px, 0px) scale(0.952081, 0.952081);"></span></div>
-                  <div class="img-character" style="opacity: 1;"></div>
-                  <div class="balloon" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale(1.25795, 1.25795);"><p>안녕. ...아야, <br>뭔가가 내 머리를 당기네.</p></div>
-                </div>
-  
-                <div class="gauge-wrap">
-                  <p>유령이 보이지 않는 학생 마키가 느끼는 <strong>WaltzForZizi</strong>님의 호감도</p>
-                  <div class="gauge-area">
-                    <div class="gauge" style="opacity: 1;"><span class="bar" style="width: 6%; overflow: hidden;"><i>6</i></span></div>
-                    <div class="gauge-num">MAX</div>
-                  </div>
-                  <p>호감도 <strong class="gauge-step">2</strong> / 30</p>
-                </div>
-                
-                <div class="reward-area">
-                  <!-- [D] 버튼 활성화 시 li에 'on' 클래스 추가 -->
-                  <ul>
-                    <li class=""><button type="button" class="ico btn-give">선물하기</button></li>
-                    <li class=""><button type="button" class="ico btn-give2">선물하기</button></li>
-                    <li class=""><button type="button" class="ico btn-receive">받기</button></li>
-                  </ul>
-                </div>
+            </div>
+          </div>
+    
+          <div class="section03 " data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+            <div class="inner hide">
+              <h2 class="hide">증표 획득 현황</h2>
+              <p class="hide">Web Event에서 획득한 증표 리스트입니다.</p>
+    
+              <div class="state-area">
+                <!-- [D] 획득 완료 시 li에 'complete' 클래스 추가 / 생일캐릭터 li에 'on' 클래스 추가 -->
+                <!-- 20220831 수정 v01, v02 클래스 추가 -->
+                <ul>
+                  <li class="v01 ">베라</li>
+                  <li class="v01 ">엘림스</li>
+                  <li class="v01 ">루시</li>
+                  <li class="v02 on ">아벨</li>
+                  <li class="v02 on ">마키</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-  
-        <div class="section02 aos-init aos-animate" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-          <div class="inner hide">
-            <h2 class="hide">컴플리트 보상</h2>
-            <p class="hide">증표 획득 현황에 따라 컴플리트 보상을 받을 수 있습니다.</p>
-            <div class="complete-area">
-              <ul>
-                <li>22년 11월 공개!</li>
-                <li>23년 2월 공개!</li>
-                <li>23년 5월 공개!</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="section03 aos-init aos-animate" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-          <div class="inner hide">
-            <h2 class="hide">증표 획득 현황</h2>
-            <p class="hide">Web Event에서 획득한 증표 리스트입니다.</p>
-  
-            <div class="state-area">
-              <!-- [D] 획득 완료 시 li에 'complete' 클래스 추가 / 생일캐릭터 li에 'on' 클래스 추가 -->
-              <!-- 20220831 수정 v01, v02 클래스 추가 -->
-              <ul>
-                <li class="v01 ">베라</li>
-                <li class="v01 ">엘림스</li>
-                <li class="v01 ">루시</li>
-                <li class="v02 on ">아벨</li>
-                <li class="v02 on ">마키</li>
-              </ul>
-            </div>
-          </div>
+      </div>
+      <div class="event_comment">
+        <div class="event_comment_in">
+        <!-- 댓글 본문 글씨 색 - color:#000 -->
+        <!-- 간격 Line 색상  Const TABLELINGCOLOR = "#e1e1e1" -->
+        <!-- 댓글남기기 버튼경로 - //tr-image.game.onstove.com/web/Common/btn_reply_160303.png -->
+          <iframe src="/Comment/evtCmtConf.html" width="980" height="371" frameborder="0" allowtransparency="true" title="덧글게시판"></iframe>
         </div>
       </div>
-    </div>
-    <div class="event_comment">
-      <div class="event_comment_in">
-      <!-- 댓글 본문 글씨 색 - color:#000 -->
-      <!-- 간격 Line 색상  Const TABLELINGCOLOR = "#e1e1e1" -->
-      <!-- 댓글남기기 버튼경로 - //tr-image.game.onstove.com/web/Common/btn_reply_160303.png -->
-        <iframe src="/Comment/evtCmtConf.html" width="980" height="371" frameborder="0" allowtransparency="true" title="덧글게시판"></iframe>
+      <div class="footer">
+        <p class="footer_copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
       </div>
     </div>
-    <div class="footer">
-      <p class="footer_copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    <div class="popup" data-popup-id="caution">
+      <button type="button" class="btn btn-close" onclick="popupClose($(this))">닫기</button>
+      <div class="popup-inner">
+        <h3>이벤트 유의사항</h3>
+        
+        <ul>
+          <li>- 1만 TR &amp; 3만 TR 선물하고 보상받기는 금액과 상관없이 부캐별로 하루 2회까지 선물하실 수 있으며, <br>호감도는 선물하기 1회 시 +1 상승합니다.</li>
+          <li>- 부캐별로 호감도 MAX 달성 시 특별한 증표를 받으실 수 있습니다.</li>
+          <li><em>- 획득한 증표는 추후 칭호 시스템 업데이트 시 게임에서 교환할 수 있습니다.</em></li>
+          <li>- 1만 TR &amp; 3만 TR 선물하고 보상받기는 호감도 Max 달성 후에도 매일 참여하실 수 있습니다.</li>
+          <li>- 지급받은 아이템은 게임 내 선물함에서 확인하실 수 있으며, 보상 아이템 만료 기간은 1만 TR &amp; 3만 TR 선물하고 보상받기 2주, <br>증표 보상의 경우 180일입니다.</li>
+          <li>- 부정한 방법으로 이벤트 참여 및 아이템 수령 시 약관 및 정책에 따라 제재 혹은 회수될 수 있습니다.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup" data-popup-id="login" style="display: none;">
+      <div class="popup-inner hide">
+        <h3>친해지고 싶은 부캐가 있다면</h3>
+        <button type="button" class="btn btn-login" onclick="fnLogin($(this));">로그인하고 친해지기!</button>
+      </div>
     </div>
   </div>
-<body>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script type="text/javascript" charset="utf-8" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
