@@ -155,4 +155,25 @@ function loadAjax_sub(url, num) {
   });
 }
 
+function loadAjax_sub_2(url) {
+  $.ajax({
+      type: "GET",
+      url: url,
+      async: true,
+      cache: false,
+      dataType: "html",
+      // contentType: 'application/x-www-form-urlencoded; charset=euc-kr',
+      beforeSend: function (data) {
+          data.overrideMimeType('application/x-www-form-urlencoded; charset=euc-kr');
+      },
+      success: function (result) {
+          // var refine = $(".login-wrap").html(result).find('.login-wrap').html();
+          // $('.login-wrap').html(refine);
+
+          var refine2 = $(".quiz-area").html(result).find('.quiz-area').html();
+          $('.quiz-area').html(refine2);
+      }
+  });
+}
+
 // loadAjax('./api/event_1.html')
