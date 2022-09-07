@@ -1,6 +1,6 @@
 // promotion swiperData
 
-var swiperData = {
+var swiperData1 = {
   1: {
     "tit": "§ 마고 & 염라의 17주년 축사 §",
     "url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/CUJJZ9j3Wqk?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
@@ -49,6 +49,70 @@ var swiperData = {
     "tit": "§ 저승컴퍼니 건물 §",
     "url": "<div class=\"image\"><img src=\"../Promotion/images/img_slide11.jpg\" alt=\"저승컴퍼니 건물 이미지\" width=\"100%\" height=\"100%\"></div>",
   },
+}
+
+
+var swiperData = {
+	1: {
+		"tit": "§ 저승컴퍼니 웹툰 5화 §",
+		"url": "<div class=\"image\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0906/images/promotion/img_webtoon5_1.jpg\" alt=\"웹툰 5-1\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0906/images/promotion/img_webtoon5_2.jpg\" alt=\"웹툰 5-2\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0906/images/promotion/img_webtoon5_3.jpg\" alt=\"웹툰 5-3\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0906/images/promotion/img_webtoon5_4.jpg\" alt=\"웹툰 5-4\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0906/images/promotion/img_webtoon5_5.jpg\" alt=\"웹툰 5-5\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0906/images/promotion/img_webtoon5_6.jpg\" alt=\"웹툰 5-6\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0906/images/promotion/img_webtoon5_7.jpg\" alt=\"웹툰 5-7\"></div>",
+	},
+	2: {
+		"tit": "§ 저승컴퍼니 웹툰 4화 §",
+		"url": "<div class=\"image\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/promotion/img_webtoon4_1.jpg\" alt=\"웹툰 4-1\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/promotion/img_webtoon4_2.jpg\" alt=\"웹툰 4-2\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/promotion/img_webtoon4_3.jpg\" alt=\"웹툰 4-3\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/promotion/img_webtoon4_4.jpg\" alt=\"웹툰 4-4\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/promotion/img_webtoon4_5.jpg\" alt=\"웹툰 4-5\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/promotion/img_webtoon4_6.jpg\" alt=\"웹툰 4-6\"></div>",
+	},
+	3: {
+		"tit": "§ 담연 부장의 TMI 대잔치 §",
+		"url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/SkNJx-VfTQo?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
+	},
+	4: {
+		"tit": "§ 마고 & 염라의 17주년 축사 §",
+		"url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/CUJJZ9j3Wqk?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
+	},
+	5: {
+		"tit": "§ 저승컴퍼니 웹툰 3화 §",
+		"url": "<div class=\"image\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide1_1.jpg\" alt=\"웹툰 3-1\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide1_2.jpg\" alt=\"웹툰 3-2\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide1_3.jpg\" alt=\"웹툰 3-3\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide1_4.jpg\" alt=\"웹툰 3-4\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide1_5.jpg\" alt=\"웹툰 3-5\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide1_6.jpg\" alt=\"웹툰 3-6\"></div>",
+	},
+	6: {
+		"tit": "§ 저승컴퍼니 웹툰 2화 §",
+		"url": "<div class=\"image\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide2_1.jpg\" alt=\"웹툰 2-1\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide2_2.jpg\" alt=\"웹툰 2-2\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide2_3.jpg\" alt=\"웹툰 2-3\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide2_4.jpg\" alt=\"웹툰 2-4\"></div>",
+	},
+	7: {
+		"tit": "§ 신입 차사 오리엔테이션 §",
+		"url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/oxW_SrDa1pE?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
+	},
+	8: {
+		"tit": "§ 담연 부장 소개 §",
+		"url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/BhtxYEGYj7E?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
+	},
+	9: {
+		"tit": "§ 저승 전경 §",
+		"url": "<div class=\"image\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide5.jpg\" alt=\"저승 전경 이미지\" width=\"100%\" height=\"100%\"></div>",
+	},
+	10: {
+		"tit": "§ 저승컴퍼니 : 프롤로그 §",
+		"url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/nv_5FaVDJaw?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
+	},
+	11: {
+		"tit": "§ 신입 차사 공개 채용 §",
+		"url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/vYcXfgxKaM0?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
+	},
+	12: {
+		"tit": "§ 저승컴퍼니 기업 광고 §",
+		"url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/wHbrQOMWxik?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
+	},
+	13: {
+		"tit": "§ 저승컴퍼니 웹툰 1화 §",
+		"url": "<div class=\"image\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide9_1.jpg\" alt=\"웹툰 1-1\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide9_2.jpg\" alt=\"웹툰 1-2\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide9_3.jpg\" alt=\"웹툰 1-3\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide9_4.jpg\" alt=\"웹툰 1-4\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide9_5.jpg\" alt=\"웹툰 1-5\"></div>",
+	},
+	14: {
+		"tit": "§ 업데이트 트레일러 §",
+		"url": "<div class=\"youtube\"><iframe src=\"https://www.youtube.com/embed/PsURbJZFQgs?enablejsapi=1&rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>",
+	},
+	15: {
+		"tit": "§ 저승컴퍼니 건물 §",
+		"url": "<div class=\"image\"><img src=\"//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0803/images/promotion/img_slide11.jpg\" alt=\"저승컴퍼니 건물 이미지\" width=\"100%\" height=\"100%\"></div>",
+	},
 }
 
 setSwiper();
