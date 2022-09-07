@@ -33,6 +33,7 @@ h2.tit-promotion {background:url('../images/tit_promotion.png') no-repeat;}
 .grid li.li11 button {background-image:url('../images/btn_thumb11.png');}
 .grid li.li12 button {background-image:url('../images/btn_thumb12.png');}
 .grid li.li13 button {background-image:url('../images/btn_thumb13.png');}
+.grid li.li14 button {background-image:url('../images/btn_thumb14.png');}
 .grid li.li15 button {background-image:url('../images/btn_thumb15.png');}
 
 .grid li.new button::before {content:'';position:absolute;right:10px;top:9px;width:43px;height:22px;background:url('../images/ico_new.png') no-repeat;}
