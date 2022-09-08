@@ -406,5 +406,55 @@ var trJSC = {
 			$('#downloadImage').removeClass('employee-Id');
 			return false;
 		});
+	},
+	office: function() {
+		// 做一下动画过渡(页面已经关闭了 )
+		//팀 업무 성과 그래프 효과
+		$('.bar').each(function(e) {
+			var per = $(this).attr('data-per') + '%';
+			TweenMax.fromTo( $(this), 0.4, {height:0}, {height:per, delay:e*0.04 } );
+		});
+		//주간 업무 탭
+		$(document).on('click', '.weekly-state .tab-area li button', function() {
+			tabView($(this).parents('li').index(), $('.weekly-state .tab-area li'), $('.weekly-mission .tab-content'));
+		});
 	}
+
 }
+
+
+
+// office
+//토글 클래스
+function toggleCls(className, obj) {
+	$(obj).toggleClass(className);
+}
+function toggleSlide(className, that, obj) {
+	$(that).toggleClass(className);
+	$(obj).slideToggle('fast');
+}
+
+//디자인 셀렉트 박스 토글
+$(document).on('click', '.selectbox-header', function() {
+	var $this = $(this).parents('.selectbox');
+	$('.selectbox').not($this).each(function() {
+		$(this).find('.selectbox-header').removeClass('open');
+		$(this).find('.selectbox-body').hide();
+	});
+	$(this).toggleClass('open');
+	$(this).next('.selectbox-body').toggle();
+});
+$(document).on('click', '.selectbox .selectbox-body button', function() {
+	var selextedTxt = $(this).text();
+	var selextedValue = $(this).attr('value') != '' ? $(this).attr('value') : '';
+	$(this).parents('.selectbox').find('.selectbox-header').text(selextedTxt).attr('value',selextedValue);
+	$(this).parents('.selectbox').find('.selectbox-header').removeClass('open');
+	$(this).parents('.selectbox-body').hide();
+});
+$(document).on('click', function(e) {
+	var $tgPoint = $(e.target);
+	if ( !$tgPoint.parents().hasClass('selectbox') ) {
+		$(".selectbox").find(".selectbox-header").removeClass("open");
+		$(".selectbox-body").hide();
+	}
+});
