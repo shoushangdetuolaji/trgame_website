@@ -1,0 +1,38 @@
+
+/* popup  z-index - default:110000000 / 알럿&컨펌:130000000
+   dimded z-index - default dimmed:100000000 / modal dimmed:120000000
+*/
+
+body.dimmed {overflow:hidden;width:100%;height:100%;}
+body.dimmed:before {z-index:100000000;content:'';display:block;position:fixed;top:0;left:0;bottom:0;right:0;background-color:rgba(0,0,0,.9);}
+body.modal {overflow:hidden;width:100%;height:100%;}
+body.modal:after {z-index:120000000;content:'';display:block;position:fixed;top:0;left:0;bottom:0;right:0;background-color:rgba(0,0,0,.1);}
+
+.popup {z-index:110000000;box-sizing:border-box;position:absolute;top:0;left:50%;min-width:400px;min-height:150px;background-color:rgba(34,34,34,.9);background-repeat:no-repeat;background-position:50% 0;border:4px solid rgba(60,60,60,.9);border-radius:20px;box-shadow:0 5px 5px rgba(0,0,0,.05);text-align:center;line-height:1.5;color:#d2d2d2;transform:translate(-50%, 0) scale(0);}
+.popup * {box-sizing:border-box;font-family:'Noto Sans KR', 'Malgun Gothic', 'dotum', sans-serif;}
+.popup.show {display:block;transform:translate(-50%, 0) scale(1);}
+.fullscreen .popup {position:initial;width:100%;border:0;box-shadow:none;}
+.fullscreen .popup.show {transform:none;}
+
+.popup > .btn-close {position:absolute;top:-50px;right:-50px;width:40px;height:40px;background:url('../images/btn_close.png') no-repeat;text-indent:-9999em;}
+.popup .popup-header {position:relative;width:100%;height:85px;padding:0 40px;background-color:#f7f7f7;border-bottom:1px solid #d2d2d2;}
+.popup .popup-header .popup-title {text-align:left;font-weight:bold;font-size:26px;color:#333;}
+.popup .popup-inner {padding:30px 40px;text-align:left;}
+.popup .popup-footer {position:relative;width:100%;height:40px;padding:0 40px;background-color:#f7f7f7;border-top:1px solid #e3e3e3;text-align:center;}
+.popup .btn-area {margin:30px 0 0;text-align:center;}
+
+.popup .popup-inner > h3 {position:relative;margin:0 0 12px;padding-left:16px;font-weight:500;font-size:16px;color:#333;}
+.popup .popup-inner > h3:first-of-type {margin-top:-4px;}
+.popup .popup-inner > h3:not(:first-of-type) {margin-top:14px;}
+.popup .popup-inner > h3::before {content:"";display:inline-block;position:absolute;top:10px;left:0;width:12px;height:8px;background:url('../images/ico_spr.png') no-repeat -1px -69px;}
+
+.popup .pop-notice {position:relative;width:100%;font-weight:400;font-size:13px;color:#04b04f;}
+.popup .pop-notice::before {content:"";display:inline-block;width:16px;height:16px;margin:-2px 5px 0 0;background:url('../images/ico_spr.png') no-repeat -101px -52px;vertical-align:middle;}
+.popup .pop-desc + .pop-desc {margin-top:20px;}
+
+/* 알럿&컨펌 팝업 */
+[data-popup-type="modal"] {z-index:130000000;}
+[data-popup-id="alert"], [data-popup-id="confirm"] {z-index:130000000;position:fixed;top:50%;transform:translate(-50%, -50%) scale(0);}
+[data-popup-id="alert"].show, [data-popup-id="confirm"].show {transform:translate(-50%, -50%) scale(1);}
+[data-popup-id="alert"] .popup-inner,
+[data-popup-id="confirm"] .popup-inner {padding:40px;text-align:center;font-weight:500;font-size:18px;color:#444;}
