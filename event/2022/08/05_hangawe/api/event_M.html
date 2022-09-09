@@ -1,0 +1,114 @@
+<!-- 이벤트 불러오는 컨텐츠 영역 -->
+<!-- [D] TAB 3 -->
+<div class="tab-cont">
+  <div id="section03" class="section03">
+    <div class="inner hide">
+      <h2>한가WE 삼도천 플레이 이벤트</h2>
+      <button type="button" class="btn btn-caution" onclick="popup('[data-popup-id=caution]'); gtag('event', '유의사항_삼도천', { 'event_category': '한가WE이벤트', 'event_label': '91' });">이벤트 참여 및 유의사항</button>
+      <!-- 20220901 수정 -->
+      <h3>삼도천 건너기 맵 안내</h3>
+      <div class="map-wrap">
+        <dl>
+          <dt>맵 이름</dt><dd>삼도천 건너기</dd>
+          <dt>인원</dt><dd>8인 개인전 트레이닝</dd>
+          <dt>난이도</dt><dd>★★★★★</dd>
+          <dt>제한</dt><dd>슈 태그 사용 불가</dd>
+          <dt>게임설명</dt>
+          <dd>8인 개인전 트레이닝 맵으로 순위에 따라 결과 보상을 받으며 삼도천에 빠질 경우 이전 세이브포인트로 이동하게 되며 유령 상태가 되어 분노/힘 치임/밟기 효과를 받지 않게 됩니다. 
+            삼도천에 빠지지 않고 무사히 골인 지점까지 도착해 주세요!</dd>
+        </dl>
+      </div>
+      <!-- //20220901 수정 -->
+    </div>
+  </div>
+  <div id="section04" class="section04">
+    <div class="inner hide">
+      <h3>일일 미션 이벤트</h3>
+      <div class="daily-mission">
+        <ul>
+          <li class="complete">삼도천 완주 3회 하기</li>
+          <li class="complete">삼도천 플레이 6회 하기</li>
+          <li class="complete">저승컴퍼니 채널 플레이 10회 하기</li>
+          <li class="complete">삼도천 완주 1회 하기</li>
+          <li class="">저승컴퍼니 아무 캡슐 기계 1회 이용하기</li>
+          <li class="complete">저승컴퍼니 채널 플레이 5회 하기</li>
+          <li class="">팜에서 농작물 20회 수확하기</li>
+          <li class="complete">낚시로 물고기 10마리 낚기</li>
+          <li class="complete">게임 접속 1분 유지하기</li>
+        </ul>
+      </div>
+      <div class="caution-area">
+        <h4>유의사항</h4>
+        <ul>
+          <li><span>일일 미션은 매일 00시에 초기화되어 다음 날 다시 진행하실 수 있습니다.</span></li>
+          <li><span>달성 보상 중 게임 아이템은 게임 내 마이룸으로 지급됩니다.</span></li><!-- 20220831 수정 -->
+          <li><span>톱(=웹 포인트)은 1일 최대 18개까지 획득 가능하며, 이벤트 종료 시 자동 소멸됩니다.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="section05" class="section05">
+    <div class="inner hide">
+      <h3>박타기 이벤트</h3>
+      <p>이벤트 기간 동안 톱(=웹 포인트)을 사용하여 박타기를 진행하고, 다양한 보상 아이템을 획득해 보세요!</p><!-- 20220829 수정 -->
+      <div class="game-wrap">
+        <span class="visual-motion"></span>
+        <div class="user-area">
+          <ul>
+            <li><p class="hide">현재 보유 중인 톱</p><strong><em>11</em>개</strong></li>
+            <li><p class="hide">현재까지 획득한 톱</p><strong><em>68</em>개</strong></li>
+          </ul>
+          <div class="count">
+            <p>오늘 <em>2</em>회 / 6회 진행</p>
+          </div>
+        </div>
+      </div>						
+      <div class="btn-area">
+        <button type="button" class="btn btn-reward-items" onclick="popup('[data-popup-id=reward]')">박타기로 획득 가능한 보상</button>
+
+        <button type="button" class="btn btn-start" onclick="fnValidate(1)"  >박타기</button>
+        <script>
+          var callBack = function() {
+            popupItem('지옥의 불꽃 상자 1개','item01');
+          };
+        </script>
+      </div>
+      <div class="caution-area">
+        <h4>유의사항</h4>
+        <ul>
+          <li><span>박타기 진행 횟수는 매일 00시에 초기화되어 다음 날 다시 진행하실 수 있습니다.</span></li>
+          <li><span>보상 아이템은 게임 내 선물함으로 지급되며, 보관 만료 기간은 2주입니다.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="section06" class="section06">
+    <div class="inner hide">
+      <h3>박타기 진행 횟수 달성 이벤트</h3>
+      <div class="count">
+        <p class="hide">박타기 진행 횟수 (누적)</p>
+        <strong><em>19</em>회</strong>
+      </div>
+      <div class="reward-wrap">
+        <!-- [D] 받기 완료 시 li에 'complete' 클래스 추가 -->
+        <ul>
+          <li class="complete"><span class="hide">누적 3회 달성 시 </span><button type="button" class="btn btn-receive" onclick="fnValidate(11)">받기</button></li>
+          <li class="complete"><span class="hide">누적 10회 달성 시</span><button type="button" class="btn btn-receive" onclick="fnValidate(12)">받기</button></li>
+          <li class=""><span class="hide">누적 15회 달성 시</span><button type="button" class="btn btn-receive" onclick="fnValidate(13)">받기</button></li>
+          <li class=""><span class="hide">누적 20회 달성 시</span><button type="button" class="btn btn-receive" onclick="fnValidate(14)">받기</button></li>
+          <li class=""><span class="hide">누적 35회 달성 시</span><button type="button" class="btn btn-receive" onclick="fnValidate(15)">받기</button></li>
+        </ul>
+      </div>
+      <!-- 20220831 추가 -->
+      <div class="caution-area">
+        <h4>유의사항</h4>
+        <ul>
+          <li><span>보상 아이템은 이벤트 기간 중 조건 달성 시 계정당 1회에 한해 획득하실 수 있습니다.</span></li>
+          <li><span>보상 아이템은 게임 내 선물함으로 지급되며, 보관 만료 기간은 2주입니다.</span></li>
+        </ul>
+      </div>
+      <!-- //20220831 추가 -->
+    </div>
+  </div>
+</div>
+<!-- //이벤트 불러오는  컨텐츠 영역 -->

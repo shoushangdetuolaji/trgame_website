@@ -26,12 +26,91 @@
         <h1>보름달이 뜰 때까지 함께 해요. 한가WE 이벤트</h1>
       </div>
       <div class="motion">
-        <span class="m1 visual" data-speed="0.08" style="opacity: 1; transform: matrix(1, 0, 0, 1, -65.16, 0); transform-origin: left bottom 0px;"></span><span class="m2 visual" data-speed="0.06" style="opacity: 1; transform: matrix(1, 0, 0, 1, -48.62, 0); transform-origin: right bottom 0px;"></span>
-        <span class="m3 visual" data-speed="0.008" style="opacity: 1; transform: matrix(1, 0, 0, 1, -5.616, 0);"></span>
-        <span class="m6 visual" data-speed="0.005" style="opacity: 1; transform: matrix(1, 0, 0, 1, -3.135, 0);"></span>
-        <span class="m4 visual" data-speed="0.01" data-revert="true" style="opacity: 1; transform: matrix(1, 0, 0, 1, 9.27, 0);"></span><span class="m5 visual" data-speed="0.02" data-revert="true" style="opacity: 1; transform: matrix(1, 0, 0, 1, 17.54, 0);"></span>
+        <span class="m1" data-speed="0.08"></span>
+        <span class="m2" data-speed="0.06"></span>
+        <span class="m3" data-speed="0.008"></span>
+        <span class="m6" data-speed="0.005"></span>
+        <span class="m4" data-speed="0.01" data-revert="true"></span>
+        <span class="m5" data-speed="0.02" data-revert="true"></span>
+      </div>
+      <span class="bg"></span>
+    </div>
+    <div class="lnb-wrap">
+      <div class="inner">
+        <ul>
+          <!-- https://tr.hangame.com/event/2022/08/05_hangawe/event_2.asp -->
+          <li class="current"><button type="button" onclick="loadAjax('./api/event_1.html');">할인 상점 오픈</button></li>
+          <li class=""><button type="button" onclick="loadAjax('./api/event_2.html');">접속 혜택 강화</button></li>
+          <li class=""><button type="button" onclick="loadAjax('./api/event_M.html');">삼도천 플레이 이벤트</button></li>
+          <li class=""><button type="button" onclick="loadAjax('./api/event_4.html');">테런데이 이벤트</button></li>
+        </ul>
       </div>
     </div>
+    <div class="evt-content">
+      <!-- [D] Event Content Exposure Area -->
+      <div class="content-body">
+          <div id="section01" class="section01">
+            <div class="inner hide">
+              <h2>한가WE 할인 상점 오픈</h2>
+              <p>이벤트 기간 한정 ~ 할인 상품들을 만나 보세요!</p><!-- 20220901 수정 -->
+              <p>(위치 : 게임 내 상점 &gt; 한가위 특별 상점)</p><!-- 20220829 수정 -->
+              <a href="/news/update.asp?seq=8835925" onclick="gtag('event', '할인상품더보기', { 'event_category': '한가WE이벤트', 'event_label': '91' });" target="_blank" class="btn btn-store">할인 상품 더 보기</a>
+            </div>
+          </div>
+        </div>
+      <!-- //[D] Event Content Exposure Area -->
+  
+      <button type="button" class="btn btn-top show" data-href="#evt_wrap">Top</button>
+    </div>
+    <div class="event_comment">
+      <div class="event_comment_in">
+        <iframe src="/Comment/evtCmtConf.html" width="980" height="371" frameborder="0" allowtransparency="true" title="덧글게시판"></iframe>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    </div>
   </div>
+  <div class="popup" data-popup-id="caution">
+    <button type="button" class="btn btn-close" onclick="popupClose($(this))">닫기</button>
+    <h3>이벤트 참여 및 유의사항</h3>
+    <div class="popup-inner">
+      <h4>일일 미션 이벤트</h4>
+      <ul>
+        <li>· 일일 미션은 매일 00시에 초기화되어 다음 날 다시 진행하실 수 있습니다.</li>
+        <li>· 달성 보상 중 게임 아이템은 게임 내 마이룸으로 지급됩니다.</li><!-- 20220831 수정 -->
+        <li>· 톱(=웹 포인트)은 1일 최대 18개까지 획득 가능하며, 이벤트 종료 시 자동 소멸됩니다.</li>
+      </ul>
+      <h4>박타기 이벤트</h4>
+      <ul>
+        <li>· 박타기는 일일 미션 이벤트를 통해 획득한 톱(=웹 포인트) 3개를 사용하여, 1일 최대 6회까지 진행하실 수 있어요!</li>
+        <li>· 박타기 진행 횟수는 매일 00시에 초기화되어 다음 날 다시 진행하실 수 있습니다.</li>
+        <li>· 보상 아이템은 게임 내 선물함으로 지급되며, 보관 만료 기간은 2주입니다.</li>
+      </ul> 
+      <h4>박타기 진행 횟수 달성 이벤트</h4>
+      <ul>
+        <li>· 보상 아이템은 이벤트 기간 중 조건 달성 시 계정당 1회에 한해 획득하실 수 있습니다.</li><!-- 20220831 수정 -->
+        <li>· 보상 아이템은 게임 내 선물함으로 지급되며, 보관 만료 기간은 2주입니다.</li>
+      </ul>
+      <h4>공통</h4>
+      <ul>
+        <li>· 부정한 방법으로 이벤트 참여 및 보상 수령 시 약관 및 운영 정책에 따라 계정 제재 및 보상 회수가 진행될 수 있습니다.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup" data-popup-id="caution2">
+    <button type="button" class="btn btn-close" onclick="popupClose($(this))">닫기</button>
+    <h3>이벤트 참여 및 유의사항</h3>
+    <div class="popup-inner">
+      <ul>
+        <li>· 한가WE 테런데이에서 진행되는 이벤트들은 각 이벤트마다 참여 기간이 다르니, 안내된 기간에 따라 참여 및 보상을 수령해 주세요.</li><!-- 20220831 수정 -->
+        <li>· 각 보상 아이템은 안내된 미션 달성 시 아래의 방법으로 지급되며, 부정한 방법으로 이벤트 참여 및 아이템 수령 시 <br>약관 및 정책에 따라 제재 혹은 회수될 수 있습니다.</li>
+        <li>· <em>테런데이 출석 보상 지급 위치</em> : [이벤트 &amp; 커뮤니티] &gt; [오늘의 혜택 받으러 가기]</li>
+        <li>· <em>4종 미션 이벤트 보상 지급 위치</em> : [마이룸] 즉시 지급</li>
+        <li>· <em>삐에로 달리기 접속 보상 지급 위치</em> : [삐에로 우편함]</li>
+      </ul>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
 </body>
 </html>
