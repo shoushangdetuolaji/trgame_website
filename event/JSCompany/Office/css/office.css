@@ -1,0 +1,210 @@
+
+body {background-color:#24272c;}
+
+/* 집중업무실 공통 스타일 */
+#evt_wrap.office {background:#24272c url('../../assets/images/office/bg_content.jpg') no-repeat 50% 100%;}
+.title-area {position:relative;height:55px;padding:0 20px;}
+.title-area h2.tit {height:100%;text-indent:-9999em;}
+.title-area .tooltip-area {position:absolute;left:0;top:0;}
+h2.tit-office-daily {background:url('../../assets/images/office/tit_office_daily.png') no-repeat;}
+h2.tit-office-team {background:url('../../assets/images/office/tit_office_team.png') no-repeat;}
+h2.tit-office-weekly {background:url('../../assets/images/office/tit_office_weekly.png') no-repeat;}
+
+[data-scrollbar="scrollbar"]::-webkit-scrollbar-thumb {border-radius:4px;background-color:#3e4459;}
+[data-scrollbar="scrollbar"]::-webkit-scrollbar-track {border-radius:4px;background-color:transparent;}
+[data-scrollbar="scrollbar"]::-webkit-scrollbar {width:8px;background-color:transparent;}
+
+.itembox {text-align:center;}
+.itembox .img {display:block;overflow:hidden;width:65px;height:65px;margin:0 auto;background:#fff;border-radius:3px;}
+.itembox .img img {width:100%;height:100%;}
+.itembox .item-name {margin:5px 0 0;text-align:center;line-height:1.3;color:#bbc4e4;}
+
+.btn-area > * {vertical-align:top;}
+.btn-area > * ~ * {margin-left:12px;}
+
+.util-content {z-index:1;position:absolute;right:0;top:0;}
+.util-content > * ~ * {margin-left:6px;}
+.util-content .txt-date {display:inline-flex;align-items:center;height:30px;padding:0 17px;background-color:#000;border-radius:15px;font-size:13px;color:var(--color-white);}
+.util-content .coin-area {display:inline-flex;align-items:center;height:30px;padding:0 14px;background-color:#000;border-radius:15px;}
+.util-content .coin-area > p {display:inline-block;font-size:13px;color:var(--color-white);}
+.util-content .coin-area > p strong,
+.util-content .coin-area > p em {font-size:13px;color:var(--color-point);}
+.util-content .coin-area .tooltip-area {display:inline-block;margin-left:5px;}
+[data-tooltip-id="coin"] .tooltip {left:auto;right:-14px;top:30px;width:545px;height:140px;background:url('../../assets_0720/images/tooltip_coin.png') no-repeat;}
+
+/* button */
+.btn-caution {width:188px;height:47px;background-position:0 0;}
+.btn-detail-map {width:338px;height:47px;background-position:0 -53px;}
+.btn-receive-daily {width:217px;height:149px;background-position:0 -110px;}
+.btn-receive-daily.complete {background-position-x:-230px;cursor:default;}
+.btn-detail-map2 {width:338px;height:47px;background:url('../../assets_0720/images/btn_detail_map02.png') no-repeat 0 0;}
+.btn-detail-map3 {width:338px;height:47px;background:url('../../assets_0817/images/office/btn_detail_map03.png') no-repeat 0 0;}
+
+/* 집중 업무실 이벤트 유의사항 팝업 */
+[data-popup-id="caution"] {width:900px;background-image:url('../../assets/images/office/popup_tit_caution.png');background-position:50% 63px;}
+[data-popup-id="caution"] .popup-inner {padding-top:100px;padding-bottom:50px;}
+[data-popup-id="caution"] .caution-area li {font-size:14px;color:#d2d2d2;}
+[data-popup-id="caution"] .caution-area li + li {margin-top:6px;}
+
+/* 좌하단 npc */
+.npc-area {position:fixed;left:30px;bottom:80px;padding:0 0 0 136px;}
+.npc-area .img-npc {position:absolute;left:0;top:-13px;width:126px;height:140px;background:url('../../assets/images/office/img_npc05.png') no-repeat;}
+.npc-area .img-npc.team1 {background-image:url('../../assets/images/office/img_npc01.png');}
+.npc-area .img-npc.team2 {background-image:url('../../assets/images/office/img_npc02.png');}
+.npc-area .img-npc.team3 {background-image:url('../../assets/images/office/img_npc03.png');}
+.npc-area .img-npc.team4 {background-image:url('../../assets/images/office/img_npc04.png');}
+.npc-area .img-npc.team5 {background-image:url('../../assets/images/office/img_npc05.png');}
+.npc-area .img-npc.team6 {background-image:url('../../assets/images/office/img_npc06.png');}
+.npc-area .txt-npc {position:relative;width:286px;height:115px;padding:0 0 0 40px;background:url('../../assets/images/office/img_npc_baloon.png') no-repeat;}
+.npc-area .txt-npc p {text-align:left;font-weight:300;font-size:15px;line-height:1.5;color:#f0f0f0;}
+.npc-area .txt-npc p em {font-weight:normal;color:var(--color-point);}
+.npc-area .txt-npc p em::after {content:',';}
+.npc-area .txt-npc p button {margin-top:5px;}
+.npc-area .btn-login {width:118px;height:30px;background-position:0 -286px;}
+.npc-area .btn-game-process {width:108px;height:30px;background-position:0 -326px;}
+.npc-area .btn-team-assign {width:93px;height:30px;background-position:0 -365px;}
+
+/* 우하단 talk */
+.talk-wrap {z-index:5;position:fixed;right:30px;bottom:80px;}
+.talk-wrap .btn-talk {width:137px;height:130px;background:url('../images/btn_talk.png') no-repeat;text-indent:-9999em;}
+.talk-wrap.open .btn-talk {width:137px;height:130px;background:url('../images/btn_talk_close.png') no-repeat;}
+.talk-wrap .talk-area {display:none;position:absolute;right:146px;bottom:0;width:355px;height:557px;padding:57px 27px 0;background:url('../images/bg_talk.png') no-repeat;border-radius:20px;box-shadow:0 5px 0px rgba(0,0,0,.3);}
+.talk-wrap.open .talk-area {display:block;}
+.talk-area .talk-count {height:51px;line-height:51px;font-size:15px;color:#d2d2d2;}
+.talk-area .talk-count em {font-weight:normal;color:var(--color-point);}
+.talk-area .selectbox {position:absolute;right:26px;top:68px;}
+.talk-area .selectbox .selectbox-header {height:30px;padding:0 15px;background-color:#272a37;border-color:#636a85;border-radius:13px;text-align:right;font-size:13px;color:#d2d2d2;}
+.talk-area .selectbox .selectbox-header::after {left:0;right:auto;}
+.talk-area .selectbox .selectbox-body {top:0;padding:0 15px;background-color:#2e3241;border-color:#636a85;border-radius:13px;}
+.talk-area .selectbox .selectbox-body button {height:29px;text-align:right;font-size:13px;color:#d2d2d2;}
+
+.talk-list {overflow-y:scroll;height:390px;margin:0 -27px;padding:0 19px 0 27px;}
+.talk-list .list-wrap {position:relative;}
+.talk-list .list-wrap li {position:relative;margin-top:10px;padding:13px 15px 33px;background-color:#393e52;border-radius:5px;}
+.talk-list .list-wrap li p {font-size:13px;}
+.talk-list .list-wrap li.no-data {display:flex;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;width:100%;height:340px;background-color:transparent;text-align:center;}
+.talk-list .list-wrap li.no-data::before {content:'';display:block;margin:0 auto 12px;width:60px;height:54px;background:var(--icons) no-repeat -144px -284px;}
+.talk-list .list-wrap li.no-data p {width:100%;font-size:15px;}
+.talk-list .txt-name {margin:0 0 8px;color:#d2d2d2;}
+.talk-list .txt-name > * {vertical-align:middle;}
+.talk-list .txt-name em {font-weight:normal;}
+.talk-list .txt-name strong {font-weight:normal;color:var(--color-point);}
+.talk-list .txt-date {position:absolute;right:15px;bottom:15px;}
+.talk-list .txt-date a {position:relative;margin-left:16px;color:#a0a0a0;}
+.talk-list .txt-date a::before {content:'';position:absolute;left:-8px;top:50%;width:2px;height:2px;background-color:#a0a0a0;}
+.talk-list .txt-msg {line-height:1.5;color:#d2d2d2}
+.talk-list .btn-more {position:absolute;left:0;bottom:0;width:100%;height:40px;background-color:transparent;color:#888;}
+.talk-list .btn-more::after {content:'▼';display:inline-block;margin-left:4px;transform:scale(0.8,1);}
+
+[data-id="form-talk"] textarea {height:40px;margin:0;padding:7px 15px;border-color:transparent;}
+[data-id="form-talk"].open {padding-top:40px;padding-bottom:60px;height:178px;background:#fff;border:1px solid #d2d2d2;border-radius:5px;}
+[data-id="form-talk"].open textarea {height:80px;background-color:transparent;}
+[data-id="form-talk"].open textarea + .form-util {display:block;}
+[data-id="form-talk"] .form-util {display:none;position:absolute;left:13px;right:13px;bottom:0;height:47px;background-color:#fff;border-top:1px solid #d2d2d2;}
+[data-id="form-talk"] .txt-name {position:absolute;left:3px;top:-115px;background-color:#fff;color:#111;}
+[data-id="form-talk"] .txt-name strong {color:#1a3499;}
+[data-id="form-talk"] .byte {padding-left:3px;line-height:45px;}
+[data-id="form-talk"] .byte em {font-weight:normal;color:#1a3499;}
+[data-id="form-talk"] button {float:right;margin-top:9px;}
+
+/* talk 내부 alert, comfirm 팝업 */
+.talk-modal {display:none;position:fixed;right:222px;bottom:274px;width:260px;height:118px;background-color:#fff;border-radius:4px;}
+.talk-modal.show {display:block;}
+.talk-modal .popup-inner {display:flex;flex-wrap:wrap;justify-content:center;align-content:center;width:100%;height:100%;}
+.talk-modal .popup-msg {width:100%;margin:0 0 9px;text-align:center;font-size:13px;line-height:1.5;color:#666;}
+
+/* 일일 업무 
+------------------------------------------ */
+[data-tooltip-id="office-daily"] {padding-left:468px;}
+[data-tooltip-id="office-daily"] .tooltip {left:0;top:37px;width:1240px;height:493px;background:url('../../assets/images/office/tooltip_daily.png') no-repeat;}
+
+.daily-state {position:relative;height:246px;margin:0 0 15px;background:url('../../assets/images/office/bg_state_daily.png') no-repeat;}
+.daily-state .txt-point {position:absolute;left:0;top:131px;width:470px;text-align:center;font-size:20px;color:var(--color-point);}
+.daily-state .btn-receive-daily {position:absolute;right:38px;top:48px;}
+.daily-state .reward-area {display:flex;justify-content:center;align-items:center;position:absolute;left:470px;top:0;width:494px;height:100%;background-repeat:no-repeat;background-position:0 78px;}
+.daily-state .reward-area li {width:154px;}
+.daily-state .reward-area.team1 {background-image:url('../../assets/images/office/bg_reward_team1.jpg');}
+.daily-state .reward-area.team2 {background-image:url('../../assets/images/office/bg_reward_team2.jpg');}
+.daily-state .reward-area.team3 {background-image:url('../../assets/images/office/bg_reward_team3.jpg');}
+.daily-state .reward-area.team4 {background-image:url('../../assets/images/office/bg_reward_team4.jpg');}
+.daily-state .reward-area.team5 {background-image:url('../../assets/images/office/bg_reward_team5.jpg');}
+.daily-state .reward-area.team6 {background-image:url('../../assets/images/office/bg_reward_team6.jpg');}
+
+.daily-mission li {position:relative;width:400px;height:265px;padding:182px 0 0;text-align:center;}
+.daily-mission li {font-size:15px;line-height:1.5;color:#d2d2d2;}
+.daily-mission li strong {font-weight:normal;color:var(--color-white);}
+.daily-mission .week1 {background:url('../../assets/images/office/mission_daily_week1.png') no-repeat;}
+.daily-mission .week2 {background:url('../../assets_0720/images/mission_daily_week2.png') no-repeat;}
+.daily-mission .week3 {background:url('../../assets_0817/images/office/mission_daily_week3.png') no-repeat;}
+
+.caution-area {margin:15px 0 0;text-align:center;}
+.caution-area li {font-size:13px;line-height:1.5;}
+.caution-area li + li {margin-top:6px;}
+.caution-area li em {font-weight:500;color:#fff;}
+.caution-area li span,
+.caution-area li span em {color:var(--color-point);}
+
+/* 팀 업무 성과
+------------------------------------------ */
+.team-state {position:relative;height:516px;background:url('../../assets_0720/images/bg_team_state.png') no-repeat;}
+.team-state .graph-area {position:absolute;left:579px;top:68px;width:574px;height:361px;}
+.team-state .graph-area ul {height:100%;}
+.team-state .graph-area li {position:relative;width:54px;height:100%;background:url('../../assets/images/office/bar_bg.png') no-repeat 50% 100%;box-shadow:inset 0 0 0 1px #0a0a0a;border-radius:6px;text-align:center;}
+.team-state .graph-area li > .bar {position:absolute;left:0;bottom:0;width:100%;height:0;background:url('../../assets/images/office/bar_others.png') repeat 50% calc(100% + 1px);box-shadow:inset 0 0 0 1px #666977;border-radius:6px;transition:height 0.2s ease;}
+.team-state .graph-area li > span {position:absolute;left:50%;top:calc(100% + 10px);transform:translateX(-50%);font-size:15px;color:#f0f0f0;white-space:nowrap;}
+.team-state .graph-area li.my {position:absolute;left:-415px;top:0;width:74px;}
+.team-state .graph-area li.my > .bar {background-image:url('../../assets/images/office/bar_my.png');box-shadow:inset 0 0 0 1px #ffe69b;}
+
+.team-state .reward-area {position:absolute;left:40px;top:40px;}
+.team-state .reward-area ul {width:322px;}
+.team-state .reward-area li {position:absolute;width:124px;padding-top:63px;text-align:center;}
+.team-state .reward-area li:nth-of-type(2) {top:178px;}
+.team-state .reward-area li:nth-of-type(3) {top:223px;}
+.team-state .reward-area li:nth-of-type(even) {right:0;}
+.team-state .reward-area li .item-name {margin:5px 0 6px;text-align:center;line-height:1.3;color:#dcdcdc;}
+.team-state .reward-area li .btn-receive {width:74px;height:33px;background-position:-400px -284px;cursor:default;}
+.team-state .reward-area li.on .btn-receive {background-position-y:-351px;cursor:pointer;}
+.team-state .reward-area li.complete .btn-receive {background-position-y:-418px;}
+
+.team-closed {position:relative;height:516px;padding:246px 0 0;background:url('../../assets/images/office/bg_team_closed.png') no-repeat;text-align:center;}
+.team-closed .btn-login1 {width:289px;height:76px;background-position:0 -499px;}
+.team-closed .btn-login2 {width:289px;height:76px;background-position:0 -583px;}
+.team-closed .btn-login3 {width:289px;height:76px;background-position:0 -667px;}
+
+
+/* 주간 업무
+------------------------------------------ */
+.weekly-state {position:relative;padding:0 0 0 270px;}
+.weekly-state .tab-area {position:absolute;left:0;top:0;width:249px;height:100%;}
+.weekly-state .tab-area li {width:100%;height:78px;background:url('../../assets_0803/images/office/tab_mission_weekly.png') no-repeat 0 0;border-radius:20px;box-shadow:0 0 10px rgba(0,0,0,0.2);text-indent:-9999em;}
+.weekly-state .tab-area li + li {margin-top:10px;}
+.weekly-state .tab-area li button {display:block;width:100%;height:100%;background:url('../../assets_0803/images/office/tab_mission_weekly.png') no-repeat -9999em 0;text-indent:-9999em;}
+.weekly-state .tab-area li:nth-of-type(1),
+.weekly-state .tab-area li:nth-of-type(1) button {background-position-y:0;}
+.weekly-state .tab-area li:nth-of-type(2),
+.weekly-state .tab-area li:nth-of-type(2) button {background-position-y:calc(100%/3*1);}
+.weekly-state .tab-area li:nth-of-type(3),
+.weekly-state .tab-area li:nth-of-type(3) button {background-position-y:calc(100%/3*2);}
+.weekly-state .tab-area li:nth-of-type(4),
+.weekly-state .tab-area li:nth-of-type(4) button {background-position-y:calc(100%/3*3);}
+.weekly-state .tab-area li.current button {background-position-x:100%;}
+
+.weekly-mission .tab-content {display:none;}
+.weekly-mission .tab-content.current {display:block;}
+.weekly-mission li {position:relative;width:310px;height:343px;padding:250px 0 0;text-align:center;}
+.weekly-mission li .btn-receive {width:145px;height:59px;background-position:-228px -284px;cursor:default;}
+.weekly-mission li.on .btn-receive {background-position-y:-351px;cursor:pointer;}
+.weekly-mission li.complete .btn-receive {background-position-y:-418px;}
+.weekly-mission li.complete::after {content:'';position:absolute;left:0;top:0;width:100%;height:100%;background:url('../../assets/images/office/ico_complete.png') no-repeat 50% 0;}
+.weekly-mission li:nth-of-type(n+4) {margin-top:15px;}
+.weekly-mission .week1 {background:url('../../assets/images/office/mission_weekly_week1.png') no-repeat;}
+.weekly-mission .week2 {background:url('../../assets_0803/images/office/mission_weekly_week2.png') no-repeat;}
+.weekly-mission .week3 {background:url('../../assets_0803/images/office/mission_weekly_week3.png') no-repeat;}
+.weekly-mission .week4 {background:url('../../assets_0817/images/office/mission_weekly_week4.png') no-repeat;}
+
+/* 이벤트 종료
+------------------------------------------ */
+.evt-closed {position:relative;height:702px;margin-top:43px;padding:512px 0 0;background:url('../images/bg_event_closed.png') no-repeat;text-align:center;}
+.evt-closed .evt-button {display:inline-block;background: url("../images/evt_button.png") no-repeat -9999em 0;text-indent:-9999em;vertical-align:top;}
+.evt-closed .evt-button.login {width:187px;height:76px;background-position:0 0;}
+.evt-closed .evt-button.special {width:248px;height:76px;margin-left:8px;background-position:0 -86px;}

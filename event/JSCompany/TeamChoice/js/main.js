@@ -1,4 +1,7 @@
+// init 初始化
 initHeight();
+setSwiper();
+
 function initHeight() {
 	$('#evt_wrap').css({
 		'min-height': 'calc(100% - ' + $('#evt_wrap').offset().top + 'px)'
@@ -74,4 +77,101 @@ function fnTeamChoiceInsert() {
   // 判断有无登录状态信息
   // 这里就直接显示已经选好队伍了
   alert('런너님께서는 이미 소속 팀을 선택하셨습니다.Runner已经选好了所属队')
+}
+
+
+// TeamChoice_test  
+function fnTeamChoice_test_pop() {
+  // 先走登录逻辑程序
+  // 是否登录啊，登录了就拿取登录信息
+  popup('[data-popup-id=test]');
+  swiper.slideTo(0,0);
+  return
+}
+// 当玩家选择12个问题的倾向后，就会走这个ajax返回适合哪个部门名单
+function fnTeamChoice_Test() {
+ // 最后跳转到一个结果测试页面
+ window.location.href = 'teamChoice_Test_Result.html'
+}
+
+// Popup
+var $popup;
+function popup(obj, url) {
+  $popup = $(obj);
+	var targetY = $(window).scrollTop()+100,
+		h = $popup.outerHeight() / 2, w = $popup.outerWidth() / 2;
+	$("body").addClass("dimmed");
+	$popup.addClass("show").css({top:targetY,opacity:1});
+}
+
+function popupClose(that) {
+	$("body").removeClass("dimmed").unbind('touchmove');
+	var type = typeof(that); //this == "object"
+	if ( type == "object" ) {
+		$(that).parents('.popup').removeAttr("style").removeClass("show");
+		$(that).parents('.popup').find(".iframe iframe").remove();
+
+		if ( $(that).parents('.popup').attr('data-popup-id') == 'item') {
+			if ( $(that).parents('.popup').attr('data-popup-re') != 're') {
+				document.location.reload();
+			}
+		}
+	} else {
+		$(that).parents('.popup').removeAttr("style").removeClass("show");
+	}
+}
+
+
+var swiper;
+function setSwiper() {
+	swiper = new Swiper('#swiper', {
+		slidesPerView: 1,
+		speed : 0,
+		touchRatio: 0,	//드래그 금지 No Dragging
+		pagination: {
+			el: '.swiper-pagination',
+			type: "fraction",
+		},
+		navigation: {
+			prevEl: '.btn-prev',
+		},
+		on: {
+			init: function() {
+				$('.btn-prev').hide();
+			},
+			slideChange: function() {
+				// console.log( this.realIndex );
+				if ( this.realIndex != 0 ) {
+					$('.txt-start-msg').hide();
+					$('.btn-prev').show();
+				}
+				else {
+					$('.txt-start-msg').show();
+					$('.btn-prev').hide();
+				}
+			}
+		}
+	});
+}
+// Next slide exposure function
+// 다음 슬라이드 노출 함수
+function viewNextSlide() {
+	setTimeout(function() {
+		swiper.slideNext();
+	}, 100);	
+}
+
+
+
+function fnSetAnswer(q, val) {
+  //alert(q);
+  $("#q" + q).val(val);
+  return;
+}
+
+function fnSetAnswerEnd(q, val) {
+  //alert(q);
+  $("#q" + q).val(val);
+  fnTeamChoice_Test();
+  return;
 }

@@ -1,0 +1,966 @@
+[
+	{},
+	{
+		"name": "나는야 스포츠맨 초원",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/chowon/tit_character.png",
+		"desc": "달리기를 좋아하는 소년으로 건강하고 밝은 성격의 꼬마 스포츠맨이다. <br>무슨 일이든 나서서 하므로 주변에 친구들이 많은 골목대장이다.",
+		"profile":  {
+			"나이": "11살",
+			"키": "140cm",
+			"몸무게": "35kg",
+			"MBTI / 혈액형": "ESFJ / O형",
+			"직업": "육상선수",
+			"전용 능력치": "분노 지속시간 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/chowon/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/chowon/img_character.png",
+		"chart": {
+			"최고속도": "3",
+			"힘": "3",
+			"컨트롤": "3",
+			"가속도": "3"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/chowon/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.8, 2, 3, 1.7, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "테일즈런너 스타 밍밍",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/mingming/tit_character.png",
+		"desc": "밝고 꾸밈없는 성격으로 모두의 귀여움을 받고 있다. <br>어려서부터 스타로 떠받들어져서 약간 도도한 면도 있다.",
+		"profile":  {
+			"나이": "10살",
+			"키": "130cm",
+			"몸무게": "32kg",
+			"MBTI / 혈액형": "ENFP / B형",
+			"직업": "영화배우",
+			"전용 능력치": "분노 누적속도 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/mingming/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/mingming/img_character.png",
+		"chart": {
+			"최고속도": "3",
+			"힘": "2",
+			"컨트롤": "4",
+			"가속도": "3"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/mingming/tit_character_popup.png",
+		"popupMotion" : [
+			1.2, 1.8, 2.2, 3, 1.7, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "프랑스에서 온 발레리나 리나",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rina/tit_character.png",
+		"desc": "착하고 순종적이지만 목표를 정하면 고집스럽게 밀어붙이는 면도 있다. <br>엄격한 가정교육 아래에서 자라 예의범절이 깍듯하다. <br>화려한 생활보다는 평범하고 작은 일상을 소중히 한다.",
+		"profile":  {
+			"나이": "17살",
+			"키": "155cm",
+			"몸무게": "38kg",
+			"MBTI / 혈액형": "INFP / A형",
+			"직업": "발레리나",
+			"전용 능력치": "분노 공격 회피 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rina/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rina/img_character.png",
+		"chart": {
+			"최고속도": "1",
+			"힘": "2",
+			"컨트롤": "5",
+			"가속도": "6"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rina/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.8, 2, 3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "덩치 큰 친구 빅보",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bigbo/tit_character.png",
+		"desc": "엄청나게 큰 덩치를 가졌지만, 누구보다 순박하고 착한 친구이다. <br>거대한 몸집에 어울리지 않게 작고 귀여운 것들을 좋아한다. <br>취미는 귀여운 애완동물 키우기와 애니메이션 피규어 모으기다.",
+		"profile":  {
+			"나이": "18살",
+			"키": "192cm",
+			"몸무게": "125kg",
+			"MBTI / 혈액형": "ISFJ / O형",
+			"직업": "학생",
+			"전용 능력치": "분노 변신 시간 감소 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bigbo/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bigbo/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "6",
+			"컨트롤": "1",
+			"가속도": "2"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bigbo/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.8, 2.3, 3.2, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "신세대 아이돌 스타 DnD",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/dnd/tit_character.png",
+		"desc": "낙천적인 성격과 섹시함으로 최고의 인기를 누리고 있는 가수. <br>생방송 중 무리한 활동으로 얻은 변비로 인해 방귀를 뀌는 실수를 하였다. <br>변비를 치료하기 위해 쉬던 중 동화나라 달리기 대회를 알게 된다.",
+		"profile":  {
+			"나이": "21살",
+			"키": "168cm",
+			"몸무게": "52kg",
+			"MBTI / 혈액형": "ESFP / O형",
+			"직업": "가수",
+			"전용 능력치": "넘어지는 시간 감소 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/dnd/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/dnd/img_character.png",
+		"chart": {
+			"최고속도": "4",
+			"힘": "3",
+			"컨트롤": "3",
+			"가속도": "2"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/dnd/tit_character_popup.png",
+		"popupMotion" : [
+			1.3, 1.8, 2, 3.1, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "동화나라 최고의 꽃미남 나르시스",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/narcissus/tit_character.png",
+		"desc": "자신의 아름다움을 영원히 간직하는 것이 소원인 나르시스. <br>동화나라 달리기 대회의 우승 상품인 소원의 돌을 통해 자신의 소원을 이루고자 <br>달리기 대회에 출전하게 된다.",
+		"profile":  {
+			"나이": "19살",
+			"키": "185cm",
+			"몸무게": "68kg",
+			"MBTI / 혈액형": "ISTP / AB형",
+			"직업": "모델",
+			"전용 능력치": "넘어지는 시간 감소 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/narcissus/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/narcissus/img_character.png",
+		"chart": {
+			"최고속도": "6",
+			"힘": "3",
+			"컨트롤": "4",
+			"가속도": "1"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/narcissus/tit_character_popup.png",
+		"popupMotion" : [
+			1.5, 2.8, 2.5, 3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "귀신 들린 아이, 빙의 소녀 마키",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/maki/tit_character.png",
+		"desc": "다른 사람들에 비해 강한 영적 능력 때문에 어려서부터 영혼을 보게 된 마키는 <br>영혼들에게 받는 시달림과 주변의 시선 때문에 성격이 어두워진 슬픈 과거를 가지고 있다.",
+		"profile":  {
+			"나이": "16살",
+			"키": "143cm",
+			"몸무게": "34kg",
+			"MBTI / 혈액형": "INTJ / AB형",
+			"직업": "학생",
+			"전용 능력치": "공격력 +10"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/maki/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/maki/img_character.png",
+		"chart": {
+			"최고속도": "2",
+			"힘": "1",
+			"컨트롤": "6",
+			"가속도": "5"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "/News/Develop.asp?seq=2016",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/maki/thumb_01.jpg",
+				"popupName": "마키 스토리"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/maki/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.9, 2.1, 2.8, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "폭풍 소년 러프",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rough/tit_character.png",
+		"desc": "아직 고등학생이지만 라이더로서는 세계 일류인 바이크를 사랑하는 소년. <br>어느 날 바이크 사고로 크게 다친 이후 신경계에 문제가 생겨 몸이 거꾸로 반응하게 된다. <br>바이크를 탈 수 없게 된 러프는 몸을 원래대로 되돌리기 위해 동화나라 달리기 대회에 참가하게 된다.",
+		"profile":  {
+			"나이": "18살",
+			"키": "178cm",
+			"몸무게": "69kg",
+			"MBTI / 혈액형": "ESFP / O형",
+			"직업": "학생(라이더)",
+			"전용 능력치": "분노 지속시간 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rough/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rough/img_character.png",
+		"chart": {
+			"최고속도": "4",
+			"힘": "5",
+			"컨트롤": "2",
+			"가속도": "3"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "/News/Develop.asp?seq=2229",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rough/thumb_01.jpg",
+				"popupName": "러프 스토리"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rough/tit_character_popup.png",
+		"popupMotion" : [
+			1.5, 1.6, 2.6, 3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "미래에서 온 히든러프",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/hiddenrough/tit_character.png",
+		"desc": "러프가 도와준 고양이 미야의 소원으로 러프를 정상으로 되돌리려 했으나, <br>다른 차원에서 살던 정상적인 미래의 러프를 불러오게 되었다. <br>히든러프는 몸이 정상이 되었지만, 부작용으로 기억이 사라진 미야를 되돌리려 한다.",
+		"profile":  {
+			"나이": "20살",
+			"키": "178cm",
+			"몸무게": "71kg",
+			"MBTI / 혈액형": "ESFP / O형",
+			"직업": "학생(라이더)",
+			"전용 능력치": "전용 이펙트 보유 <br>펭귄 피격 시 대시 패널티 감소 +25%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/hiddenrough/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/hiddenrough/img_character.png",
+		"chart": {
+			"최고속도": "6",
+			"힘": "4",
+			"컨트롤": "2",
+			"가속도": "3"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=2334",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/hiddenrough/thumb_01.jpg",
+				"popupName": "미야의 소원"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/hiddenrough/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.6, 2.1, 3.6, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "섬 소녀 바다",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bada/tit_character.png",
+		"desc": "곰 발바닥 섬에서 태어난 바다는 자신이 살고 있는 평화로운 섬이 점점 불어나는 <br>바다에 가라앉는 것을 막기 위하여 테일즈런너 대회에 참가하게 되었다. <br>섬에서 자란 터라 구수한 사투리를 구사하며, 매우 활동적이고 활발한 성격이다.",
+		"profile":  {
+			"나이": "17살",
+			"키": "162cm",
+			"몸무게": "45kg",
+			"MBTI / 혈액형": "ESTP / O형",
+			"직업": "학생",
+			"전용 능력치": "분노 누적속도 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bada/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bada/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "2",
+			"컨트롤": "4",
+			"가속도": "3"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "/News/Develop.asp?seq=2268",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bada/thumb_01.jpg",
+				"popupName": "바다 스토리"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bada/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.8, 2.1, 3.1, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "어둠의 아이 카이",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kai/tit_character.png",
+		"desc": "카이는 다른 사람들이 이해하지 못하는 소외 받은 캐릭터들의 불만이 뭉쳐서 태어났다. <br>세상을 부정적으로 바라보며 적개심이 가득하지만 닥터헬의 보살핌으로 <br>자신의 감정을 억누르며 살아가고 있다.",
+		"profile":  {
+			"나이": "?",
+			"키": "177cm",
+			"몸무게": "67kg",
+			"MBTI / 혈액형": "INFP / B형",
+			"직업": "?",
+			"전용 능력치": "승패와 상관없이 보너스 EXP +5"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kai/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kai/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "2",
+			"컨트롤": "2",
+			"가속도": "5"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "/News/Develop.asp?seq=2285",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kai/thumb_01.jpg",
+				"popupName": "카이 스토리"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kai/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.8, 2.3, 3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "냉혹한 닌자 유키",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yuki/tit_character.png",
+		"desc": "도도하고 시크한 이미지지만, 사실은 가족을 사랑하는 따뜻한 마음을 가진 소녀. <br>뛰어난 닌자로 활동하고 있으며, 빠른 속도가 특징이다.",
+		"profile":  {
+			"나이": "?",
+			"키": "165cm",
+			"몸무게": "48kg",
+			"MBTI / 혈액형": "ISFJ / AB형",
+			"직업": "닌자",
+			"전용 능력치": "장애물 1회 회피 확률 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yuki/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yuki/img_character.png",
+		"chart": {
+			"최고속도": "6",
+			"힘": "2",
+			"컨트롤": "5",
+			"가속도": "1"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yuki/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.5, 2, 3.3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "밤의 아이 쿠로",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kuro/tit_character.png",
+		"desc": "쾌활하고 활동적인 성격의 닌자. <br>어릴 적부터 파파의 밑에서 유키와 함께 닌자 기술을 익혔다.",
+		"profile":  {
+			"나이": "?",
+			"키": "164cm",
+			"몸무게": "45kg",
+			"MBTI / 혈액형": "ESFJ / AB형",
+			"직업": "닌자",
+			"전용 능력치": "장애물 1회 회피 확률 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kuro/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kuro/img_character.png",
+		"chart": {
+			"최고속도": "1",
+			"힘": "4",
+			"컨트롤": "4",
+			"가속도": "5"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/kuro/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.6, 2, 3.3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "늑대 인간 아벨",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/abel/tit_character.png",
+		"desc": "모든 것이 미스터리에 싸여있는 늑대 인간 아벨. <br>늑대 인간의 후예이지만, 평소에는 평범한 인간의 모습을 하고 있다. <br>분노 시 늑대로 변하여 적들을 공포에 휩싸이게 한다.",
+		"profile":  {
+			"나이": "?",
+			"키": "?",
+			"몸무게": "?",
+			"MBTI / 혈액형": "ISTJ / ?",
+			"직업": "?",
+			"전용 능력치": "분노 지속시간 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/abel/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/abel/img_character.png",
+		"chart": {
+			"최고속도": "4",
+			"힘": "3",
+			"컨트롤": "2",
+			"가속도": "5"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/abel/tit_character_popup.png",
+		"popupMotion" : [
+			1.2, 1.7, 2.2, 3.3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "어둠의 근원 하루",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/haru/tit_character.png",
+		"desc": "버려진 악의 기운들이 모여 태어난 하루는 어둠의 힘으로 강하게 성장한다. <br>분노 시 강력한 어둠으로 변하게 되며, 어둠에서 태어난 카이를 자신만의 방식으로 아끼고 있다.",
+		"profile":  {
+			"나이": "?",
+			"키": "177cm",
+			"몸무게": "68kg",
+			"MBTI / 혈액형": "INTJ / B형",
+			"직업": "?",
+			"전용 능력치": "분노 누적속도 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/haru/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/haru/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "4",
+			"컨트롤": "2",
+			"가속도": "3"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/haru/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.8, 2.3, 3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "뱀파이어 베라",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/tit_character.png",
+		"desc": "남아있는 소수의 뱀파이어 귀족 가문 출신. <br>마음의 병을 앓았던 과거를 이겨내고 발랄한 성격과 귀족 특유의 세련미와 귀여운 외모를 가지게 되었다. <br>분노 시 어두운 내면에 있는 박쥐 떼를 소환한다.",
+		"profile":  {
+			"나이": "?",
+			"키": "155cm",
+			"몸무게": "38kg",
+			"MBTI / 혈액형": "ENFP / ?",
+			"직업": "고고학자",
+			"전용 능력치": "분노 공격 회피 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/img_character.png",
+		"chart": {
+			"최고속도": "6",
+			"힘": "2",
+			"컨트롤": "1",
+			"가속도": "5"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=764248",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/thumb_01.jpg",
+				"popupName": "베라 스토리 - 1"
+			},
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=764254",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/thumb_02.jpg",
+				"popupName": "베라 스토리 - 2"
+			},
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=764261",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/thumb_03.jpg",
+				"popupName": "베라 스토리 - 3"
+			},
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=764262",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/thumb_04.jpg",
+				"popupName": "베라 스토리 - 4"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/vera/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.6, 1.9, 3.3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "서유기의 주인공 손오공",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/sonogong/tit_character.png",
+		"desc": "동화나라에 떨어진 의문의 비석에서 나타난 손오공. <br>장난기 가득한 외모지만 용기 있고 모험심이 강하며, 자신을 가둔 우마왕이 <br>아누비스와 힘을 합치는 것을 막기 위해 동화나라에 머물기로 한다.",
+		"profile":  {
+			"나이": "?",
+			"키": "177cm",
+			"몸무게": "67kg",
+			"MBTI / 혈액형": "ESTP / ?",
+			"직업": "수행자",
+			"전용 능력치": "승패와 상관없이 보너스 EXP +5"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/sonogong/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/sonogong/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "3",
+			"컨트롤": "2",
+			"가속도": "4"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/sonogong/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.8, 2, 3.5, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "여우 인간 시호",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/shiho/tit_character.png",
+		"desc": "판도라 아일랜드의 수호자. <br>다정다감하고 순수한 영혼을 지니고 있어 동물과의 교감이 가능하며, <br>오감이 발달되어 있어 민첩하고 재빠르다.",
+		"profile":  {
+			"나이": "수인족 12살",
+			"키": "155cm",
+			"몸무게": "40kg",
+			"MBTI / 혈액형": "INFP / ?",
+			"직업": "수호자(천년호의 후예)",
+			"전용 능력치": "분노 지속시간 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/shiho/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/shiho/img_character.png",
+		"chart": {
+			"최고속도": "6",
+			"힘": "2",
+			"컨트롤": "3",
+			"가속도": "3"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=2336",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/shiho/thumb_01.jpg",
+				"popupName": "시호 스토리 - 1"
+			},
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=2338",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/shiho/thumb_02.jpg",
+				"popupName": "시호 스토리 - 2"
+			},
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=2339",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/shiho/thumb_03.jpg",
+				"popupName": "시호 스토리 - 3"
+			},
+			{
+				"popupType": "link",
+				"popupValue": "/news/develop.asp?seq=2341",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/shiho/thumb_04.jpg",
+				"popupName": "시호 스토리 - 4"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/shiho/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.4, 2, 3.6, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "마지막 요정 루시",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lucy/tit_character.png",
+		"desc": "혼돈의 지역 흩날리는 바람계곡에 살아남은 마지막 요정. <br>대자연을 섬기는 요정으로 경계심이 많고 예민하다.",
+		"profile":  {
+			"나이": "추정 불가 (요정 15살)",
+			"키": "162cm",
+			"몸무게": "43kg",
+			"MBTI / 혈액형": "INFJ / ?",
+			"직업": "자연 수호의 요정",
+			"전용 능력치": "행운 +5% <br> 낮과 밤의 눈 색깔이 다르다."
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lucy/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lucy/img_character.png",
+		"chart": {
+			"최고속도": "4",
+			"힘": "3",
+			"컨트롤": "3",
+			"가속도": "4"
+		},
+		"multimedia": "",
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lucy/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.6, 1.9, 3.6, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "판도라의 또 다른 친구 미호",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/miho/tit_character.png",
+		"desc": "판도라 아일랜드에서 온 태양술사. <br>밝고 낙천적이지만 꽤 단순한 적극파 소녀로, 별자리를 통해 미래를 내다볼 수 있는 <br>차기 태양술사이다.",
+		"profile":  {
+			"나이": "수인족 12살",
+			"키": "155cm",
+			"몸무게": "38kg",
+			"MBTI / 혈액형": "ESFP / ?",
+			"직업": "태양술사",
+			"전용 능력치": "모든 보스 추가 데미지 +3%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/miho/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/miho/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "2",
+			"컨트롤": "1",
+			"가속도": "6"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "https://tv.naver.com/v/991831",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/miho/thumb_01.jpg",
+				"popupName": "미호 스토리 - 1"
+			},
+			{
+				"popupType": "link",
+				"popupValue": "https://tv.naver.com/v/1041159",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/miho/thumb_02.jpg",
+				"popupName": "미호 스토리 - 2"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/miho/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.4, 2, 3.6, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "닥터헬이 만들어낸 인조인간 R",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/r/tit_character.png",
+		"desc": "버려진 닥터헬의 은둔처였던 호러파크에서 만들어진 인조인간 소년. <br>감정 표현에 서툴고 세상 모든 것이 신기한 순수한 소년이다.",
+		"profile":  {
+			"나이": "5년 전 닥터헬에 의해 제조",
+			"키": "177cm",
+			"몸무게": "65kg",
+			"MBTI / 혈액형": "INTP / 없음",
+			"직업": "닥터헬의 심부름꾼",
+			"전용 능력치": "탈진 지속시간 감소 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/r/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/r/img_character.png",
+		"chart": {
+			"최고속도": "6",
+			"힘": "6",
+			"컨트롤": "1",
+			"가속도": "1"
+		},
+		"multimedia": [
+			{
+				"popupType": "link",
+				"popupValue": "https://tv.naver.com/v/1288770",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/r/thumb_01.jpg",
+				"popupName": "R 프로모션 영상 - 1"
+			},
+			{
+				"popupType": "link",
+				"popupValue": "https://tv.naver.com/v/1413768",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/r/thumb_02.jpg",
+				"popupName": "R 프로모션 영상 - 2"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/r/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.4, 2, 3.3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "저승을 넘어온 차사 하랑",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/tit_character.png",
+		"desc": "이승에서 운명을 거스른 죄를 지은 대가로 저승차사가 되었다. <br>오랫동안 미래와 과거를 넘나들며 사망 명부를 관리하는 중이며, <br>지금은 저승차사로서의 새로운 삶에 나름대로 적응하고 있다.",
+		"profile":  {
+			"나이": "살아있을 때 22살",
+			"키": "176cm",
+			"몸무게": "65kg",
+			"MBTI / 혈액형": "ISFJ / 까먹음",
+			"직업": "저승차사",
+			"전용 능력치": "장애물 1회 회피 확률 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/img_character.png",
+		"chart": {
+			"최고속도": "4",
+			"힘": "4",
+			"컨트롤": "2",
+			"가속도": "4"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "45Kn1T5iQiI",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/thumb_01.jpg",
+				"popupName": "하랑 공식 홍보 동영상"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "U6OVvF4cr8M",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/thumb_02.jpg",
+				"popupName": "하랑의 이야기"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "hhnMR9cpj7s",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/thumb_03.jpg",
+				"popupName": "하랑 꼰대 테스트"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/illust_04.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/thumb_04.jpg",
+				"popupName": "공식 일러스트"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/harang/tit_character_popup.png",
+		"popupMotion" : [
+			1.3, 1.5, 2, 3.8, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "기쁨의 공주 라라",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/tit_character.png",
+		"desc": "앙리 3세와 사브리나의 딸이자, 동화나라의 공주. <br>기쁨의 나라 출신 사브리나에게 이어받은 잠재된 기쁨의 힘을 지녔다.",
+		"profile":  {
+			"나이": "13살",
+			"키": "156cm",
+			"몸무게": "40kg",
+			"MBTI / 혈액형": "ESTJ / A형",
+			"직업": "동화나라의 공주",
+			"전용 능력치": "분노 변신 시간 감소 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "4",
+			"컨트롤": "3",
+			"가속도": "2"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "BjB9rrbpanc",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/thumb_01.jpg",
+				"popupName": "라라의 이야기"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "73oqFVUHkOI",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/thumb_02.jpg",
+				"popupName": "LALLA"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "TDPc5-pLywY",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/thumb_03.jpg",
+				"popupName": "바람이 되어"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/illust_04.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/thumb_04.jpg",
+				"popupName": "공식 일러스트"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/lala/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.6, 2, 3.5, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "깨어난 성주신 연오",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/tit_character.png",
+		"desc": "오랫동안 노리개에 봉인되어 있다 런너들의 힘으로 깨어난 성주신. <br>성격은 우아하고 때론 냉정하리만큼 차갑지만, 한 번 마음을 준 상대에겐 <br>한없이 잘 대해주는 의리파이다.",
+		"profile":  {
+			"나이": "?",
+			"키": "161cm",
+			"몸무게": "46kg",
+			"MBTI / 혈액형": "ENFJ / ?",
+			"직업": "성주신",
+			"전용 능력치": "분노 지속시간 증가 +5%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/img_character.png",
+		"chart": {
+			"최고속도": "4",
+			"힘": "4",
+			"컨트롤": "1",
+			"가속도": "5"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "X64JGD92WOc",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/thumb_01.jpg",
+				"popupName": "연오 모션 영상"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "3hzFFy4E1oA",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/thumb_02.jpg",
+				"popupName": "연오의 아주 오래된 이야기"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "mzgLWsi8GBI",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/thumb_03.jpg",
+				"popupName": "연오 스타일링 영상"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/illust_04.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/thumb_04.jpg",
+				"popupName": "공식 일러스트"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/yeono/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.5, 2, 3.8, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "저주받은 박쥐 블러디 베라",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/tit_character.png",
+		"desc": "강력한 어둠의 힘 때문에 친구들을 해치고 사람들에게 이용당했던 과거의 슬픔이, <br>카인이 가진 반전의 힘에 의해 발현되었다. <br>베라가 마음의 병을 앓던 과거의 모습과 성격을 그대로 지니고 있다.",
+		"profile":  {
+			"나이": "뱀파이어가 되기 전 12살",
+			"키": "155cm",
+			"몸무게": "38kg",
+			"MBTI / 혈액형": "ISTP / ?",
+			"직업": "고고학자 <small>고고학자 뱀파이어 가문의 양녀</small>",
+			"전용 능력치": "공격력 +10"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "6",
+			"컨트롤": "2",
+			"가속도": "2"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "PEe4bNxLHc0",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/thumb_01.jpg",
+				"popupName": "블러디 베라 모션 영상"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "ih_fyxJsCNo",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/thumb_02.jpg",
+				"popupName": "Dark Tales"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "dRAuNkAFupM",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/thumb_03.jpg",
+				"popupName": "평행선"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/illust_04.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/thumb_04.jpg",
+				"popupName": "공식 일러스트"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/bloodyvera/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.6, 1.9, 2.8, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "왕위 계승자 시오넬",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/tit_character.png",
+		"desc": "감정의 제도에 위치한 기쁨의 왕국의 왕자. <br>물의 정령 네레이드의 선택을 받은 유력한 차기 왕위 계승자 후보이며, <br>고급스럽고 차가운 외모와 달리 반항적이고 난폭한 성격의 소유자이다.",
+		"profile":  {
+			"나이": "25살",
+			"키": "186cm",
+			"몸무게": "77kg",
+			"MBTI / 혈액형": "ISTP / B형",
+			"직업": "왕자",
+			"전용 능력치": "수영 최고속도 증가 +15"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/img_character.png",
+		"chart": {
+			"최고속도": "4",
+			"힘": "5",
+			"컨트롤": "3",
+			"가속도": "2"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "ZggzQYweypA",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/thumb_01.jpg",
+				"popupName": "오만하고 난폭한 왕자님"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/illust_02.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/thumb_02.jpg",
+				"popupName": "공식 일러스트 - 1"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/illust_03.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/thumb_03.jpg",
+				"popupName": "공식 일러스트 - 2"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/illust_04.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/thumb_04.jpg",
+				"popupName": "공식 일러스트 - 3"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/xionell/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.6, 2, 3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "엘리트 저승차사 담연",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/tit_character.png",
+		"desc": "저승컴퍼니 내에서 여러 업무를 담당하고 있는 엘리트 저승차사이자 부장이다. <br>많은 업무를 담당하고 있는 만큼, 피로에 시달리고 있다. <br>업무에 대해서는 그 누구보다도 완벽하게 처리하며, 공과 사의 구분이 철저하다.",
+		"profile":  {
+			"나이": "? (저승 나이 100살)",
+			"키": "156cm",
+			"몸무게": "40kg",
+			"MBTI / 혈액형": "ISTJ / A형",
+			"직업": "저승차사",
+			"전용 능력치": "판당 최대 획득 경험치 증가 +50"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/img_character.png",
+		"chart": {
+			"최고속도": "2",
+			"힘": "4",
+			"컨트롤": "2",
+			"가속도": "6"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "BhtxYEGYj7E",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/thumb_01.jpg",
+				"popupName": "담연 소개 영상"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/illust_02.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/thumb_02.jpg",
+				"popupName": "공식 일러스트 - 1"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/illust_03.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/thumb_03.jpg",
+				"popupName": "공식 일러스트 - 2"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "S0bbZ_LVmcI",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/thumb_04.jpg",
+				"popupName": "담연 모션 영상"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/damyeon/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.4, 2, 3, 1.66, 1.33, 1.66, 1.66
+		]
+	}
+]

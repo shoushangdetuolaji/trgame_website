@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <script src="../../../assets/common/js/jquery-1.7.2.js"></script>
+  <script src="../../../assets/common/js/jquery.slides.min.js"></script>
+  <script src="../../../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../../../assets/common/css/swiper.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/gnbWrapDiv.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/popup.css">
+  <link rel="stylesheet" href="./css/shop.css">
+</head>
+<body>
+  <div class="gnbWrapDiv">
+    <div id="hangame_gnb_basic"></div>
+  </div>
+  <div id="evt_wrap" class="sub shop">
+    <div class="gnb-wrap" style="left: 0px; width: 1547px;">
+      <div class="gnb-area flex">
+        <span class="bi"><a href="/index.asp" onclick="gtag('event', 'GNB_bi_공홈', { 'event_category': '저컴_로비', 'event_label': '' });">저승컴퍼니</a></span>
+  
+        <!-- [D] 현재 메뉴 li에 'current' 클래스 추가 / 새로운 컨텐츠 li에 'new' 클래스 추가-->
+        <ul class="gnb flex">
+          <li class="m1 "><a href="/event/JSCompany/Lobby0817.asp" onclick="gtag('event', 'GNB_로비', { 'event_category': '저컴_로비', 'event_label': '' });"><span>로비</span></a>
+            <div class="lnb-area" style="display: none;">
+              <ul class="flex">
+                              <li class=""><a href="/event/JSCompany/Lobby0817.asp" onclick="gtag('event', 'GNB_0817', { 'event_category': '저컴_로비', 'event_label': '' });"><span>08.17</span></a></li>
+                              <li class=""><a href="/event/JSCompany/Lobby0803.asp" onclick="gtag('event', 'GNB_0803', { 'event_category': '저컴_로비', 'event_label': '' });"><span>08.03</span></a></li>
+                              <li class=""><a href="/event/JSCompany/Lobby0720.asp" onclick="gtag('event', 'GNB_0720', { 'event_category': '저컴_로비', 'event_label': '' });"><span>07.20</span></a></li>
+                <li class=""><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_0706', { 'event_category': '저컴_로비', 'event_label': '' });"><span>07.06</span></a></li>                            
+              </ul>
+            </div>
+          </li>
+          <li class="m2 "><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_내정보실', { 'event_category': '저컴_로비', 'event_label': '' });"><span>내 정보실</span></a>
+            <div class="lnb-area flex" style="display: none;">
+              <ul class="flex">
+                <li class=""><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_사원정보', { 'event_category': '저컴_로비', 'event_label': '' });"><span>사원 정보</span></a></li>
+                <li class=""><a href="/event/JSCompany/Information/information_organization.asp" onclick="gtag('event', 'GNB_조직도', { 'event_category': '저컴_로비', 'event_label': '' });"><span>조직도</span></a></li>
+                <li class=""><a href="/event/JSCompany/Information/information_job_evaluation.asp" onclick="gtag('event', 'GNB_업무평가', { 'event_category': '저컴_로비', 'event_label': '' });"><span>업무 평가</span></a></li>
+              </ul>
+            </div>
+                  </li>
+          <li class="m3  new "><a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'GNB_집중업무실', { 'event_category': '저컴_로비', 'event_label': '' });"><span>집중 업무실</span></a>
+            <div class="lnb-area flex" style="display: none;">
+              <ul class="flex">
+                <li class=" new "><a href="/event/JSCompany/Office/office_main.asp?id=daily" onclick="gtag('event', 'GNB_일일업무', { 'event_category': '저컴_로비', 'event_label': '' });"><span>일일 업무</span></a></li>
+                <li class=" new "><a href="/event/JSCompany/Office/office_main.asp?id=TeamM" onclick="gtag('event', 'GNB_팀업무성과', { 'event_category': '저컴_로비', 'event_label': '' });"><span>팀 업무 성과</span></a></li>
+                <li class=" new "><a href="/event/JSCompany/Office/office_main.asp?id=weeklyM" onclick="gtag('event', 'GNB_주간업무', { 'event_category': '저컴_로비', 'event_label': '' });"><span>주간 업무</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="m4 current"><a href="/event/JSCompany/Shop/" onclick="gtag('event', 'GNB_차사복지샵', { 'event_category': '저컴_로비', 'event_label': '' });"><span>차사 복지샵</span></a></li>
+          <li class="m5 "><a href="/event/JSCompany/Promotion/" onclick="gtag('event', 'GNB_회사홍보관', { 'event_category': '저컴_로비', 'event_label': '' });"><span>회사 홍보관</span></a></li>
+          <li class="m6 "><a href="/event/JSCompany/Director/" onclick="gtag('event', 'GNB_담연부장실', { 'event_category': '저컴_로비', 'event_label': '' });"><span>담연 부장실</span></a></li>
+        </ul>
+  
+        <div class="util-area">
+                  <a href="/index.asp" class="btn btn-home" onclick="gtag('event', 'GNB_icon_공홈', { 'event_category': '저컴_로비', 'event_label': '' });">테일즈런너</a>
+  
+                  
+                  <button type="button" onclick="goLogout();gtag('event', 'GNB_퇴근하기', { 'event_category': '저컴_로비', 'event_label': '' });" class="btn btn-login logout"><span>퇴근하기 LOGOUT</span></button>
+                  
+  
+          <button type="button" class="btn btn-gamestart" onclick="fnmainGameStart(); fnStoveLogClick('SUB', 'JSCOMPANY_GAMESTART_BTN', 'http://' + location.host + '/global/common/lib/game_cab_execute.asp', window.event); gtag('event', '게임시작버튼', { 'event_category': '저컴_로비'});"><span>게임 시작</span></button> 
+                  
+                  
+          <div class="arrow_box" id="gameStartLayer" style="display: none;">
+            <p>게임을 시작하기 위해선<br>먼저 테일즈런너 클라이언트 설치가<br>되어 있어야 합니다.</p>
+            <a href="#" onclick="fnGameDown()" class="btn btn-Install"><span>STOVE 클라이언트 설치</span></a>
+            <button type="button" class="btnX" onclick="$('#gameStartLayer').hide()"><span>닫기</span></button>
+          </div>      
+                  
+        </div>
+      </div>
+    </div>
+    <div class="evt-content">
+      <div class="content-body inner">
+        <div class="title-area">
+          <h2 class="tit tit-welfare">차샤 복지샵</h2>
+        </div>
+        <div class="welfare-area">
+          <div class="login-area">
+            <p class="name"><em>shoushangdetuolaji</em> 전무</p>
+            <p class="team team2">저승관리팀</p>
+            <div class="count-area">엽전 뭉치 보유 현황 : &nbsp;<em>44개</em></div>
+        </div>
+        </div>
+        <div class="title-area">
+          <h2 class="tit tit-hot-deal">오늘의 핫 딜 (하루에 단 하나, 오늘의 핫 딜 아아템이 매일 특별 할인가에 판매됩니다.)</h2>
+          <button type="button" class="ico btn-guide1" onclick="popup('[data-popup-type=deal-guide]');try {gtag('event', '오늘의핫딜_이용가이드', { 'event_category': '저컴_차사복지샵', 'event_label': $('#TeamName').val()});}catch (err) {};">이용 가이드</button>
+        </div>
+        <div class="hot-deal">
+          <div class="clock-area">
+            <p class="hide">오늘의 핫 딜 판매 종료까지 남은 시간</p>
+            <div class="clock"></div>
+          </div>
+          <div class="today-item">
+            <!-- <div class="sold-out1 hide"></div> -->
+            <img src="./images/w0ja6ckab9.png">
+          </div>
+          <button type="button" class="ico btn-purchase" onclick="fnBuyHotDealItem()">구매 하기</button>
+        </div>
+        <div class="title-area">
+          <h2 class="tit tit-shop">나만의 상점 (차사님만을 위한 5개의 맞춤 상품이 1주일 마다 할인 판매됩니다.)</h2>
+          <button type="button" class="ico btn-item" onclick="popup('[data-popup-type=appearance-item]');try {gtag('event', '나만의상점_등장아이템안내', { 'event_category': '저컴_차사복지샵', 'event_label': $('#TeamName').val()});}catch (err) {};">등장 아이템 안내</button>
+          <button type="button" class="ico btn-guide1" onclick="popup('[data-popup-type=myshop-guide]');try {gtag('event', '나만의상점_이용가이드', { 'event_category': '저컴_차사복지샵', 'event_label': $('#TeamName').val()});}catch (err) {};">이용 가이드</button>
+      
+        </div>
+        <div class="my-shop">
+          <p class="sale-period">5차 판매 기간 :&nbsp;<span>8월 17일 ~ 8월 23일</span></p>
+            <!-- 나만의 아이템 리스트 -->
+           <div class="card-list">
+                <div class="card">
+                    <div class="front" onclick="flip(this)" id="card_1_front">카드를 클릭하여 판매 아이템을 확인해 부세요.</div>
+                    <div class="back">
+  
+                        <!-- [D] 나만의 상점 A타입(15개)  아이템 이미지 경로 개발시 절대 경로로 수정 -->               	                
+                        <div class="my-item"><img src="//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/items/81uwdbf5mc.png"></div>	
+                        <p class="item-name">어둠의 주머니 1개</p>
+                        <del>엽전 뭉치 26개</del>
+                        <p class="item-price">엽전 뭉치 18개</p>
+          
+                        <button type="button" class="ico btn-purchase2" onclick="javascript:fnBuyMyShopItem(1);">구매 하기</button>
+  
+  
+                    </div>
+                </div>                
+                <div class="card">
+                    <div class="front" onclick="flip(this)" id="card_2_front">카드를 클릭하여 판매 아이템을 확인해 부세요.</div>
+                    <div class="back">
+                    
+                        <!-- [D] 나만의 상점 B타입(13개)  아이템 이미지 경로 개발시 절대 경로로 수정 -->               	                
+                        <div class="my-item"><img src="//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/items/vddz0yjctd.png"></div>	
+                        <p class="item-name">감정의 주머니 1개</p>
+                        <del>엽전 뭉치 20개</del>
+                        <p class="item-price">엽전 뭉치 14개</p>
+  
+                        <button type="button" class="ico btn-purchase2" onclick="javascript:fnBuyMyShopItem(2);">구매 하기</button>
+  
+                    </div>
+                </div>               
+                <div class="card" id="card3">
+                    <div class="front" onclick="flip(this)" id="card_3_front">카드를 클릭하여 판매 아이템을 확인해 부세요.</div>
+                    <div class="back">
+                      
+                        <!-- [D] 나만의 상점 C타입(25개)  아이템 이미지 경로 개발시 절대 경로로 수정 -->               	                
+                        <div class="my-item"><img src="//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0817/images/items/pl1wsc74k7.png"></div>	
+                        <p class="item-name">고대 드라칼 에그 1개</p>
+                        <del>엽전 뭉치 10개</del>
+                        <p class="item-price">엽전 뭉치 9개</p>
+  
+                        <button type="button" class="ico btn-purchase2" onclick="javascript:fnBuyMyShopItem(3);">구매 하기</button>
+  
+                    </div>
+                </div>
+             </div>   
+            <!--  로그인 영역-->
+            <div class="myshop-login" style="display: none;">
+  
+                <button type="button" class="ico btn-myshop" onclick="">이 주의 나만의 상점 상품 확인하기</button>
+  
+            </div>
+        </div>
+        <div class="title-area">
+          <h2 class="tit tit-exchange-shop">엽전 뭉치 교환 상점(엽전 뭉치를 사용하여 제한 없이 아이템을 교환하여 구입할 수 있습니다.)</h2>
+          <button type="button" class="ico btn-guide1" onclick="popup('[data-popup-type=exchange-guide]');try {gtag('event', '교환상점_이용가이드', { 'event_category': '저컴_차사복지샵', 'event_label': $('#TeamName').val()});}catch (err) {}; ">이용 가이드</button>
+        </div>
+        <div class="exchange-shop">
+          <ul>
+            <li>
+                <p class="purchase">구매 제한 : <em>0</em> / 5</p>
+                  <p class="hide">17주년 코인 상자 1개</p>
+                  <p class="hide">엽전 뭉치 1개</p>
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(11);">구매 하기</button>
+              </li>
+              <li>
+                <p class="purchase">구매 제한 : <em>0</em> / 1</p>
+                  <p class="hide">봉인된 염라의 신줏단지 1개</p>
+                  <p class="hide">엽전 뭉치 16개</p>
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(12);">구매 하기</button>                        
+              </li>
+              <li>
+                <p class="purchase">구매 제한 : <em>0</em> / 5</p>
+                  <p class="hide">망자의 구슬 조각 2개</p>
+                  <p class="hide">엽전 뭉치 2개</p>
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(13);">구매 하기</button>                        
+              </li>
+              <li>
+                <p class="purchase">구매 제한 : <em>0</em> / 1</p>
+                  <p class="hide">지옥의 불꽃 상자 1개</p>
+                  <p class="hide">엽전 뭉치 40개</p>
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(14);">구매 하기</button>                        
+              </li>
+              <li>
+                <p class="purchase">구매 제한 : <em>1</em> / 1</p>
+                  <p class="hide">혼이 나간 지렁이 5개</p>
+                  <p class="hide">엽전 뭉치 4개</p>
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(15);">구매 하기</button>                        
+              </li>
+
+              <li>
+                <p class="purchase">구매 제한 : <em>0</em> / 3</p>
+                  <p class="hide">봉인해제 두루마리 1개</p>
+                  <p class="hide">엽전 뭉치 1개</p>
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(16);">구매 하기</button>                        
+              </li>
+              <li>
+                <p class="purchase">구매 제한 : <em>0</em> / 3</p>
+                  <p class="hide">봉인된 저승컴퍼니 상자 1개</p>
+                  <p class="hide">엽전 뭉치 1개</p>
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(17);">구매 하기</button>                        
+              </li>
+              <li>
+                <p class="purchase">구매 제한 : <em>3</em> / 3</p>
+                  <p class="hide">잠겨진 플레이그 닥터 박스 1개</p>
+                  <p class="hide">엽전 뭉치 2개</p>
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(18);">구매 하기</button>                        
+              </li>
+              <li>
+                <p class="purchase">구매 제한 : <em>0</em> / 1</p>
+      <p class="hide">테일즈 쿠폰 1개</p><!-- 20220811 수정 -->
+      <p class="hide">엽전 뭉치 6개</p><!-- 20220811 수정 -->
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(19);">구매 하기</button>                        
+              </li>
+              <li>
+                <p class="purchase">구매 제한 : <em>2</em> / 3</p>
+      <p class="hide">스트릿 코스튬 박스 1개</p><!-- 20220811 수정 -->
+      <p class="hide">엽전 뭉치 3개</p><!-- 20220811 수정 -->
+                  <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(20);">구매 하기</button>                        
+              </li>
+    <!-- 20220818 추가 -->
+    <li>
+      <p class="purchase">구매 제한 : <em>0</em> / 3</p>
+      <p class="hide">타락한 동화 주머니 1개</p>
+      <p class="hide">엽전 뭉치 26개</p>
+      <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(21);">구매 하기</button>
+    </li>
+    <li>
+      <p class="purchase">구매 제한 : <em>0</em> / 1</p>
+      <p class="hide">타락한 자의 영혼석 1개</p>
+      <p class="hide">엽전 뭉치 40개</p>
+      <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(22);">구매 하기</button>
+    </li>
+    <li>
+      <p class="purchase">구매 제한 : <em>0</em> / 2</p>
+      <p class="hide">어둠의 주머니 1개</p>
+      <p class="hide">엽전 뭉치 22개</p>
+      <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(23);">구매 하기</button>
+    </li>
+    <li>
+      <p class="purchase">구매 제한 : <em>0</em> / 1</p>
+      <p class="hide">성주신의 보패 주머니 1개</p>
+      <p class="hide">엽전 뭉치 22개</p>
+      <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(24);">구매 하기</button>
+    </li>
+    <li>
+      <p class="purchase">구매 제한 : <em>0</em> / 10</p>
+      <p class="hide">인센티브 포션 2개</p>
+      <p class="hide">엽전 뭉치 1개</p>
+      <button type="button" class="ico btn-purchase3" onclick="javascript:fnBuyChangeShopItem(25);">구매 하기</button>
+    </li>
+    <!-- //20220818 추가 -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer flex">
+      <p class="copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    </div>
+  </div>
+  <div class="popup" data-popup-type="deal-guide">
+    <button type="button" class="btn btn-close" onclick="popupClose(this)">X</button>
+    <div class="popup-inner">
+      <h3 class="hide">오늘의 핫 딜 이용 가이드</h3>
+        <h4 class="hide">오늘의 핫 딜 판매 방식</h4>
+        <ul>
+          <li>·&nbsp;이벤트 기간 중 매일 1개의 아이템이 특별 할인가로 판매됩니다.</li>
+          <li>·&nbsp;오늘의 핫 딜은 안내된 판매 시간(당일 자정까지)에만 판매가 진행되며, 판매 시간이 종료된 아이템은 더 이상 확인 및 구입할 수 없습니다.</li>
+          <li>·&nbsp;판매가 진행되는 아이템은 판매 시간 동안 1개만 구매할 수 있으며, 구매한 상품은 선물함으로 지급됩니다.(선물함 보관 만료 기간 2주)</li>
+        </ul>
+    </div>
+  </div>
+  <div class="popup" data-popup-type="myshop-guide">
+    <button type="button" class="btn btn-close" onclick="popupClose(this)"><span>X</span></button>
+    <div class="popup-inner">
+      <h3 class="hide">나만의 상점 이용 가이드</h3>
+          <h4 class="hide">나만의 상점 판매 방식</h4>
+          <ul>
+              <li>·&nbsp;매주 수요일마다 나만을 위한 3개의 상품이 판매됩니다.</li>
+              <li>·&nbsp;판매되는 아이템은 매주 차수마다 새롭게 제안받아볼 수 있습니다.</li>
+              <li>·&nbsp;등장하는 아이템은 개인 별로 상이하며, 각각 다른 할인율이 적용되어 등장합니다.(등장 아이템 참고)</li>
+              <li>·&nbsp;판매가 진행되는 아이템은 판매 차수의 기간 동안 1개씩 구매할 수 있으며,<br>구매한 상품은 선물함으로 지급됩니다.(선물함 보관 만료 기간 2주)</li>
+              <li>·&nbsp;이미 지나간 차수의 판매 아이템은 구매하실 수 없습니다.</li>
+          </ul>
+          <h4 class="hide">나만의 상점 판매 기간</h4>
+          <table>
+              <tbody><tr>
+                  <th>1차</th>
+                  <td>07/20(수) 점검 후 ~ 07/26(화)</td>
+              </tr>
+              <tr>
+                  <th>2차</th>
+                  <td>07/27(수) ~ 08/02(화)</td>
+                  </tr>
+              <tr>
+                  <th>3차</th>
+                  <td>08/03(수) ~ 08/09(화)</td>
+                  </tr>
+              <tr>
+                  <th>4차</th>
+                  <td>08/10(수) ~ 08/16(화)</td>
+              </tr>
+              <tr>
+                  <th>5차</th>
+                  <td>08/17(수) ~ 08/23(화)</td>
+              </tr>
+              <tr>
+                  <th>6차</th>
+                  <td>08/24(수) ~ 08/30(화)</td>
+              </tr>
+              <tr>
+                  <th>7차</th>
+                  <td>08/31(수) ~ 09/06(화)</td>
+              </tr>
+              <tr>
+                  <th>8차</th>
+                  <td>09/07(수) ~ 09/13(화)</td>
+              </tr>
+              <tr>
+                  <th>9차</th>
+                  <td>09/14(수) ~ 09/20(화)</td>
+              </tr>
+          </tbody></table>
+    </div>
+  </div>
+  <div class="popup" data-popup-type="appearance-item">
+    <button type="button" class="btn btn-close" onclick="popupClose(this)"><span>X</span></button>
+    <div class="popup-inner">
+          <h3 class="hide">나만의 상점 등장 아이템 안내</h3>
+          <div class="scroll-area" data-scrollbar="scrollbar">
+          <ul>
+            <li>·&nbsp;판매 아이템과 판매 금액은 안내된 내용에서 개인 별로 등장 확률에 따라 랜덤하게 등장합니다.</li>
+              <li>·&nbsp;판매되는 아이템은 차수 별 3종이며, 동일 아이템이 중복하여 등장하지 않습니다.</li>
+          </ul>
+          <table>
+    <colgroup><col width="224">
+    <col width="*">
+    <col width="*">
+          </colgroup><tbody><tr>
+          <th>아이템명</th>
+          <th>정상 판매 금액</th>
+          <th>판매 금액</th>
+          </tr>
+          <tr>
+              <td>5th 변경권 상자 1개</td>
+              <td>14 엽전 뭉치</td>
+              <td>7 ~ 13 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>4th 변경권 상자 1개</td>
+              <td>14 엽전 뭉치</td>
+              <td>7 ~ 13 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>천년서리 빙정 1개</td>
+              <td>50 엽전 뭉치</td>
+              <td>20 ~ 35 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>나이아스 물방울 1개</td>
+              <td>26 엽전 뭉치</td>
+              <td>10 ~ 18 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>삼황의 검갑 1개</td>
+              <td>26 엽전 뭉치</td>
+              <td>10 ~ 18 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>반짝이는 여우별 상자 1개</td>
+              <td>60 엽전 뭉치</td>
+              <td>24 ~ 42 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>심해의 유물상자 1개</td>
+              <td>60 엽전 뭉치</td>
+              <td>24 ~ 42 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>어둠의 주머니 1개</td>
+              <td>26 엽전 뭉치</td>
+              <td>13 ~ 23 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>봉인된 지옥의 불꽃 상자 1개</td>
+              <td>30 엽전 뭉치</td>
+              <td>15 ~ 21 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>염라의 신줏단지 1개</td>
+              <td>40 엽전 뭉치</td>
+              <td>16 ~ 28 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>봉인된 차사의 영혼 주머니 1개</td>
+              <td>40 엽전 뭉치</td>
+              <td>20 ~ 28 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>차사의 영혼 주머니 1개</td>
+              <td>80 엽전 뭉치</td>
+              <td>40 ~ 56 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>감수성이 풍부한 지렁이    50개</td>
+              <td>50 엽전 뭉치</td>
+              <td>20 ~ 35 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>어둠에 물든 지렁이 50개</td>
+              <td>50 엽전 뭉치</td>
+              <td>20 ~ 35 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>특등급 아이템 복주머니 1개</td>
+              <td>40 엽전 뭉치</td>
+              <td>20 ~ 32 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>염색 쿠폰 3개</td>
+              <td>3 엽전 뭉치</td>
+              <td>2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>2000 마우</td>
+              <td>4 엽전 뭉치</td>
+              <td>2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>빛바랜 흑운룡 상자 3개</td>
+              <td>2 엽전 뭉치</td>
+              <td>1 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>윈터 코스튬 박스 1개</td>
+              <td>3 엽전 뭉치</td>
+              <td>1 ~ 2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>스트릿 코스튬 박스 1개</td>
+              <td>3 엽전 뭉치</td>
+              <td>1 ~ 2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>1st 변경권 상자 1개</td>
+              <td>6 엽전 뭉치</td>
+              <td>3 ~ 5 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>2nd 변경권 상자 1개</td>
+              <td>6 엽전 뭉치</td>
+              <td>3 ~ 5 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>무당 지렁이 10개</td>
+              <td>10 엽전 뭉치</td>
+              <td>5 ~ 9 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>페스티벌 지렁이 10개</td>
+              <td>10 엽전 뭉치</td>
+              <td>5 ~ 9 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>고대 드라칼 에그 1개</td>
+              <td>10 엽전 뭉치</td>
+              <td>4 ~ 9 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>망자의 구슬 조각 3개</td>
+              <td>6 엽전 뭉치</td>
+              <td>5 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>망자의 구슬 조각 2개</td>
+              <td>4 엽전 뭉치</td>
+              <td>3 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>망자의 구슬 조각 1개</td>
+              <td>2 엽전 뭉치</td>
+              <td>1 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>리베스트럼 박스 1개</td>
+              <td>3 엽전 뭉치</td>
+              <td>1 ~ 2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>디아블로스 박스 1개</td>
+              <td>3 엽전 뭉치</td>
+              <td>1 ~ 2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>적화매향 상자 1개</td>
+              <td>3 엽전 뭉치</td>
+              <td>1 ~ 2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>여왕 지렁이 50개</td>
+              <td>5 엽전 뭉치</td>
+              <td>3 ~ 4 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>장군 지렁이 50개</td>
+              <td>5 엽전 뭉치</td>
+              <td>3 ~ 4 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>황제 지렁이 50개</td>
+              <td>5 엽전 뭉치</td>
+              <td>3 ~ 4 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>셀레스티얼 박스 1개</td>
+              <td>3 엽전 뭉치</td>
+              <td>1 ~ 2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>베히모스 박스 1개</td>
+              <td>3 엽전 뭉치</td>
+              <td>1 ~ 2 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>휴몽의 보드판 리셋 쿠폰 1개</td>
+              <td>2 엽전 뭉치</td>
+              <td>1 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>3등급 아이템 복주머니 1개</td>
+              <td>4 엽전 뭉치</td>
+              <td>2 ~ 3 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>컴퍼니 캡슐 코인 I 10개</td>
+              <td>6 엽전 뭉치</td>
+              <td>3 ~ 5 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>컴퍼니 캡슐 코인 II 10개</td>
+              <td>6 엽전 뭉치</td>
+              <td>3 ~ 5 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>컴퍼니 캡슐 주머니 I  3개</td>
+              <td>5 엽전 뭉치</td>
+              <td>2 ~ 3 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>컴퍼니 캡슐 주머니 II 3개</td>
+              <td>5 엽전 뭉치</td>
+              <td>2 ~ 3 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>봉인된 염라의 신줏단지 1개</td>
+              <td>20 엽전 뭉치</td>
+              <td>10 ~ 18 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>3rd 변경권 상자 1개</td>
+              <td>10 엽전 뭉치</td>
+              <td>5 ~ 9 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>저승컴퍼니 상자 2개</td>
+              <td>4 엽전 뭉치</td>
+              <td>2 ~ 3 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>봉인해제 두루마리 3개</td>
+              <td>5 엽전 뭉치</td>
+              <td>3 ~ 4 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>봉인된 저승컴퍼니 상자 3개</td>
+              <td>5 엽전 뭉치</td>
+              <td>3 ~ 4 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>망자의 구슬 1개</td>
+              <td>20 엽전 뭉치</td>
+              <td>12 ~ 18 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>빈센트 주머니 1개</td>
+              <td>20 엽전 뭉치</td>
+              <td>10 ~ 18 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>감정의 주머니 1개</td>
+              <td>20 엽전 뭉치</td>
+              <td>10 ~ 18 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>2등급 아이템 복주머니 1개</td>
+              <td>6 엽전 뭉치</td>
+              <td>3 ~ 5 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>2등급 펫 복주머니 1개</td>
+              <td>6 엽전 뭉치</td>
+              <td>3 ~ 5 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>1등급 아이템 복주머니 1개</td>
+              <td>10 엽전 뭉치</td>
+              <td>6 ~ 9 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>데이터 조각 10개</td>
+              <td>6 엽전 뭉치</td>
+              <td>4 ~ 5 엽전 뭉치</td>
+          </tr>
+          <tr>
+              <td>호랑이 기운 10개</td>
+              <td>6 엽전 뭉치</td>
+              <td>4 ~ 5 엽전 뭉치</td>
+          </tr>
+      </tbody></table>
+          </div>
+    </div>
+  </div>
+  <div class="popup" data-popup-type="exchange-guide" style="top: 100px; opacity: 1;">
+    <button type="button" class="btn btn-close" onclick="popupClose(this)"><span>X</span></button>
+    <div class="popup-inner">
+      <h3 class="hide">엽전 뭉치 상시 교환 상점 이용 가이드</h3>
+          <h4 class="hide">엽전 뭉치 상시 교환 상점 판매 방식</h4>
+          <ul>
+            <li>·&nbsp;이벤트 기간 중 안내된 아이템이 상시 판매 진행됩니다.</li>
+              <li>·&nbsp;엽전 뭉치 상시 교환 상점에서 판매되는 아이템은 이벤트 페이지 종료 시까지 판매 품목이 변경되지 않습니다.</li>
+              <li>·&nbsp;아이템마다 구매 가능한 개수가 상이하며, 최대 구매 가능 개수만큼 구매 시 해당 아이템은 더 이상 구매가 불가능합니다.</li>
+              <li>·&nbsp;구매한 상품은 선물함으로 지급됩니다.(선물함 보관 만료 기간 2주)</li>
+          </ul>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script>
+    var myshopDisplayYN = 'Y';
+    $(document).ready(function() {
+      var date = new Date()
+      var year = date.getFullYear()
+      var month = (date.getMonth() + 1) < 10 ? '0' +(date.getMonth() + 1) : (date.getMonth() + 1)
+      var day = date.getDate() < 10 ? '0' + date.getDate() : date.getDate()
+      var dateInit = `${year}.${month}.${day}`
+      dDay('.clock', dateInit + '.23:59:00');
+      if (myshopDisplayYN == 'Y') {
+        $('.myshop-login').hide()
+      }
+    })
+    //차사 복지샵 핫딜 d-day
+    var imgClock;
+    var timer;
+    var setViewTime = function(obj,time) {
+      var getYear = time.substring(0,4);
+      var getMonth = time.substring(5,7);
+      var getDay = time.substring(8,10);
+      var getHour = time.substring(11,13);
+      var getMin = time.substring(14,16);
+      var getSec = time.substring(17,19);
+
+      if ( $.trim(getYear) != "" && $.trim(getMonth) != "" && $.trim(getDay) != "" ) {
+        var dat1 = new Date(); //현재 날짜
+        var dat2 = new Date(getYear, getMonth-1, getDay, getHour, getMin, getSec); //월에서 1 빼줘야 함
+
+        var diff = dat2 - dat1; //날짜 빼기
+
+        var currSec = 1000;						//밀리세컨
+        var currMin = 60 * 1000;				//초 * 밀리세컨
+        var currHour = 60 * 60 * 1000;			//분 * 초 * 밀리세컨
+        var currDay = 24 * 60 * 60 * 1000;  	//시 * 분 * 초 * 밀리세컨
+
+        var day = parseInt(diff/currDay);		//d-day 일
+        var hour = parseInt(diff/currHour);	    //d-day 시
+        var min = parseInt(diff/currMin);		//d-day 분
+        var sec = parseInt(diff/currSec);		//d-day 초
+
+        var viewHour = hour-(day*24);
+        var viewMin = min-(hour*60);
+        var viewSec = sec-(min*60);
+
+        if (day < 10 && day >= 0) {
+          day = '0' + day;
+        }
+        if (viewHour < 10 && viewHour >= 0) {
+          viewHour = '0' + viewHour;
+        }
+        if (viewMin < 10 && viewMin >= 0) {
+          viewMin = '0' + viewMin;
+        }
+        if (viewSec < 10 && viewSec >= 0) {
+          viewSec = '0' + viewSec;
+        }
+
+        //d-day 지남
+        if ( day <= 0 && viewHour <= 0 && viewMin <= 0 && viewSec <= 0 ) {
+          clearInterval(timer);
+          //이미지인 경우
+          //$(obj).html('<span><img src="./images/imgclock/num_0.png" alt="number"><img src="./images/imgclock/num_0.png" alt="number"></span> : <span><img src="./images/imgclock/num_0.png" alt="number"><img src="./images/imgclock/num_0.png" alt="number"></span> : <span><img src="./images/imgclock/num_0.png" alt="number"><img src="./images/imgclock/num_0.png" alt="number"></span> : <span><img src="./images/imgclock/num_0.png" alt="number"><img src="./images/imgclock/num_0.png" alt="number"></span>');
+          
+          //시스템폰트인 경우
+          $(obj).html('<span><i>0</i><i>0</i></span>:<span><i>0</i><i>0</i></span>:<span><i>0</i><i>0</i></span>');
+        }
+        else {
+          //숫자 잘라서 배열로 만들기
+          var day_img = String(day).split('');
+          var hour_img = String(viewHour).split('');
+          var min_img = String(viewMin).split('');
+          var sec_img = String(viewSec).split('');
+          //이미지로 변환된 데이터 담을 변수 선언
+          var day_txt = '';
+          var hour_txt = '';
+          var min_txt = '';
+          var sec_txt = '';
+
+          //이미지인 경우
+          // for (var x in day_img) {
+          // 	day_txt += '<img src="./images/imgclock/num_' + day_img[x] + '.png" alt="number" />';
+          // }
+          // for (var x in hour_img) {
+          // 	hour_txt += '<img src="./images/imgclock/num_' + hour_img[x] + '.png" alt="number" />';
+          // }
+          // for (var x in min_img) {
+          // 	min_txt += '<img src="./images/imgclock/num_' + min_img[x] + '.png" alt="number" />';
+          // }
+          // for (var x in sec_img) {
+          // 	sec_txt += '<img src="./images/imgclock/num_' + sec_img[x] + '.png" alt="number" />';
+          // }
+          // var viewStr = "<span>" + day_txt + "</span> : <span>" + hour_txt + "</span> : <span>" + min_txt + "</span> : <span>" + sec_txt;
+
+          //시스템 폰트인 경우
+          for (var x in day_img) {
+            day_txt += '<i>' + day_img[x] + '</i>';
+          }
+          for (var x in hour_img) {
+            hour_txt += '<i>' + hour_img[x] + '</i>';
+          }
+          for (var x in min_img) {
+            min_txt += '<i>' + min_img[x] + '</i>';
+          }
+          for (var x in sec_img) {
+            sec_txt += '<i>' + sec_img[x] + '</i>';
+          }
+          var viewStr = "<span>" + hour_txt + "</span>:<span>" + min_txt + "</span>:<span>" + sec_txt + "</span>";
+
+          $(obj).html(viewStr);
+        }		
+      }
+      else {
+        $(obj).html('<span><i>0</i><i>0</i></span>:<span><i>0</i><i>0</i></span>:<span><i>0</i><i>0</i></span>');
+      }
+    }
+
+    dDay = function(obj,time) {
+      var timer = setInterval(function() {
+        setViewTime(obj,time);
+      }, 1000);	
+    }
+
+    function timeReset() {
+      $('.clock').html('<span><i>0</i><i>0</i></span>:<span><i>0</i><i>0</i></span>:<span><i>0</i><i>0</i></span>');
+    }
+    
+    function fnBuyHotDealItem() {
+      alert('祝你购买成功')
+      // $('.sold-out1').addClass('show');
+      $('.today-item').append('<div class="sold-out1 hide"></div>');
+      $('.btn-purchase').attr('disabled', true);
+    }
+
+    // 卡片翻转
+    function flip(target) {
+      $(target).parent('.card').addClass('show');
+    }
+  </script>
+</body>
+</html>

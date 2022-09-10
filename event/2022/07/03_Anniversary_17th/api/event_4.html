@@ -1,0 +1,181 @@
+<script type="text/javascript">
+	var strCheck1 = "F";
+	    var strCheck2 = "2022-09-02 오후 4:54:55";
+	    var strCheck3 = "T";
+	    var strCheck4 = "T";
+	    var strCheck5 = "T";
+	    var Acc = "0";
+	    var Acc2 = "0";
+	    var Acc3 = "0";
+</script>
+<div id="evt_wrap">
+	<div class="evt-content">
+		<div class="content-body">
+
+			<!-- 이벤트 불러오는 컨텐츠 영역 -->
+			<div class="evt4-content">
+				<div class="section01">
+					<div class="inner hide">
+						<h2>이승관리팀의 이생전생 퀴즈</h2>
+						<button type="button" class="btn btn-caution" onclick="popup('[data-popup-id=evt4-caution]')">이벤트 유의사항</button>
+						<ul>
+							<li>9/5까지 매일 3개씩 공개되는 이생전생 퀴즈 풀이에 참여할 수 있습니다. (상세 참여 방법은 이벤트 유의사항 참고)</li>
+							<!-- 20220811_2 수정 -->
+							<li>참여하신 퀴즈는 9/6 이후 채점과 보상, 해설이 공개됩니다.</li>
+							<li>이미 지나간 일자의 퀴즈를 풀 수도 있지만, 공개된 당일에 답안을 제출한 일자는 채점 시 일별 5점의 보너스 점수가 지급됩니다. (보너스 점수는 정답 여부와
+								무관)</li><!-- 20220811_2 수정 -->
+							<li>채점 공개 시 점수 구간에 따라 보상 아이템이 지급되며, 점수 상위자 20명은 추첨을 통해 저승컴퍼니 굿즈를 지급합니다.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section02">
+					<div class="inner">
+						<!-- 유저별 화면 -->
+						<div class="login-wrap">
+							<ul class="login-area">
+								<li>
+									<p>로그인 후 참여해 주세요. <a onclick='fnLogin();'>[로그인]</a></p>
+								</li>
+								<li>
+									<p>답안을 제출한 퀴즈 수 : <em>-</em>개</p>
+								</li>
+							</ul>
+						</div>
+
+						<!-- [D] 퀴즈 영역 (9/6 00시 전까지 노출) -->
+						<div class="quiz-wrap">
+							<h3 class="hide">날짜를 선택 후 퀴즈를 풀어주세요</h3><!-- 20220811_2 수정 -->
+
+							<ul class="tab-quiz">
+								<!-- [D] 날짜 활성화 시 li에 'on' 클래스 추가 / 현재 날짜에 'current' 클래스 추가 -->
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY1')" >8/17(수)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY2')" >8/18(목)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY3')" >8/19(금)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY4')" >8/20(토)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY5')" >8/21(일)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY6')" >8/22(월)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY7')" >8/23(화)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY8')" >8/24(수)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY9')" >8/25(목)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY10')" >8/26(금)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY11')">8/27(토)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY12')">8/28(일)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY13')">8/29(월)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY14')">8/30(화)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY15')">8/31(수)</button>
+								</li>
+								<li class="on">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY16')">9/1(목)</button>
+								</li>
+								<li class="on current">
+									<button type="button" onclick="loadAjax_sub_2('/event/2022/07/03_Anniversary_17th/event_4_1.asp?Step=DAY17')">9/2(금)</button>
+								</li>
+								<li class=""><button type="button" onclick="">9/3(토)</button></li>
+								<li class=""><button type="button" onclick="">9/4(일)</button></li>
+								<li class=""><button type="button" onclick=""">9/5(월)</button></li>
+							</ul>
+							
+		                    <!-- 문제 -->
+		                    <div class="quiz-area">
+			                    <ul class="quiz-list">
+				                    <!-- 1번 문제 -->
+                                    
+				                    <li>
+					                    <div class="quiz-tit">
+						                    <p class="txt">다음 중 삐에로 기준으로 레인과의 관계는? (1점)</p>
+						                    <div class="img">
+                                                
+						                    </div>
+					                    </div>
+					                    <div class="quiz-answer">
+						                    <ul>
+							                    <li><button type="button" value="">이모</button></li>
+								<li><button type="button" value="">엄마</button></li>
+								<li><button type="button" value="">고모</button></li>
+								<li><button type="button" value="">누나</button></li>
+							</ul>
+						</div>
+						</li>
+
+						<li>
+							<div class="quiz-tit">
+								<p class="txt">다음 사진 속 장소로 알맞은 곳은? (2점)</p>
+								<div class="img">
+
+									<img src="https://tr-image.game.onstove.com/event/202208/17_17th_Anniversary_2nd/images/quiz/aapgnsjifn.png" alt="quiz image">
+
+						                    </div>
+								</div>
+								<div class="quiz-answer">
+									<ul>
+										<li><button type="button" value="">잭와 콩나무</button></li>
+										<li><button type="button" value="">재크와 콤나무</button></li>
+										<li><button type="button" value="">제크와 공나무</button></li>
+										<li><button type="button" value="">제크와 콩나무</button></li>
+									</ul>
+								</div>
+						</li>
+
+						<li>
+							<div class="quiz-tit">
+								<p class="txt">다음 사진 속 장소로 알맞은 곳은? (2점)</p>
+								<div class="img">
+
+									<img src="https://tr-image.game.onstove.com/event/202208/17_17th_Anniversary_2nd/images/quiz/ep8mnq0jne.png" alt="quiz image">
+
+						                    </div>
+								</div>
+								<div class="quiz-answer">
+									<ul>
+										<li><button type="button" value="">피노키오</button></li>
+										<li><button type="button" value="">제페토의 모험</button></li>
+										<li><button type="button" value="">피노키오의 모험</button></li>
+										<li><button type="button" value="">오즈의 마법사</button></li>
+									</ul>
+								</div>
+						</li>
+
+						</ul>
+
+						<!-- [D] 비활성 시 button에 'complete' 클래스 추가 onclick="var answer = applyAnswer(); console.log(answer)"-->
+						<button type="button" class="btn btn-apply " onclick="fnValidate2('DAY17', 'Q')" >퀴즈 답안 제출하기</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- //이벤트 불러오는 컨텐츠 영역 -->
+
+	</div>
+</div>
+</div>

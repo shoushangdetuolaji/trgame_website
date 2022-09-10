@@ -1,0 +1,130 @@
+body {background-color:#301e50 ;}
+:root {
+	--icons :url('../images/ico_spr.png');	
+}
+
+.ico {display:inline-block;background:var(--icons) no-repeat -9999em 0;text-indent:-9999em;}
+
+/*  복지샵 배경 스타일 */
+#evt_wrap.shop {background:#301e50 url('../images/bg_content.jpg') no-repeat 50% top;}
+.shop .evt-content .content-body{left:0;width:1200px;}
+
+
+.title-area {position:relative;height:55px;padding:0 20px;}
+.title-area h2.tit {height:100%;text-indent:-9999em;}
+h2.tit-welfare {background:url('../images/tit_welfare.png') no-repeat;}
+h2.tit-hot-deal {background:url('../images/tit_hot_deal.png') no-repeat;}
+h2.tit-shop {background:url('../images/tit_shop.png') no-repeat;}
+h2.tit-exchange-shop {background:url('../images/tit_exchange_shop.png') no-repeat;}
+
+/* 차샤 복지샵 */
+.welfare-area {display:flex;align-items:center;justify-content:center;width:100%;height:82px;margin-bottom:65px;border-radius:20px;background-color:rgba(31,17,60,0.5);}
+.login-area {display:flex;justify-content:center;align-items:center;width:100%;height:62px;font-weight:400;text-indent:0;}
+.login-area p {width:716px;text-align:center;font-size:20px;font-weight:400;color:#d9c7fc;}
+/*.login-area p em {font-weight:400;color:#fff;}*/
+.login-area p a {width:77px;height:29px;margin-left:10px;background-position:-420px -68px;text-indent:-9999em;}
+.login-area .name {width:420px;text-align:center;font-size:20px;font-weight:400;color:#d9c7fc;}
+.login-area .name em {font-weight:400;color:#fff;}
+.login-area .team {position:relative;width:290px;height:32px;background:url('../images/ico_spr.png') no-repeat;text-align:center;font-size:20px;font-weight:400;color:#d9c7fc;text-indent:-9999em;}
+.login-area .team::before {content:'';position:absolute;left:0;top:50%;width:1px;height:19px;margin-top:-8px;background-color:#3f5468;}
+.login-area .team1{background-position:0 0;}
+.login-area .team2{background-position:0 -33px;}
+.login-area .team3{background-position:0 -66px;}
+.login-area .team4{background-position:0 -99px;}
+.login-area .team5{background-position:0 -132px;}
+.login-area .team6{background-position:0 -167px;}
+.login-area .team7{position:relative;background:url('../images/ico_spr.png');background-position:0 -198px;}
+.login-area .team7 a{position:absolute;top:0;left:140px;width:102px;height:29px;text-indent:-9999em;}
+.count-area{position:relative;width:480px;text-align:center;font-size:20px;font-weight:400;color:#d9c7fc;}
+.count-area::before{content:'';position:absolute;left:0;top:50%;width:1px;height:19px;margin-top:-8px;background-color:#3f5468;}
+.count-area em{color:#ffd75f;font-weight:600;}
+/* 오늘의 핫딜 */
+.hot-deal{position:relative;width:1200px;height:171px;margin-bottom:65px;background:url('../images/hot_deal_bg.png') no-repeat;}
+.clock-area .clock {display:flex;justify-content:flex-start;align-items:center;width:368px;height:171px;margin-left:108px;padding-top:32px;font-weight:400;font-size:30px;color:#765dab;}
+.clock-area .clock span{display:flex;justify-content:space-around;width:120px;margin-left:4px;}
+.clock-area .clock span i{width:57px;height:57px;line-height:57px;margin-right:2px;border-radius:10px; background-color:rgba(255,255,219,1);font-size:30px;text-align:center;color:#111;}
+.today-item {position:absolute;top:45px;left:561px;width:285px;height:86px; z-index:1;}
+.sold-out1{position:absolute;top:-20px;left:-15px;width:124px;height:124px;background:url('../images/soldout1.png') no-repeat; z-index:3;}
+/* 나만의 상점 */
+.my-shop{position:relative;width:100%;height:498px;margin-bottom:65px;padding-top:40px;border-radius:20px;background-color:rgba(31,17,60,0.5);}
+.sale-period{display:flex;align-items:center;justify-content:center;width:410px;height:47px;margin:0 auto;border-radius:23px;background-color:#11052a;color:#d8c6fb;font-size:16px;}
+.sale-period span{color:#f2ebff;}
+/*.card-list{display:flex;justify-content:center;width:100%;margin-top:40px;}
+.card-list li{width:221px;height:320px;margin:0 25px;text-align:center;}*/
+.card-list {display:flex;justify-content:center;width:100%;margin-top:40px;text-align:center;}
+.card {position:relative;width:221px;height:320px;margin:0 25px;}
+.front,
+.back {position:absolute;left:0;top:0;width:221px;height:320px; background:url('../images/card_front.png') no-repeat 50% 0;background-size:100% 100%;backface-visibility:hidden;transition:transform 1s ease-in-out;}
+.front{cursor:pointer; text-indent:-9999em;}
+.front:hover {background:url('../images/card_front_over.png') no-repeat; border-radius:8px;box-shadow: 0px 0px 20px 0px #765f44;}
+.back {background-image:url('../images/card_back.png');transform:rotateY(180deg);}
+.card.show .front {transform:rotateY(-180deg);}
+.card.show .back {transform:rotateY(0deg);}
+.back .my-item{margin:50px 0 10px;}
+.back .item-name{display:flex;justify-content:center;align-content:flex-start;width:130px;height:35px;margin:0 auto 25px;font-size:15px;color:#51338a;word-break: keep-all;}
+.back del{font-size:14px;color:#7056a3;}
+.back .item-price{margin:5px 0 15px;font-size:18px;color:#1f103c;font-weight:bold;}
+.sold-out2{position:absolute;top:35px;left:48px;width:124px;height:124px;background:url('../../assets_0720/images/soldout2.png') no-repeat; z-index:3;}
+.myshop-login{display:flex;justify-content:center;align-items:center;position:absolute;left:0;bottom:0;width:100%;height:383px;border-radius:20px;background-color:rgba(22,9,49,0.8);}
+.login-before{width:399px;height:22px; background:url('../../assets_0720/images/txt_shop1.png') no-repeat 50% 0; text-indent:-9999em;}
+.login-no-character{width:441px;height:22px; background:url('../../assets_0720/images/txt_shop2.png') no-repeat 50% 0; text-indent:-9999em;}
+/* 엽전 뭉치 교환 상점 */
+.exchange-shop{position:relative;width:1200px;margin-bottom:65px;background:url('../images/exchange_shop_list.png') no-repeat;}
+.exchange-shop ul{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.exchange-shop ul li{width:223px;height:320px; margin-bottom:20px; text-align:center;}
+.exchange-shop ul li em{color:#ffd75f;}
+.exchange-shop ul li .application{width:149px;height:48px;line-height:1.2em; padding-top:10px;margin:31px auto 165px;font-size:13px;color:#fff;}
+.exchange-shop ul li .purchase{width:149px;height:29px;line-height:2em;margin:40px auto 176px;font-size:13px;color:#fff;}
+.notice-text{width:100%; font-size:13px; color:#aa91db;text-align:center; text-indent:0}
+
+
+
+/* button */
+.btn-guide1{position:absolute;top:0;right:0;width:102px;height:29px;background-position:-291px -65px;text-indent:-9999em}
+.btn-item{position:absolute;top:0;right:110px;width:121px;height:29px;background-position:-291px -98px;text-indent:-9999em}
+.btn-purchase{position:absolute;top:52px;left:892px;width:169px;height:69px;background-position:-290px -130px;text-indent:-9999em;cursor:pointer;}
+.btn-purchase:disabled {background-position:-290px -204px;text-indent:-9999em;cursor: not-allowed;}
+
+.btn-purchase2{width:105px;height:43px;background-position:0 -233px;text-indent:-9999em;cursor:pointer;}
+.btn-purchase2:disabled {background-position:-106px -233px;text-indent:-9999em;cursor: not-allowed;}
+.btn-myshop{width:369px;height:69px;background-position:0 -330px;text-indent:-9999em;cursor:pointer;}
+.btn-application{width:105px;height:43px;background-position:0 -279px;text-indent:-9999em;cursor:pointer;}
+.btn-purchase3{width:105px;height:43px;background-position:-106px -279px;text-indent:-9999em;cursor:pointer;}
+
+
+
+.popup {background-color:rgba(49,31,82,1);border:4px solid rgba(79,52,128,1);color:#f2ceb5;}
+.popup li{font-size:13px;color:#dfceff;font-weight:300;}
+.popup li em{color:#b197e1;font-weight:300;}
+/* 오늘의 핫딜 이용가이드 팝업 */
+[data-popup-type="deal-guide"] {width:782px;height:297px;}
+[data-popup-type="deal-guide"] .popup-inner {margin:48px 0;padding:0;background:url('../images/layer_deal_bg.png') no-repeat center 0; text-align:center;}
+[data-popup-type="deal-guide"] .popup-inner ul{margin-top:120px;}
+[data-popup-type="deal-guide"] .popup-inner ul li{padding:2px 0;}
+
+/* 나만의 상점 이용가이드 팝업 */
+[data-popup-type="myshop-guide"] {width:702px;height:708px;}
+[data-popup-type="myshop-guide"] .popup-inner {margin:48px 0;padding:0;background:url('../images/layer_myshop_bg.png') no-repeat center 0; text-align:center;}
+[data-popup-type="myshop-guide"] .popup-inner ul{margin-top:120px;}
+[data-popup-type="myshop-guide"] .popup-inner ul li{padding:2px 0;}
+[data-popup-type="myshop-guide"] .popup-inner table{width:340px;margin:95px auto 0;border:1px solid #5a3f8b;}
+[data-popup-type="myshop-guide"] .popup-inner table th{width:70px;border:1px solid #5a3f8b;background-color:#281747;color:#fff;font-weight:300;}
+[data-popup-type="myshop-guide"] .popup-inner table td{padding:4px 0;border:1px solid #5a3f8b;color:#e6d9ff;font-weight:300;}
+
+/* 등장 아이템 안내 팝업 */
+[data-scrollbar="scrollbar"]::-webkit-scrollbar-thumb {border-radius:4px;background-color:#6541a6;}
+[data-scrollbar="scrollbar"]::-webkit-scrollbar-track {border-radius:4px;background-color:#231440;}
+[data-scrollbar="scrollbar"]::-webkit-scrollbar {width:8px;background-color:transparent;}
+[data-popup-type="appearance-item"] {width:772px;height:708px;}
+[data-popup-type="appearance-item"] .popup-inner {margin:48px 0;padding:0;background:url('../images/layer_item_bg.png') no-repeat center 0; text-align:center;}
+[data-popup-type="appearance-item"] .scroll-area{width:680px;height:527px;margin:70px auto 0;overflow-x:hidden;overflow-y:auto;}
+[data-popup-type="appearance-item"] .popup-inner ul li{padding:2px 0;}
+[data-popup-type="appearance-item"] .popup-inner table{width:622px;margin:15px auto 0;border:1px solid #5a3f8b;}
+[data-popup-type="appearance-item"] .popup-inner table th{padding:5px 0;border:1px solid #5a3f8b;background-color:#281747;color:#fff;font-weight:300;}
+[data-popup-type="appearance-item"] .popup-inner table td{padding:5px 0;border:1px solid #5a3f8b;color:#e6d9ff;font-weight:300;}
+
+/* 엽전 뭉치 교환 상점 이용가이드 팝업 */
+[data-popup-type="exchange-guide"] {width:782px;height:340px;}
+[data-popup-type="exchange-guide"] .popup-inner {margin:48px 0;padding:0;background:url('../images/layer_exchange_bg.png') no-repeat center 0; text-align:center;}
+[data-popup-type="exchange-guide"] .popup-inner ul{margin-top:120px;}
+[data-popup-type="exchange-guide"] .popup-inner ul li{padding:2px 0;}

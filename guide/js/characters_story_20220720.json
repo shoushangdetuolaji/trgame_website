@@ -1,0 +1,156 @@
+[
+	{},
+	{
+		"name": "아티팩터 엘림스 스마일",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/tit_character.png",
+		"desc": "감정의 제도에서 온 아티팩터. <br>늘 스마일 가면을 쓰고 다니며, 아티팩트를 자유자재로 다룰 수 있다.",
+		"profile":  {
+			"나이": "30대 초반",
+			"키": "193cm",
+			"몸무게": "75kg",
+			"MBTI / 혈액형": "ENTP / AB형",
+			"직업": "아티팩터",
+			"전용 능력치": "유저 레벨 X 보너스 EXP +2% <br>유저 레벨 X 보너스 TR +3% <br>착지대시 성공 시 지속시간 증가 +0.5"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/img_character.png",
+		"chart": {
+			"최고속도": "3",
+			"힘": "5",
+			"컨트롤": "2",
+			"가속도": "5"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "FehjxkRBRUA",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/thumb_01.jpg",
+				"popupName": "캐릭터 프롤로그"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "m7EZZyjkTyk",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/thumb_02.jpg",
+				"popupName": "전용 모션 영상"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "4xb0nrP46bY",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/thumb_03.jpg",
+				"popupName": "개발자 인터뷰"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/illust_04.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/thumb_04.jpg",
+				"popupName": "공식 일러스트"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/eilmssmile/tit_character_popup.png",
+		"popupMotion" : [
+			1.3, 1.6, 2, 3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "치유의 천사 카인",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/tit_character.png",
+		"desc": "보우의 요청으로 엔젤시티에서 견습 사제로 온 천사. <br>모두에게 친절하고 무엇이든 열심히 하지만, 실수가 많은 성격이다.",
+		"profile":  {
+			"나이": "?",
+			"키": "163cm",
+			"몸무게": "50kg",
+			"MBTI / 혈액형": "INFJ / B형",
+			"직업": "사제",
+			"전용 능력치": "유저 레벨 X 보너스 EXP +3% <br>유저 레벨 X 보너스 TR +2% <br>착지대시 성공 판정시간 증가"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/img_character.png",
+		"chart": {
+			"최고속도": "5",
+			"힘": "3",
+			"컨트롤": "5",
+			"가속도": "2"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "FehjxkRBRUA",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/thumb_01.jpg",
+				"popupName": "캐릭터 프롤로그"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "m7EZZyjkTyk",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/thumb_02.jpg",
+				"popupName": "전용 모션 영상"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/illust_03.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/thumb_03.jpg",
+				"popupName": "공식 일러스트 - 1"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/illust_04.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/thumb_04.jpg",
+				"popupName": "공식 일러스트 - 2"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/cain/tit_character_popup.png",
+		"popupMotion" : [
+			1.1, 1.7, 1.9, 3, 1.6, 1.5, 2, 2
+		]
+	},
+	{
+		"name": "가면 영매사 로로아",
+		"nameImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/tit_character.png",
+		"desc": "동화나라 변방에서 살고 있던 작은 요정. <br>요정의 능력으로 영혼을 빼앗아 가면으로 만들 수 있다. <br>고양이 슈슈와 함께 영혼 가면을 수집하는 모험 중이다.",
+		"profile":  {
+			"나이": "?",
+			"키": "132cm",
+			"몸무게": "30kg",
+			"MBTI / 혈액형": "ENFP / AB형",
+			"직업": "영매사",
+			"전용 능력치": "최대 대시 게이지 증가 +3%"
+		},
+		"chartImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/img_chart.png",
+		"characterImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/img_character.png",
+		"chart": {
+			"최고속도": "4",
+			"힘": "5",
+			"컨트롤": "2",
+			"가속도": "4"
+		},
+		"multimedia": [
+			{
+				"popupType": "youtube",
+				"popupValue": "Jl1fzgbJFS0",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/thumb_01.jpg",
+				"popupName": "영매사 로로아"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "JwhreTYEddY",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/thumb_02.jpg",
+				"popupName": "로로아 모션 영상"
+			},
+			{
+				"popupType": "youtube",
+				"popupValue": "8IwsyHJBhD0",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/thumb_03.jpg",
+				"popupName": "로로아 외전"
+			},
+			{
+				"popupType": "illust",
+				"popupValue": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/illust_04.jpg",
+				"thumbImg": "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/thumb_04.jpg",
+				"popupName": "공식 일러스트"
+			}
+		],
+		"popupTitImg" : "https://tr-image.game.onstove.com/webapp/pc/character/assets/images/character/rolloa/tit_character_popup.png",
+		"popupMotion" : [
+			1, 1.6, 2, 3, 1.6, 1.5, 2, 2
+		]
+	}
+]
