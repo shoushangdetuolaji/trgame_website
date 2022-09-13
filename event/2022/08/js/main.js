@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 var rewardItemList = [
 	{
 		name: '봉인해제 두루마리 1개',
@@ -10,8 +9,6 @@ var rewardItemList = [
 		imgSrc: './images/items/item01'
 	}
 ]
-
->>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 $(function() {
   // 05_hangawe 中秋活动
   startMotion($('.motion'));
@@ -34,12 +31,6 @@ $(function() {
 			// TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
     })
   })
-<<<<<<< HEAD
-})
-
-
-=======
-
 	$('button[data-href]').click(function(e){
 		var href = $(this).data("href"),
 			offsetTop = href === "#" ? 0 : $(href).offset().top + 1;
@@ -63,7 +54,6 @@ $(window).scroll(function(){
 });
 
 
->>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 // api request
 function loadAjax(url) {
   $.ajax({
@@ -109,9 +99,6 @@ $(document).on('click', '.lnb-wrap li:not(.comingsoon)', function() {
   var index = $(this).index();
   $('body').attr('data-tabNum', index);
 })
-
-<<<<<<< HEAD
-=======
 // 05_hangawe tab3 click cause to motion
 function fnGame(itemName, imgName) {
 	$('.visual-motion').addClass('on');
@@ -137,7 +124,6 @@ function fnValidate(num) {
 	}
 
 }
->>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 
 // popup
 //Popup
@@ -163,16 +149,12 @@ function popupItem(itemName, imgName, isOpend) {
 
 	$popup.addClass("show").css({top:targetY,opacity:1});
 	$("body").addClass("dimmed");
-
-<<<<<<< HEAD
 	imgSrc = imgSrc ? imgSrc : "./assets/images/items/";
 	$popup.find('.item-name').html(itemName);
 	$popup.find('.item-img').html('<img src="' + imgSrc + imgName + '.png" alt="item image">');
-=======
 	// imgSrc = imgSrc ? imgSrc : "./assets/images/items/";
 	$popup.find('.item-name').html(itemName);
 	$popup.find('.item-img').html('<img src="'+ imgName + '.png" alt="item image">');
->>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 	$popup.attr('data-popup-re','').attr('data-popup-re',isOpend);
 
 }
@@ -191,8 +173,6 @@ function popupClose(that) {
 	} else {
 		$(that).parents('.popup').removeAttr("style").removeClass("show");
 	}
-<<<<<<< HEAD
-=======
 }
 
 function popupClose_item(that) {
@@ -210,5 +190,4 @@ function popupClose_item(that) {
 	} else {
 			$(that).parents('.popup').removeAttr("style").removeClass("show");
 	}
->>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 }
