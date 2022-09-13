@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+var rewardItemList = [
+	{
+		name: '봉인해제 두루마리 1개',
+		imgSrc: './images/items/item19'
+	},
+	{
+		name: '봉인해제 두루마리 2개',
+		imgSrc: './images/items/item01'
+	}
+]
+
+>>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 $(function() {
   // 05_hangawe 中秋活动
   startMotion($('.motion'));
@@ -20,9 +34,36 @@ $(function() {
 			// TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
     })
   })
+<<<<<<< HEAD
 })
 
 
+=======
+
+	$('button[data-href]').click(function(e){
+		var href = $(this).data("href"),
+			offsetTop = href === "#" ? 0 : $(href).offset().top + 1;
+
+		$('html, body').stop().animate({
+			scrollTop: offsetTop
+		}, 400, "easeInOutExpo");
+
+		return false;
+		e.preventDefault();
+	});
+})
+
+
+$(window).scroll(function(){
+	if ( $(window).scrollTop() > 100 ){
+			$(".btn-top").addClass("show")
+	} else {
+			$(".btn-top").removeClass("show")
+	}
+});
+
+
+>>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 // api request
 function loadAjax(url) {
   $.ajax({
@@ -69,6 +110,34 @@ $(document).on('click', '.lnb-wrap li:not(.comingsoon)', function() {
   $('body').attr('data-tabNum', index);
 })
 
+<<<<<<< HEAD
+=======
+// 05_hangawe tab3 click cause to motion
+function fnGame(itemName, imgName) {
+	$('.visual-motion').addClass('on');
+	$('.btn-start').attr('disabled', true);
+	setTimeout(function() {
+		$('.visual-motion').removeClass('on');
+		popupItem(itemName, imgName);
+	}, 3000);
+}
+
+function fnValidate(num) {
+	// var strParams = {Type: num, Acc: Acc};
+	// 模拟请求 J_Send_Item.asp， strParams, 然后获取
+	// var strRetUseMsg = jResult.UseMsg;
+	// var strRetUseMsg2 = jResult.UseMsg2;
+	// 触发页面动画效果
+	if (num === 1) {
+		const {name, imgSrc} = rewardItemList[0];
+		fnGame(name, imgSrc);
+	} else {
+		alert('获取奖品成功');
+		// 然后修改buttn的状态
+	}
+
+}
+>>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 
 // popup
 //Popup
@@ -95,9 +164,15 @@ function popupItem(itemName, imgName, isOpend) {
 	$popup.addClass("show").css({top:targetY,opacity:1});
 	$("body").addClass("dimmed");
 
+<<<<<<< HEAD
 	imgSrc = imgSrc ? imgSrc : "./assets/images/items/";
 	$popup.find('.item-name').html(itemName);
 	$popup.find('.item-img').html('<img src="' + imgSrc + imgName + '.png" alt="item image">');
+=======
+	// imgSrc = imgSrc ? imgSrc : "./assets/images/items/";
+	$popup.find('.item-name').html(itemName);
+	$popup.find('.item-img').html('<img src="'+ imgName + '.png" alt="item image">');
+>>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 	$popup.attr('data-popup-re','').attr('data-popup-re',isOpend);
 
 }
@@ -116,4 +191,24 @@ function popupClose(that) {
 	} else {
 		$(that).parents('.popup').removeAttr("style").removeClass("show");
 	}
+<<<<<<< HEAD
+=======
+}
+
+function popupClose_item(that) {
+	$("body").removeClass("dimmed").unbind('touchmove');
+	var type = typeof (that); //this == "object"
+	if (type == "object") {
+			$(that).parents('.popup').removeAttr("style").removeClass("show");
+			$(that).parents('.popup').find(".iframe iframe").remove();
+
+			if ($(that).parents('.popup').attr('data-popup-id') == 'item') {
+					if ($(that).parents('.popup').attr('data-popup-re') != 're') {
+							loadAjax(refreshUrl);
+					}
+			}
+	} else {
+			$(that).parents('.popup').removeAttr("style").removeClass("show");
+	}
+>>>>>>> 66f9a473ed93c6a4d0e059fc922ae8ce9985dc9d
 }
