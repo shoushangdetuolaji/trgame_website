@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search public nicknames</title>
+  <script src="../../../../assets/common/js/jquery-1.7.2.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="popup-nickname">
+    <div class="popup-header hide">
+      <div class="logo">
+        <a href="#" title="테일즈런너 홈으로">테일즈런너</a>
+      </div>
+      <div class="logo">
+        <h2>Search public nicknames</h2>
+        <p>The searched nickname will be available in the game from 20:00 on September 7.</p>
+      </div>
+    </div>
+    <div class="popup-content">
+      <div class="input-area">
+        <div class="box-input">
+          <input type="text" placeholder="Enter a search term!" title="검색어" class="input-search" id="text" onkeypress="if (event.keyCode == 13) fnSearch();" maxlength="12">
+          <span role="button" class="btn-delete" onclick="inputReset()"><span class="hide">삭제</span></span>
+        </div>
+        <button class="btn-search" onclick="fnSearch()"><span class="hide">시어</span></button>
+      </div>
+      <div class="info-area">
+        <h3 class="title-info">Points to note</h3>
+        <ul class="list-info">
+          <li>- <em class="color">입력한 단어가 모두 일치하는 닉네임만 노출</em>됩니다.</li>
+          <li>- 공개된 닉네임은 <em class="line">9월 7일 20시부터 게임 내에서 사용</em>하실 수 있습니다.</li> <!-- 20220825 수정 -->
+          <li>- 공개된 닉네임으로 검색 되더라도 9월 7일 20시 이후 이미 선점된 닉네임은 사용이 불가능합니다.</li>
+          <li>- 게임 내 동일한 닉네임을 반복해서 입력할 경우 <em class="line">닉네임 매크로 방지 시스템</em>이 활성화됩니다.</li>
+          <li>- 공개된 닉네임은 2018년 1월 1일 이후 미 접속하여 초기화된 닉네임 320만 개를 대상으로 합니다.</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {	
+      $('.input-search').on('input', function () {
+        if (!!$('.input-search').val()) {
+          $('.btn-delete').addClass('on')
+        } else {
+          $('.btn-delete').removeClass('on')
+        }
+      })
+    });
+
+    function inputReset() {
+      $('.input-search').val('').focus();
+      if($('.btn-delete').hasClass('on')) {
+        $('.btn-delete').removeClass('on');
+      }
+    }
+  </script>
+  <!-- // 核心查询代码 但是目前文件没有代理配置 -->
+  <script src="./js/utils.js"></script>
+</body>
+</html>

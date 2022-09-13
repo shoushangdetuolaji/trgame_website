@@ -1,0 +1,53 @@
+@charset "euc-kr";
+@import url('https://tr-image.game.onstove.com/event/fonts/NotoSansKR/NotoSansKR.css');
+@import url('https://tr-image.game.onstove.com/event/fonts/NanumSquare/NanumSquare.css');
+
+/* reset */
+*, *:before, *:after {margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;word-break:break-word;outline:0;}
+html, body {width:100%;height:100%;font-size:12px;letter-spacing:-0.05em;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button {margin:0;padding:0;}
+body, h1, h2, h3, h4, input, button {font-family:'malgun gothic','dotum',sans-serif;}
+body {background-color:#fff;word-break:break-all;-ms-word-break:break-all;}
+img, fieldset, iframe {border:0 none;}
+li {list-style:none;}
+input, select, button {vertical-align:middle;}
+img {vertical-align:top;}
+i, em, address {font-style:normal;}
+label, button {cursor:pointer;}
+button {margin:0;padding:0;border:0;outline:none;}
+a {color:#333;text-decoration:none;}
+a:hover {color:#333;text-decoration:none;}
+button * {position:relative;}
+hr {display:none;}
+table {width:100%;border-collapse:collapse;border-spacing:0;}
+input::-ms-clear {display:none;}
+legend, caption {overflow:hidden;height:0;text-indent:-9999em;font-size:0;line-height:0;}
+.hide {height:0;text-indent:-9999em;font-size:0;line-height:0;}
+
+/* event_nav.css style 강제 초기화 */
+body {min-height:auto !important;}
+#sideEvtNav *, #sideEvtNav *:before, #sideEvtNav *:after {box-sizing:content-box;}
+
+/* popup */
+.popup-nickname {overflow:hidden;position:relative;width:700px;background-color:#dbefff;font-size:15px;}
+.popup-nickname .popup-header {height:142px;background:url('../images/bg_header.png') no-repeat 0 0;}
+.popup-nickname .popup-header .logo {position:absolute;top:14px;left:15px;z-index:100;}
+.popup-nickname .popup-header .logo a {display:block;width:60px;height:40px;background:url('../images/logo.png') no-repeat;text-indent:-9999em;}
+
+.popup-nickname .popup-content {padding:56px 45px 34px;background:url('../images/bg_content.jpg') no-repeat 0 0;}
+.popup-nickname .input-area {position:relative;padding-right:58px;border:2px solid #4e7af6;border-radius:3px;background-color:#fff;box-shadow:0 5px 20px 0 rgba(0, 0, 0, 0.1);}
+.popup-nickname .input-area .box-input {display:flex;align-items:center;overflow:hidden;padding-right:12px;border-radius:1px;}
+.popup-nickname .input-area .input-search {font-family:'Noto Sans KR', 'Malgun Gothic', 'dotum', sans-serif;height:56px;padding:0 11px 0 18px;border:none;font-size:20px;font-weight:500;color:#333;letter-spacing:-0.2px;flex:1;}
+.popup-nickname .input-area .input-search::placeholder {color:#999;}
+.popup-nickname .input-area .btn-delete {display:none;width:32px;height:32px;background:url('../images/btn_delete.png') no-repeat center;cursor:pointer;}
+.popup-nickname .input-area .btn-delete.on {display:block;}
+.popup-nickname .input-area .btn-search {position:absolute;top:-2px;right:-2px;width:60px;height:60px;background:url('../images/btn_search.png') no-repeat;}
+
+.popup-nickname .info-area {margin-top:59px;padding:0 4px;}
+.popup-nickname .info-area .title-info {display:inline-block;padding:0 12px;border-radius:11.5px;background-color:#4e7af6;font-family:'Noto Sans KR', 'Malgun Gothic', 'dotum', sans-serif;font-size:15px;font-weight:bold;color:#fff;line-height:25px;}
+.popup-nickname .list-info {margin-top:7px;padding:0 4px;}
+.popup-nickname .list-info li {margin-top:4px;font-family:'Noto Sans KR', 'Malgun Gothic', 'dotum', sans-serif;font-size:15px;line-height:20px;color:#555966;}
+.popup-nickname .list-info em {display:inline-block;font-weight:500;}
+.popup-nickname .list-info .color {color:#2a5ae0;}
+.popup-nickname .list-info .line {position:relative;color:#2a2c33;}
+.popup-nickname .list-info .line::after {content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background-color:#2a2c33;}
