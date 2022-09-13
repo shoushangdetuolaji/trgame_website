@@ -1,8 +1,35 @@
 $(function() {
   oddFixed();
-  loadAjax('./api/event_1.html');
+  let api = matchHrefId();
+  loadAjax(api);
   tabMenu(0);
 })
+
+function matchHrefId() {
+  let id = window.location.href.split('=')[1];
+  let api;
+  switch (id) {
+    case '1':
+      api ='./api/event_1.html';
+      break;
+    case '2':
+      api ='./api/event_2.html';
+      break;
+    case '3':
+      api ='./api/event_3.html';
+      break;
+    case '4':
+      api ='./api/event_4.html';
+      break;
+    case '5':
+      api ='./api/event_5.html';
+      break;
+    case '6':
+      api ='./api/event_6.html';
+      break;
+  }
+  return api;
+}
 
 var lnbTop;
 var fromTop;
