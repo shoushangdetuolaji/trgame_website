@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>information_job_evaluation</title>
+  <script src="../../../assets/common/js/jquery-1.7.2.js"></script>
+  <script src="../../../assets/common/js/jquery.slides.min.js"></script>
+  <script src="../../../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../../../assets/common/css/swiper.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/gnbWrapDiv.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/popup.css">
+  <link rel="stylesheet" href="../css/infor.css">
+  <link rel="stylesheet" href="../css/information.css">
+</head>
+<body>
+  <div class="gnbWrapDiv">
+    <div id="hangame_gnb_basic"></div>
+  </div>
+  <div id="evt_wrap" class="sub information">
+    <div class="gnb-wrap">
+      <div class="gnb-area flex">
+        <span class="bi"><a href="/index.asp" onclick="gtag('event', 'GNB_bi_공홈', { 'event_category': '저컴_로비', 'event_label': '' });">저승컴퍼니</a></span>
+  
+        <!-- [D] 현재 메뉴 li에 'current' 클래스 추가 / 새로운 컨텐츠 li에 'new' 클래스 추가-->
+        <ul class="gnb flex">
+          <li class="m1 "><a href="/event/JSCompany/Lobby0906.asp" onclick="gtag('event', 'GNB_로비', { 'event_category': '저컴_로비', 'event_label': '' });"><span>로비</span></a>
+            <div class="lnb-area" style="display: none;">
+              <ul class="flex">
+                              <li class=""><a href="/event/JSCompany/Lobby0906.asp" onclick="gtag('event', 'GNB_0906', { 'event_category': '저컴_로비', 'event_label': '' });"><span>09.06</span></a></li>
+                              <li class=""><a href="/event/JSCompany/Lobby0817.asp" onclick="gtag('event', 'GNB_0817', { 'event_category': '저컴_로비', 'event_label': '' });"><span>08.17</span></a></li>
+                              <li class=""><a href="/event/JSCompany/Lobby0803.asp" onclick="gtag('event', 'GNB_0803', { 'event_category': '저컴_로비', 'event_label': '' });"><span>08.03</span></a></li>
+                              <li class=""><a href="/event/JSCompany/Lobby0720.asp" onclick="gtag('event', 'GNB_0720', { 'event_category': '저컴_로비', 'event_label': '' });"><span>07.20</span></a></li>
+                <li class=""><a href="/event/JSCompany/Lobby0706.asp" onclick="gtag('event', 'GNB_0706', { 'event_category': '저컴_로비', 'event_label': '' });"><span>07.06</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="m2 current"><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_내정보실', { 'event_category': '저컴_로비', 'event_label': '' });"><span>내 정보실</span></a>
+            <div class="lnb-area flex" style="display: block;">
+              <ul class="flex">
+                <li class=""><a href="/event/JSCompany/Information/information_main.asp" onclick="gtag('event', 'GNB_사원정보', { 'event_category': '저컴_로비', 'event_label': '' });"><span>사원 정보</span></a></li>
+                <li class=""><a href="/event/JSCompany/Information/information_organization.asp" onclick="gtag('event', 'GNB_조직도', { 'event_category': '저컴_로비', 'event_label': '' });"><span>조직도</span></a></li>
+                <li class="current"><a href="/event/JSCompany/Information/information_job_evaluation.asp" onclick="gtag('event', 'GNB_업무평가', { 'event_category': '저컴_로비', 'event_label': '' });"><span>업무 평가</span></a></li>
+              </ul>
+            </div>
+                  </li>
+          <li class="m3  "><a href="/event/JSCompany/Office/office_closed.asp" onclick="gtag('event', 'GNB_집중업무실', { 'event_category': '저컴_로비', 'event_label': '' });"><span>집중 업무실</span></a>
+          </li>
+          <li class="m4 "><a href="/event/JSCompany/Shop/" onclick="gtag('event', 'GNB_차사복지샵', { 'event_category': '저컴_로비', 'event_label': '' });"><span>차사 복지샵</span></a></li>
+          <li class="m5 "><a href="/event/JSCompany/Promotion/" onclick="gtag('event', 'GNB_회사홍보관', { 'event_category': '저컴_로비', 'event_label': '' });"><span>회사 홍보관</span></a></li>
+          <li class="m6 "><a href="/event/JSCompany/Director/" onclick="gtag('event', 'GNB_담연부장실', { 'event_category': '저컴_로비', 'event_label': '' });"><span>담연 부장실</span></a></li>
+        </ul>
+  
+        <div class="util-area">
+                  <a href="/index.asp" class="btn btn-home" onclick="gtag('event', 'GNB_icon_공홈', { 'event_category': '저컴_로비', 'event_label': '' });">테일즈런너</a>
+  
+                  
+                  <button type="button" onclick="goLogout();gtag('event', 'GNB_퇴근하기', { 'event_category': '저컴_로비', 'event_label': '' });" class="btn btn-login logout"><span>퇴근하기 LOGOUT</span></button>
+                  
+  
+          <button type="button" class="btn btn-gamestart" onclick="fnmainGameStart(); fnStoveLogClick('SUB', 'JSCOMPANY_GAMESTART_BTN', 'http://' + location.host + '/global/common/lib/game_cab_execute.asp', window.event); gtag('event', '게임시작버튼', { 'event_category': '저컴_로비'});"><span>게임 시작</span></button> 
+                  
+                  
+          <div class="arrow_box" id="gameStartLayer" style="display: none;">
+            <p>게임을 시작하기 위해선<br>먼저 테일즈런너 클라이언트 설치가<br>되어 있어야 합니다.</p>
+            <a href="#" onclick="fnGameDown()" class="btn btn-Install"><span>STOVE 클라이언트 설치</span></a>
+            <button type="button" class="btnX" onclick="$('#gameStartLayer').hide()"><span>닫기</span></button>
+          </div>      
+                  
+        </div>
+      </div>
+    </div>
+    <div class="evt-content">
+      <div class="content-body inner">
+              
+  
+              <!-- title -->
+        <div class="title-area">
+          <h2 class="tit tit-job-evaluation">업무 평가</h2>
+  
+          <div class="selectbox" data-select-id="evaluation">
+            <button type="button" class="selectbox-header">4차 업무 평가(09/06)</button>
+            <div class="selectbox-body" style="display: none;">
+              <ul>
+                <li><button type="button" onclick="selStepNo('1')">1차 업무 평가(07/20)</button></li>
+                  <li><button type="button" onclick="selStepNo('2')">2차 업무 평가(08/03)</button></li>
+                              <li><button type="button" onclick="selStepNo('3')">3차 업무 평가(08/17)</button></li>
+                              <li><button type="button" onclick="selStepNo('4')">4차 업무 평가(09/06)</button></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="util-content flex">
+              
+                  <p class="txt-date">평가 기간 : 2022/08/17 점검 후 ~ 09/05 까지</p>
+          <p class="txt-date">평가 보상 확인 기간 : 2022/09/06 점검 후 ~ 종료 시까지</p>
+              
+        </div>
+  
+        <!-- 업무 평가 -->
+        <div class="evaluation-wrap">
+  
+          <div class="evaluation-personal">
+            <!-- 20220831 수정 -->
+            <!-- 1,2,3차 개인평가 -->
+            <!-- <div class="personal">
+              <h3 class="hide">개인 평가</h3>
+              <div class="tooltip-area" data-tooltip-id="personal">
+                <i class="ico ico-q"></i>
+                <span class="tooltip"></span>
+              </div>
+              <table class="hide">
+                <thead>
+                  <tr><th>평가 점수</th><th>평가 등급</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1300 ~ 1400</td><td>S</td></tr>
+                  <tr><td>1000 ~ 1299</td><td>A</td></tr>
+                  <tr><td>500 ~ 999</td><td>B</td></tr>
+                  <tr><td>100 ~ 499</td><td>C</td></tr>
+                  <tr><td>0 ~ 99</td><td>F</td></tr>
+                </tbody>
+              </table>
+            </div> -->
+  
+                      
+            <!-- 4차 개인평가 -->
+                      
+            <div class="personal version05">
+                      
+              <h3 class="hide">개인 평가</h3>
+              <div class="tooltip-area" data-tooltip-id="personal">
+                <i class="ico ico-q"></i>
+                <span class="tooltip"></span>
+              </div>
+              <table class="hide">
+                <thead>
+                  <tr><th>평가 점수</th><th>평가 등급</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1800 ~ 2000</td><td>S</td></tr>
+                  <tr><td>1400 ~ 1799</td><td>A</td></tr>
+                  <tr><td>900 ~ 1399</td><td>B</td></tr><!-- 20220902 수정 -->
+                  <tr><td>300 ~ 899</td><td>C</td></tr>
+                  <tr><td>0 ~ 299</td><td>F</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="score">
+              <h3 class="hide">평가 점수</h3>
+              <ul>
+                <li><span>평가 기간 중 나의 획득 포인트</span><strong>2000</strong></li>
+                
+                              <li><span>최대 획득 가능한 포인트</span><strong>2000</strong></li>
+                              
+                <li><span>나의 최종 평가 점수</span><strong>2000</strong></li>
+              </ul>
+            </div>
+            <div class="personal-total flex">
+                          
+              <p><span>21pilots</span>님의 최종 종합 평가 : <strong>S<small>(우수사원)</small></strong></p>
+                          
+              
+              <button type="button" id="btnGetItemPerson" class="ico btn-reward-confirm" onclick="return getItem('PERSON_ITEM', 4)"><span>평가 보상 확인하기</span></button>
+            </div>
+          </div>
+  
+          <div class="evaluation-team">
+            <h3 class="hide">팀 평가</h3>
+            <div class="tooltip-area" data-tooltip-id="team">
+              <i class="ico ico-q"></i>
+              <span class="tooltip"></span>
+            </div>
+            <div class="fixed-table-container">
+              <div class="table-wrapper" data-scrollbar="scrollbar">
+                <table>
+                  <colgroup><col width="58px"><col width="150px"><col width="66px"><col width="96px"></colgroup>
+                  <thead>
+                    <tr>
+                      <th width="58px"><div class="th-text">순위</div></th>
+                      <th width="150px"><div class="th-text">팀 이름</div></th>
+                      <th width="66px"><div class="th-text">팀 점수</div></th>
+                      <th width="96px"><div class="th-text">평가 보상</div></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                                      
+                    <tr>
+                                          
+                                          <td>1</td>
+                                          
+                      <td>사업팀</td>
+                      <td>358.0</td>
+                      <td>엽전 뭉치 6개</td>
+                    </tr>
+                                      
+                    <tr>
+                                          
+                                          <td>2</td>
+                                          
+                      <td>이승관리팀</td>
+                      <td>282.0</td>
+                      <td>엽전 뭉치 4개</td>
+                    </tr>
+                                      
+                    <tr>
+                                          
+                                          <td>3</td>
+                                          
+                      <td>차사팀</td>
+                      <td>183.0</td>
+                      <td>엽전 뭉치 4개</td>
+                    </tr>
+                                      
+                    <tr>
+                                          
+                                          <td>4</td>
+                                          
+                      <td>경영지원팀</td>
+                      <td>143.0</td>
+                      <td>엽전 뭉치 3개</td>
+                    </tr>
+                                      
+                    <tr>
+                                          
+                                          <td>5</td>
+                                          
+                      <td>저승관리팀</td>
+                      <td>128.0</td>
+                      <td>엽전 뭉치 3개</td>
+                    </tr>
+                                      
+                    <tr>
+                                          
+                                          <td>6</td>
+                                          
+                      <td>마케팅팀</td>
+                      <td>116.0</td>
+                      <td>엽전 뭉치 3개</td>
+                    </tr>
+                                                     
+                  </tbody>
+                </table>
+              </div>
+            </div>
+  
+            <div class="team-total flex">
+              
+              <p><strong>5위</strong><span>저승관리팀</span></p>
+              <button type="button" id="btnGetItemTeam" class="ico btn-reward-confirm" onclick="return getItem('TEAM_ITEM', 4)"><span>평가 보상 확인하기</span></button>
+                                      
+            </div>
+          </div>
+                  
+        </div>
+              
+              <!-- 최종평가 안내 --><!-- 20220913 수정 -->
+        <div class="evt-final-info">
+          <p class="hide">최종 평가 페이지가 오픈되었습니다. 모든 직원 여러분께서는 최종 평가 페이지로 접속하시어, 결과 확인과 보상을 수령하시길 바랍니다.</p>
+          <a href="/event/2022/09/02_Jscompany_final/event.html" target="_blank"><span class="hide">바로 가기</span></a>
+        </div>
+        <!-- // 20220913 수정 -->
+              
+      </div>
+    </div>
+    <div class="footer flex">
+      <p class="copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    </div>
+  </div>
+  <div class="popup" data-popup-id="personal" data-popup-type="item">
+    <button type="button" class="btn btn-close" onclick="layerJobEvaluationPersonClose(this)"><span>X</span></button>
+    <div class="popup-inner">
+      <p class="hide">개인 평가 결과 및 보상 안내</p>
+      <div class="grade-txt">
+        <p>나의 개인 평가 등급 : <strong><!-- 등급 삽입 영역 --></strong></p>
+      </div>
+      <div class="grade-msg"><i></i><i></i></div>
+      <div class="itembox">
+        <div class="item-img"><!-- 아이템 이미지 삽입 영역 --></div>
+        <p class="item-name"><!-- 아이템명 삽입 영역 --></p>
+      </div>
+      <ul class="popup-caution">
+        <li>· 평가 보상은 확인 시점에 1회만 지급됩니다.</li>
+      </ul>
+      <button type="button" class="ico btn-confirm" onclick="layerJobEvaluationPersonClose(this)"><span>확인</span></button>
+    </div>
+  </div>
+  <div class="popup" data-popup-id="team" data-popup-type="item" data-week="4">
+    <button type="button" class="btn btn-close" onclick="layerJobEvaluationTeamClose(this)"><span>X</span></button>
+    <div class="popup-inner">
+      <p class="hide">팀 평가 결과 및 보상 안내</p>
+      <div class="grade-txt">
+        <p>나의 팀 평가 등급 : <strong>저승관리팀 / 5위</strong></p>
+      </div>
+      <div class="grade-msg" data-grade="0">
+        <span data-grade="1"><!-- 1위팀 코멘트 --></span>
+        <span data-grade="3"><!-- 6위팀 코멘트 --></span>
+      </div>
+      <div class="itembox">
+        <div class="item-img">
+          <!-- <img src="//tr-image.game.onstove.com/event/202207/06_jscompany/pc/assets_0720/images/items/coin.jpg" alt="item image"> -->
+        </div>
+        <p class="item-name">엽전 뭉치 <em>3개</em></p>
+      </div>
+      <ul class="popup-caution">
+        <li>· 평가 보상은 확인 시점에 1회만 지급됩니다.</li>
+      </ul>
+      <button type="button" class="ico btn-confirm" onclick="layerJobEvaluationTeamClose(this)"><span>확인</span></button>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

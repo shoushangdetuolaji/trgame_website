@@ -1,0 +1,145 @@
+@charset "euc-kr";
+
+/* 업무 평가 */
+.util-content {z-index:1;position:absolute;right:0;top:0;}
+.util-content > * ~ * {margin-left:6px;}
+.util-content .txt-date {display:inline-flex;align-items:center;height:30px;padding:0 17px;background-color:rgba(0,0,0,.5);border-radius:15px;font-size:13px;color:#fcdfcc;}
+
+[data-select-id="evaluation"] {position:absolute;left:200px;top:-4px;width:184px;}
+[data-select-id="evaluation"] .selectbox-header {height:40px;background-color:rgba(31,12,0,.95);border:1px solid #5f4f46;border-radius:20px;font-weight:normal;font-size:14px;color:#feeadb;}
+[data-select-id="evaluation"] .selectbox-header::after {width:50px;color:#feeadb;}
+[data-select-id="evaluation"] .selectbox-body {top:0;padding:4px 20px;background-color:rgba(31,12,0,.95);border:1px solid #5f4f46;border-radius:20px;}
+[data-select-id="evaluation"] .selectbox-body button {font-weight:normal;font-size:14px;color:#d0aa90;}
+[data-select-id="evaluation"] .selectbox-body button:hover {color:#feeadb;}
+[data-select-id="evaluation"] .selectbox-body li + li {border-top:1px solid #38271b;}
+
+.evaluation-wrap {position:relative;width:100%;height:503px;background:url('../images/information/bg_job_evaluation_open.png') no-repeat;}
+.evaluation-wrap::after {content:'';display:block;clear:both;width:100%;}
+
+.evaluation-personal {float:left;position:relative;width:762px;height:100%;}
+.evaluation-personal .personal {float:left;width:431px;height:382px;background:url('../images/information/bg_personal.png') no-repeat;}
+.evaluation-personal .personal.version05 {background:url('../images/information/bg_personal_02.png') no-repeat;}
+.evaluation-personal .personal-total {justify-content:center;clear:both;width:100%;height:116px;}
+.evaluation-personal .personal-total p {margin-right:25px;font-size:20px;color:#fcdfcc;}
+.evaluation-personal .personal-total p span {color:var(--color-white);}
+.evaluation-personal .personal-total p strong {margin-left:6px;vertical-align:-2px;font-size:30px;color:var(--color-point);}
+.evaluation-personal .personal-total p strong small {margin-left:3px;vertical-align:2px;font-size:24px;}
+[data-tooltip-id="personal"] {position:absolute;left:251px;top:35px;}
+[data-tooltip-id="personal"] .tooltip {left:-211px;top:34px;width:545px;height:99px;background:url('../../assets_0720/images/tooltip_personal.png') no-repeat;}
+[data-tooltip-id="personal"] .ico-q {width:26px;height:28px;background:none;}
+.evaluation-personal .score {float:right;width:321px;height:382px;}
+.evaluation-personal .score ul {padding:76px 34px 0;}
+.evaluation-personal .score ul li {display:flex;justify-content:space-between;align-items:center;height:89px;font-size:15px;color:#fcdfcc;}
+.evaluation-personal .score ul li strong {font-weight:normal;font-size:24px;}
+.evaluation-personal .score ul li:last-child {color:var(--color-point);}
+.evaluation-personal .score ul li:last-child strong {font-weight:bold;}
+
+.evaluation-team {float:right;position:relative;width:448px;height:100%;padding:126px 0 0;}
+.evaluation-team .fixed-table-container {width:auto;height:220px;margin:0 38px 36px;padding:0;}
+.evaluation-team .fixed-table-container thead {position:absolute;left:0;top:-46px;width:100%;}
+.evaluation-team .fixed-table-container .th-text {position:relative;left:initial;width:auto;}
+.evaluation-team table th,
+.evaluation-team table td {font-weight:normal;font-size:15px;color:#fcdfcc;}
+.evaluation-team table td:last-child {font-weight:500;color:var(--color-point);}
+[data-tooltip-id="team"] {position:absolute;left:248px;top:35px;}
+[data-tooltip-id="team"] .tooltip {left:-348px;top:34px;width:545px;height:157px;background:url('../../assets_0720/images/tooltip_team.png') no-repeat;}
+[data-tooltip-id="team"] .ico-q {width:26px;height:28px;background:none;}
+.evaluation-team .team-total {justify-content:center;clear:both;width:100%;height:116px;text-align:center;}
+.evaluation-team .team-total p {margin-right:45px;}
+.evaluation-team .team-total p strong {display:block;font-size:30px;color:var(--color-point);}
+.evaluation-team .team-total p span {display:block;font-size:15px;color:var(--color-white);}
+.evaluation-team .team-total p.nodata {width:100%;height:100%;margin:0;background:url('../../assets_0720/images/txt_team_nodata.png') no-repeat 50% 50%;text-indent:-9999em;}
+
+.content-body .evt-end-info {width:100%;height:182px;margin-top:5px;background:url('../images/information/bg_evaluation_end.png') no-repeat 50% 50%;text-indent:-9999em;}
+
+.content-body .evt-final-info {position:relative;width:1241px;height:182px;margin-top:5px;background:url('../images/information/bg_evaluation_final.png') no-repeat 50% 50%;text-indent:-9999em;}
+.content-body .evt-final-info a {position:absolute;top:92px;left:532px;width:176px;height:50px;}
+
+/* 개인, 팀 평가 결과 및 보상 안내 팝업 */
+[data-popup-type="item"] {width:586px;height:612px;background-position:50% 48px;}
+[data-popup-type="item"] .popup-inner {padding:105px 53px 0;}
+[data-popup-type="item"] .grade-txt {height:76px;border:solid #4b3024;border-width:1px 0;text-align:center;}
+[data-popup-type="item"] .grade-txt p {font-size:20px;line-height:76px;color:#fcdfcc;}
+[data-popup-type="item"] .grade-txt p small {margin-left:-4px;vertical-align:2px;}
+[data-popup-type="item"] .grade-txt strong {margin-left:12px;vertical-align:-4px;font-size:30px;line-height:76px;color:var(--color-point);}
+[data-popup-type="item"] .grade-msg {position:relative;width:516px;height:167px;margin:21px -24px;background-color:#291309;border-radius:20px;text-align:center;}
+[data-popup-type="item"] .grade-msg[data-grade="5"]::after {content:'';position:absolute;left:0;top:100%;width:100%;height:240px;background:url('../images/information/popup_reward_msg02.png') no-repeat 50% 50%;}
+[data-popup-type="item"] .popup-caution {position:absolute;left:0;bottom:0;width:100%;height:108px;padding-top:33px;background:url('../images/information/popup_reward_msg.png') no-repeat 50% 0;text-align:center;}
+[data-popup-type="item"] .popup-caution li {font-size:14px;color:#ae8567;}
+[data-popup-type="item"] .btn-confirm {position:absolute;left:50%;top:calc(100% + 20px);width:142px;height:52px;margin-left:-71px;background-position:-210px -510px;}
+[data-popup-id="personal"] {background-image:url('../images/information/popup_reward_personal.png');}
+[data-popup-id="personal"] .grade-msg i:first-child {position:absolute;left:31px;top:107px;width:49px;height:47px;background:url('../images/information/stamp01.png') no-repeat;}
+[data-popup-id="personal"] .grade-msg i:last-child {position:absolute;left:415px;top:103px;width:91px;height:51px;background:url('../images/information/stamp02.png') no-repeat;}
+[data-popup-id="personal"].show .grade-msg i:first-child {opacity:0;animation:stamp1 0.4s ease-out forwards;animation-delay:0.4s;}
+[data-popup-id="personal"].show .grade-msg i:last-child {opacity:0;animation:stamp2 0.8s ease forwards;animation-delay:0.8s;}
+[data-popup-id="team"] {background-image:url('../images/information/popup_reward_team.png');}
+[data-popup-id="team"] .grade-msg {background-color:#381b0d;}
+[data-popup-id="team"] .grade-msg span {display:inline-block;width:251px;height:167px;background-color:#291309;border-radius:20px;}
+[data-popup-id="team"] .grade-msg span + span {margin-left:10px;}
+
+@keyframes stamp1 {
+	0% {opacity:0;transform:scale(1.4);}
+	100% {opacity:1;transform:scale(1);}
+}
+@keyframes stamp2 {
+	0% {opacity:1;width:0;height:51px;}
+	100% {opacity:1;width:91px;height:51px;}
+}
+
+.itembox {text-align:center;}
+.itembox .item-img {display:block;overflow:hidden;width:115px;height:63px;margin:0 auto;}
+.itembox .item-img img {width:100%;height:100%;}
+.itembox .item-name {margin:5px 0 0;text-align:center;font-weight:bold;font-size:20px;line-height:1.3;color:#fcdfcc;}
+.itembox .item-name em {color:var(--color-point);}
+
+/* 1차 평가 결과 텍스트 */
+[data-week="1"] .grade-msg[data-grade="1"] {background-image:url('../../assets_0720/images/txt_grade_personal01.png');}
+[data-week="1"] .grade-msg[data-grade="2"] {background-image:url('../../assets_0720/images/txt_grade_personal02.png');}
+[data-week="1"] .grade-msg[data-grade="3"] {background-image:url('../../assets_0720/images/txt_grade_personal03.png');}
+[data-week="1"] .grade-msg[data-grade="4"] {background-image:url('../../assets_0720/images/txt_grade_personal04.png');}
+[data-week="1"] .grade-msg[data-grade="5"] {background-image:url('../../assets_0720/images/txt_grade_personal05.png');}
+[data-popup-id="team"] .grade-msg span:first-child[data-grade="1"] {background-image:url('../../assets_0720/images/txt_grade_team_win_01.png');}
+[data-popup-id="team"] .grade-msg span:first-child[data-grade="2"] {background-image:url('../../assets_0720/images/txt_grade_team_win_02.png');}
+[data-popup-id="team"] .grade-msg span:first-child[data-grade="3"] {background-image:url('../../assets_0720/images/txt_grade_team_win_03.png');}
+[data-popup-id="team"] .grade-msg span:first-child[data-grade="4"] {background-image:url('../../assets_0720/images/txt_grade_team_win_04.png');}
+[data-popup-id="team"] .grade-msg span:first-child[data-grade="5"] {background-image:url('../../assets_0720/images/txt_grade_team_win_05.png');}
+[data-popup-id="team"] .grade-msg span:first-child[data-grade="6"] {background-image:url('../../assets_0720/images/txt_grade_team_win_06.png');}
+[data-popup-id="team"] .grade-msg span:last-child[data-grade="1"] {background-image:url('../../assets_0720/images/txt_grade_team_lose_01.png');}
+[data-popup-id="team"] .grade-msg span:last-child[data-grade="2"] {background-image:url('../../assets_0720/images/txt_grade_team_lose_02.png');}
+[data-popup-id="team"] .grade-msg span:last-child[data-grade="3"] {background-image:url('../../assets_0720/images/txt_grade_team_lose_03.png');}
+[data-popup-id="team"] .grade-msg span:last-child[data-grade="4"] {background-image:url('../../assets_0720/images/txt_grade_team_lose_04.png');}
+[data-popup-id="team"] .grade-msg span:last-child[data-grade="5"] {background-image:url('../../assets_0720/images/txt_grade_team_lose_05.png');}
+[data-popup-id="team"] .grade-msg span:last-child[data-grade="6"] {background-image:url('../../assets_0720/images/txt_grade_team_lose_06.png');}
+
+/* 2차 평가 결과 텍스트 */
+[data-week="2"] .grade-msg[data-grade="1"] {background-image:url('../images/information/txt_grade_personal01.png');}
+[data-week="2"] .grade-msg[data-grade="2"] {background-image:url('../../assets_0803/images/txt_grade_personal02.png');}
+[data-week="2"] .grade-msg[data-grade="3"] {background-image:url('../../assets_0803/images/txt_grade_personal03.png');}
+[data-week="2"] .grade-msg[data-grade="4"] {background-image:url('../../assets_0803/images/txt_grade_personal04.png');}
+[data-week="2"] .grade-msg[data-grade="5"] {background-image:url('../../assets_0803/images/txt_grade_personal05.png');}
+
+/* 3차 평가 결과 텍스트 */
+[data-week="3"] .grade-msg[data-grade="1"] {background-image:url('../../assets_0817/images/txt_grade_personal01.png');}
+[data-week="3"] .grade-msg[data-grade="2"] {background-image:url('../../assets_0817/images/txt_grade_personal02.png');}
+[data-week="3"] .grade-msg[data-grade="3"] {background-image:url('../../assets_0817/images/txt_grade_personal03.png');}
+[data-week="3"] .grade-msg[data-grade="4"] {background-image:url('../../assets_0817/images/txt_grade_personal04.png');}
+[data-week="3"] .grade-msg[data-grade="5"] {background-image:url('../../assets_0817/images/txt_grade_personal05.png');}
+
+/* 4차 평가 결과 텍스트 */
+[data-week="4"] .grade-msg[data-grade="1"] {background-image:url('../images/information/txt_grade_personal01.png');}
+[data-week="4"] .grade-msg[data-grade="2"] {background-image:url('../images/txt_grade_personal02.png');}
+[data-week="4"] .grade-msg[data-grade="3"] {background-image:url('../images/txt_grade_personal03.png');}
+[data-week="4"] .grade-msg[data-grade="4"] {background-image:url('../images/txt_grade_personal04.png');}
+[data-week="4"] .grade-msg[data-grade="5"] {background-image:url('../images/txt_grade_personal05.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:first-child[data-grade="1"] {background-image:url('../images/information/txt_grade_team_win_01.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:first-child[data-grade="2"] {background-image:url('../images/txt_grade_team_win_02.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:first-child[data-grade="3"] {background-image:url('../images/txt_grade_team_win_03.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:first-child[data-grade="4"] {background-image:url('../images/txt_grade_team_win_04.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:first-child[data-grade="5"] {background-image:url('../images/txt_grade_team_win_05.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:first-child[data-grade="6"] {background-image:url('../images/txt_grade_team_win_06.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:last-child[data-grade="1"] {background-image:url('../images/txt_grade_team_lose_01.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:last-child[data-grade="2"] {background-image:url('../images/txt_grade_team_lose_02.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:last-child[data-grade="3"] {background-image:url('../images/information/txt_grade_team_lose_03.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:last-child[data-grade="4"] {background-image:url('../images/txt_grade_team_lose_04.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:last-child[data-grade="5"] {background-image:url('../images/txt_grade_team_lose_05.png');}
+[data-popup-id="team"][data-week="4"] .grade-msg span:last-child[data-grade="6"] {background-image:url('../images/txt_grade_team_lose_06.png');}

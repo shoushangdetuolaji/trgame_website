@@ -458,3 +458,89 @@ $(document).on('click', function(e) {
 		$(".selectbox-body").hide();
 	}
 });
+
+
+//평가 등급 팝업
+var imgSrc;
+function popupItem(obj, weekNum, gradeNum, imgName, itemName, winNum, loseNum) {
+	$popup = $(obj);
+	var targetY = $(window).scrollTop()+100;
+		h = $popup.outerHeight()/2, w = $popup.outerWidth()/2;
+		
+
+	$popup.addClass("show").css({top:targetY,opacity:1});
+	$("body").addClass("dimmed");
+
+	imgSrc = imgSrc ? imgSrc : "../assets/images/items/";
+	if (imgName === 'coin' ) {
+		imgSrc = '../images/information/'
+	} 
+	$popup.find('.item-img').html('<img src="' + imgSrc + imgName + '.jpg" alt="item image">');
+	$popup.find('.item-name').html(itemName);
+	$('.itembox, .popup-caution').show();
+
+	var grade = '';
+	switch(gradeNum) {
+		case 'S': 
+			grade = 1
+			gradeNum = 'S <small>(우수사원)</small>'
+			break;
+		case 'A': grade = 2
+			break;
+		case 'B': grade = 3
+			break;
+		case 'C': grade = 4
+			break;
+		case 'F': 
+			grade = 5
+			$('.itembox, .popup-caution').hide();
+			break;
+		default: grade = 0
+			break;
+	}
+	$popup.find('.grade-txt strong').html(gradeNum);
+	$popup.find('.grade-msg').attr('data-grade',grade);
+	$popup.find('.item-name').html(itemName);
+	$popup.attr('data-week',weekNum);
+	$popup.find('.grade-msg span:first-child').attr('data-grade',winNum);
+	$popup.find('.grade-msg span:last-child').attr('data-grade',loseNum);
+}
+
+
+var layerJobEvaluationPersonClose = function (obj) {
+	popupClose(obj);
+}
+
+var layerJobEvaluationTeamClose = function (obj) {
+	popupClose(obj);
+}
+
+
+var getItem = function(type, stepNo) {
+	let data = {}
+	if (type === 'TEAM_ITEM') {
+		data = {"Result": "OK_GET_ITEM", "Msg": "", "Param1": "4", "Param2": "TEAM_ITEM", "Param3": "3", "Param4": "저승관리팀|5|1|3"}
+	} else if (type === 'PERSON_ITEM') {
+		data = {"Result": "OK_GET_ITEM", "Msg": "", "Param1": "4", "Param2": "PERSON_ITEM", "Param3": "25", "Param4": "S"}
+	}
+	// 模拟ajax请求
+	// 接口地址是
+	// /event/JSCompany/Information/j_send_item.asp, params
+	// var params = { type: type, esno: stepNo }
+	var result = data.Result;
+	var retMsg = data.Msg;
+	var retParam1 = data.Param1;
+	var retParam2 = data.Param2;
+	var retParam3 = data.Param3;
+	var retParam4 = data.Param4;
+	if (result == 'OK_GET_ITEM') {
+		if (retParam2 == 'TEAM_ITEM') {
+				popupItem('[data-popup-id=team]', retParam1, retParam4.split('|')[0] + ' / ' + retParam4.split('|')[1] + '위', 'coin', '엽전 뭉치 <em>' + retParam3 + '개</em>', retParam4.split('|')[2], retParam4.split('|')[3]);
+		} else {
+				popupItem('[data-popup-id=personal]', retParam1, retParam4, 'coin', '엽전 뭉치 <em>' + retParam3 + '개</em>');
+		}
+
+		// isClickChkSet_Send_Item();
+		return true;
+	}
+}
