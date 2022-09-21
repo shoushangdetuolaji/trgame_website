@@ -13,8 +13,6 @@
 
 - 需要把项目scss工程化(最近有点忙，找个一天处理这个任务才行)
 
-
-
 ### 遇到的问题
 
 1. aos配置麻烦看一下文档 class不需要配置aos样式，默认生效
@@ -36,5 +34,9 @@
        data-aos-once="true">
    </div> <!-- × -->
    ```
+
+2. display:inline-flex和flex的区别介绍
    
-   
+   > [CSS中flex和inline-flex的区别_早起的年轻人的博客-CSDN博客_inline-flex](https://blog.csdn.net/zl18603543572/article/details/108309273)
+
+3. 
