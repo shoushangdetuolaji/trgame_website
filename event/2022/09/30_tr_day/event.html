@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30_tr_day</title>
+  <script src="../../../../assets/common/js/jquery-1.7.2.js"></script>
+  <script src="../../../../assets/common/js/jquery.slides.min.js"></script>
+  <script src="../../../../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../../../../assets/common/css/swiper.min.css">
+  <link rel="stylesheet" href="../../../../assets/common/css/base.css">
+  <link rel="stylesheet" href="./css/gnbWrapDiv.css">
+  <link rel="stylesheet" href="./css/event.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="gnbWrapDiv">
+    <div id="hangame_gnb_basic"></div>
+  </div>
+  <div id="evt_wrap">
+    <div class="evt-header">
+      <div class="inner">
+        <div class="logo"><a href="/index.asp" title="테일즈런너 홈으로">테일즈런너</a></div>
+        <p class="sub-title"><span class="hide">10월에도 어서오시월</span></p>
+        <h1 class="title">
+          <span class="text hide">테</span>
+          <span class="text hide">런</span>
+          <span class="text hide">데</span>
+          <span class="text hide">이</span>
+        </h1>
+        <button type="button" class="btn btn-caution" onclick="popup('[data-popup-id=caution]')"><span class="hide">이벤트 참여 및 유의사항</span></button>
+        <div class="motion-leaf">
+          <i class="leaf"></i>
+          <i class="leaf"></i>
+        </div>
+        <i class="motion-dragonfly"></i>
+      </div>
+    </div>
+    <div class="evt-content">
+      <div class="content-body">
+        <div class="section01">
+          <div class="inner hide">
+            <h2>특별한 출석 보상</h2>
+            <dl>
+              <dt>진행 일정</dt>
+              <dd>[10/3(월)], [10/09(일)], [10/10(월)] (3일 진행)</dd><!-- 20220923 수정 -->
+              <dt>진행 내용</dt>
+              <dd>진행 일정 자정 전까지 게임 접속 시 출석 보상 지급</dd>
+              <dt>아이템</dt>
+              <!-- 20220920수정 -->
+              <dd>
+                <em>10/3(월)</em><!-- 20220923 수정 -->
+                <ul>
+                  <li>앨리스 퍼스널쿠폰 1개</li>
+                  <li>17주년 기념 지렁이 5개</li>
+                  <li>빛바랜 루미나리스 상자 2개</li>
+                </ul>
+                <em>10/9(일) / 8개 중 4개 선택</em>
+                <ul>
+                  <li>빛바랜 루미나리스 상자 1개</li>
+                  <li>플레이그 닥터 박스 1개</li>
+                  <li>지옥의 불꽃 상자 1개</li>
+                  <li>7대 주선 - 겸손 상자 1개</li>
+                  <li>러브 그래피티 코스튬 박스 1개</li><!-- 20220923 수정 -->
+                  <li>스윗 고스트 상자 1개</li>
+                  <li>500% 경험치 포션 1개</li>
+                  <li>리그 레볼루션 상자2 1개</li>
+                </ul>
+                <em>10/10(월)</em>
+                <ul>
+                  <li>다크나이트 상자 1개</li>
+                  <li>빛바랜 흑운룡 상자 1개</li>
+                  <li>디저트 코스튬 박스 1개</li>
+                </ul>
+              </dd>
+              <!-- // 20220920수정 -->
+              <dt>유의사항</dt>
+              <dd>
+                <ul>
+                  <li>[이벤트&amp;커뮤니티] &gt; [오늘의 혜택 받으러 가기]에서 수령</li>
+                  <li>출석 완료 시 게임 내 선물함에서 수령하세요.</li><!-- 20220923 수정 -->
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="section02">
+          <div class="inner hide">
+            <h2>핫타임 이벤트</h2>
+            <dl>
+              <dt>진행 일정</dt>
+              <dd>[10/1(토) ~ 10/3(월)], [10/7(금) ~ 10/10(월)], [10/14(금) ~ 10/16(일)] (10일 진행)</dd><!-- 20220930 수정 -->
+              <dt>진행 시간</dt>
+              <dd>[13:00 ~ 15:00], [19:00 ~ 21:00] (1일 2회 - 4시간 진행)</dd>
+              <dt>진행 내용</dt>
+              <dd>진행 일자 및 시간에 접속 시 900% 경험치 버프 적용</dd>
+              <dt>유의사항</dt>
+              <dd>10월 테런데이 이벤트로 진행되는 핫타임 이벤트는 기존 핫타임 혜택과 중복하여 진행되지 않습니다. <br>리그 레볼루션 v2 채널에서는 핫타임 혜택이 적용되지 않습니다.</dd><!-- 20220923 수정 -->
+            </dl>
+          </div>
+        </div>
+        <div class="section03">
+          <div class="inner hide">
+            <h2>4종 미션 이벤트</h2>
+            <dl>
+              <dt>진행 일정</dt>
+              <dd>[10/5(수) 점검 후 ~ 10/16(일)] (12일 진행)</dd><!-- 20220923 수정 -->
+              <dt>진행 내용</dt>
+              <dd>진행 일정에 게임 내 매일 4종 미션 이벤트 진행</dd>
+              <dt>미션</dt>
+              <dd>
+                <ul>
+                  <li>
+                    <strong>게임 접속 30분 달성(매일)</strong>
+                    <p>미션 성공 보상 (램덤 1종)</p>
+                    <ul>
+                      <li>다크나이트 상자 1개</li>
+                      <li>리그 레볼루션 상자2 1개</li>
+                      <li>잠겨진 플레이그 닥터 박스 2개</li><!-- 20220923 수정 -->
+                      <li>잠겨진 플레이그 닥터 박스 1개</li>
+                      <li>혼이 나간 지렁이 1개</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>신나게 달리기 3회 플레이(매일)</strong>
+                    <p>미션 성공 보상 (램덤 1종)</p>
+                    <ul>
+                      <li>스윗 고스트 상자 1개</li>
+                      <li>플레이그 닥터 열쇠 2개</li>
+                      <li>플레이그 닥터 열쇠 1개</li>
+                      <li>어둠에 물든 지렁이 1개</li>
+                      <li>별빛 지렁이 1개</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>팜 수확물 5회 수확(매일)</strong>
+                    <p>미션 성공 보상 (램덤 1종)</p>
+                    <ul>
+                      <li>빛바랜 흑운륭 상자 1개</li>
+                      <li>스윗바닐라 코스튬 박스 1개</li><!-- 20220923 수정 -->
+                      <li>잠겨진 리베스트럼 박스 2개</li>
+                      <li>잠겨진 리베스트럼 박스 1개</li>
+                      <li>휴몽의 주사위 뽑기 쿠폰 3개</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>낚시 어획물 3회 획득(매일)</strong>
+                    <p>미션 성공 보상 (램덤 1종)</p>
+                    <ul>
+                      <li>빛바랜 루미나리스 상자 1개</li>
+                      <li>스트릿 코스튬 1개</li>
+                      <li>리베스트럼 열쇠 2개</li>
+                      <li>리베스트럼 열쇠 1개</li>
+                      <li>휴몽의 보드판 리셋 쿠폰 1개</li>
+                    </ul>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="section04">
+          <div class="inner hide">
+            <h2>삐애로 달리기 이벤트</h2>
+            <dl>
+              <dt>진행 일정</dt>
+              <dd>[10/14(금) 17:00 ~ 19:00] (1일 - 2시간 진행)</dd><!-- 20220923 수정 -->
+              <dt>진행 내용</dt>
+              <dd>진행 일정에 [신나게 달리기] 채널에서 삐에로가 방 입장 또는 생성</dd>
+              <dt>아이템</dt>
+              <dd>
+                <ul>
+                  <li>삐애로 기차놀이 15일</li>
+                  <li>컬러윙부츠(보) 7일</li><!-- 20220923 수정 -->
+                  <li>삐에로의 기운 주머니 2개</li>
+                </ul>
+              </dd>
+            </dl>
+            <p>
+              10월 테런데이를 맞이하여, 런너들과 함께하는 삐에로 달리기가 진행됩니다. 
+              삐에로 달리기 이벤트 진행 시간 중 접속하신 모든 런너에게는 보상 아이템을 지급해 드립니다.
+              (10/14(금) 17:00 ~ 23:59 내 게임 접속 시 [삐에로 우편함]으로 지급)
+            </p>
+          </div>
+        </div>
+        <div class="section05">
+          <div class="inner">
+            <h2 class="hide">할인 상점 안내</h2><!-- 20220923 수정 -->
+            <dl class="hide">
+              <dt>진행 일정</dt>
+              <dd>[9/30(금) ~ 10/17(월)] (18일 진행)</dd><!-- 20220930 수정 -->
+              <dt>진행 내용</dt>
+              <dd>진행 일정 내 게임 내 상점(D-DAY 상점 및 테런데이 탭)에서 상품 할인 진행</dd><!-- 20220923 수정 -->
+              <dt>아이템</dt>
+              <dd>
+                <!-- 20220920수정 -->
+                <ul>
+                  <li>월 1회 <em>빛나는 별의 조각 1개</em> 50,000 TR</li>
+                  <li>월 1회 <em>광휘의 파편 1개</em> 50,000 TR</li>
+                  <li>일 1회 <em>앨리스 퍼스널쿠폰 1개</em> 10,000 TR</li>
+                  <li>월 1회 <em>변경권 상자 묶음3 1개 (추가 증점품 포함)</em> 39,000 Cash</li><!-- 20220923 수정 -->
+                  <li>월 1회 <em>패셔너블 더블 패키지 1개</em> 8,900 Cash</li>
+                  <li>월 1회 <em>달그림 상자 20개</em> 10,000 Cash</li><!-- 20220923 수정 -->
+                  <li>월 1회 <em>포근 베어 복장 패키지 1개</em> 6,900 Cash</li>
+                  <li>월 1회 <em>2018 트레이딩 변경권 1개</em> 4,900 Cash</li><!-- 20220923 수정 -->
+                  <li>월 2회 <em>심해의 유물 상자 1개</em> 14,900 Cash</li>
+                  <li>월 1회 <em>백년가약 더블 패키지 1개</em> 18,900 Cash</li><!-- 20220923 수정 -->
+                </ul>
+                <!-- // 20220920수정 -->
+                <p>위 안내된 아이템은 판매되는 할인 상품의 일부입니다. <br>이벤트 기간 동안 특정 일자에 판매되는 다양한 아이템들을 만나보세요!</p><!-- 20220930 수정 -->
+                <a href="/news/notice.asp?seq=8915902" target="_blank" class="btn btn-shop"><span class="hide">할인 상점 자세히 보기</span></a>
+              </dd>
+              <dt>유의사항</dt>
+              <dd>
+                <ul>
+                  <li>[상점] &gt; [할인 상점] &gt; [D-DAY 상점]에서 위와 같이 안내된 일자에만 판매되는 특별 상품이며, 상품 별 구매 횟수 제한에 따라 구입할 수 있습니다.</li>
+                  <li>판매되는 아이템은 진행 일정 내에서 품목 별 판매 기간이 상이할 수 있으며, 추가 증정품이 포함된 아이템은 게임 내 상점에서 상세 내용을 확인해 주세요.</li><!-- 20220920수정 --><!-- 내용 추가 -->
+                  <li>위 안내된 아이템 외에도 10/17(월)까지 다양한 아이템이 상점 내에서 판매될 예정입니다.</li><!-- 20220930 수정 -->
+                  <li>이벤트 기간 중 CASH로 판매되는 아이템은 추후 별도 이벤트를 통해 재판매 될 수 있습니다.</li>
+                  <li>판매되는 아이템의 청약철회는 구매 후 7일 이내, 임시보관함에 아이템이 보관되어 있을 경우에만 가능합니다.</li>
+                  <li>게임 내 상점에서 보다 다양한 판매 상품들을 확인하실 수 있습니다.</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="section06">
+          <div class="inner hide">
+            <h2>한글날 기념 SNS 공유 이벤트</h2>
+            <dl>
+              <dt>진행 일정</dt>
+              <dd>9/30(금) ~ 10/16(일) 17일 진행</dd>
+              <dt>이벤트 참여 방법</dt>
+              <dd>
+                <ol>
+                  <li>테일즈런너의 캐릭터나 아이템 등 외래어로 쓰인 여러 단어나 용어를 재치 있는 한글 이름으로 지어보세요.</li><!-- 20220923 수정 -->
+                  <li>이벤트 페이지에서 제공되는 배경 이미지를 내려받은 후 이미지 위에 지어주신 한글 이름을 작성하세요.</li>
+                  <li>해시태그를 복사 후 제작한 이미지와 함께 SNS에 등록해 주세요. (인스타그램, 페이스북, 트위터 등)</li>
+                  <li>이벤트 기간 종료 후 등록된 SNS 게시글을 추첨하여 보상 아이템을 지급해 드립니다. (등록된 SNS 게시글은 공개 상태 유지 필요)</li>
+                </ol>
+              </dd>
+              <dt>삐에로의 제작 및 등록 예시</dt>
+              <dd>
+                <em>시오넬 &gt; 신 오래</em>
+                삐에로의 뜻 풀이!: 시오넬이란 이름을 한글 이름으로 어떻게 바꿀까? 고민하다가 시오넬의 성정이라던가 주변 환경에서 이름에 대한 단어를 찾아보기로 했어! 시오넬의 동생, 사브리나와 연관된 단어기 때문에 시간이 길게 지나가는 동안이란의 "오래"를 사용했는데 신 오래랑 시오넬, 뭔가 발음이 비슷한 거 있지?
+              </dd>
+              <dt>제작 이미지 내려받기</dt><!-- 20220923 수정 -->
+              <dd>
+                1080*1080 JPG포멧
+                <!--[D] 개발 시 절대경로로 변경 -->
+                <a href="//tr-image.game.onstove.com/event/202209/30_tr_day/assets/images/down.zip" download="" class="btn btn_download" onclick="gtag('event', '이미지받기', { 'event_category': '10월테런데이', 'event_label': '이미지받기' });"><span class="hide">이미지 내려받기</span></a>
+                <button type="button" class="btn btn_tag" data-clipboard-action="copy" data-clipboard-target="p.copy"><span class="hide">해시태그 복사하기</span></button>
+                <div class="hashtag-area">
+                  <p class="copy">#한글날 #동화나라한글이름</p>
+                </div>
+              </dd>
+              <dt>추첨 대상자 혜택(50명)</dt>
+              <dd>
+                <ul>
+                  <li>플레이그 닥터 박스 2개</li>
+                  <li>스윗바닐라 코스튬 박스 1개</li>
+                </ul>
+              </dd>
+              <dt>유의사항</dt>
+              <dd>
+                <ul>
+                  <li>내려받은 이미지 파일은 자유롭게 편집하여 SNS 게시글 등록에 사용해 주세요.</li><!-- 20220923 수정 -->
+                  <li>당첨자 발표 및 보상 지급은 10/26(수)에 공식 홈페이지 안내를 통해 선물함으로 지급되며, 보상 아이템의 선물함 보관 만료 기간은 2주입니다.</li>
+                  <li>필수 해시태그를 누락하여 SNS 게시글을 등록 시 이벤트 대상에서 제외될 수 있습니다.</li>
+                  <li>본인이 직접 제작한 이미지로만 응모가 가능하며, 발표 전까지 등록한 SNS 게시글을 삭제 또는 비공개 전환 시 이벤트 대상에서 제외될 수 있습니다.</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="event_comment">
+      <div class="event_comment_in">
+        <iframe src="/Comment/evtCmtConf.html" width="980" height="371" frameborder="0" allowtransparency="true" title="덧글게시판"></iframe>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    </div>
+  </div>
+  <div class="popup" data-popup-id="caution">
+    <button type="button" class="btn btn-close" onclick="popupClose($(this))">닫기</button>
+    <div class="popup-inner">
+      <h3>이벤트 참여 및 유의사항</h3>
+      <ul>
+        <li>10월 테런데이에서 진행되는 이벤트는 각 이벤트마다 참여 기간이 다르니, 안내된 기간에 따라 참여 및 보상을 수령해 주세요.</li>
+        <li>각 보상 아이템은 안내된 아래의 방법으로 지급되며, 부정한 방법으로 이벤트 참여 및 아이템 수령 시 약관 및 정책에 따라 <br>제재 혹은 회수될 수 있습니다.</li><!-- 20220922 수정 -->
+        <li><em>테런데이 출석 보상 지급 위치 </em>: [이벤트&amp;커뮤니티] &gt; [오늘의 혜택 받으러 가기]</li>
+        <li><em>4종 미션 이벤트 보상 지급 위치 </em>: [마이룸] 즉시 지급</li>
+        <li><em>삐에로 달리기 접속 보상 지급 위치 </em>: [삐에로 우편함] 지급</li><!-- 20220922 수정 -->
+        <li><em>한글날 기념 SNS 공유 이벤트 </em>: [선물함] 지급 (추첨 대상 선별 후 공지사항으로 지급 안내 예정)</li><!-- 20220922 수정 -->
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(function () {
+        oddFixed();
+    });
+
+    //window odd fixed
+    function oddFixed() {
+      if ($(window).width() % 2 != 0)	{
+        var width = $(window).width() - 1;
+        $('html').width(width);
+      }
+      else {
+        $('html').width('100%');
+      }
+    }
+    $(window).resize(function() {
+      oddFixed();
+    });
+
+    //Popup
+    var $popup;
+    function popup(obj, url) {
+      $popup = $(obj);
+      var targetY = $(window).scrollTop()+100;
+        h = $popup.outerHeight()/2, w = $popup.outerWidth()/2;
+      $("body").addClass("dimmed");
+      $popup.addClass("show").css({top:targetY,opacity:1});
+
+      if ( $popup.attr('data-popup-id') == 'youtube') {
+        $popup.find('.iframe').empty().append('<iframe src="https://www.youtube.com/embed/'+url+'?autoplay=0&rel=0&amp;controls=1&amp;showinfo=0&amp;color=white" allow="autoplay; encrypted-media" width="100%" height="100%" allowfullscreen></iframe>');
+      }
+    }
+    function popupClose(that) {
+      $("body").removeClass("dimmed").unbind('touchmove');
+      var type = typeof(that); //this == "object"
+      if ( type == "object" ) {
+        $(that).parents('.popup').removeAttr("style").removeClass("show");
+        $(that).parents('.popup').find(".iframe iframe").remove();
+
+        if ( $(that).parents('.popup').attr('data-popup-id') == 'item') {
+          if ( $(that).parents('.popup').attr('data-popup-re') != 're') {
+            document.location.reload();
+          }
+        }
+      } else {
+        $(that).parents('.popup').removeAttr("style").removeClass("show");
+      }
+    }
+
+  </script>
+</body>
+</html>
