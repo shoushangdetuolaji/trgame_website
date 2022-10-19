@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>19_halloween_2nd</title>
+  <script src="../../../../assets/common/js/jquery-1.7.2.js"></script>
+  <script src="../../../../assets/common/js/jquery.slides.min.js"></script>
+  <script src="../../../../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../../../../assets/common/css/swiper.min.css">
+  <link rel="stylesheet" href="../../../../assets/common/css/base.css">
+  <link rel="stylesheet" href="./css/gnbWrapDiv.css">
+  <link rel="stylesheet" href="./css/event.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="gnbWrapDiv">
+    <div id="hangame_gnb_basic"></div>
+  </div>
+  <div id="evt_wrap">
+    <div class="evt-header">
+      <div class="inner hide">
+        <div class="logo"><a href="/index.asp" title="테일즈런너 홈으로">테일즈런너</a></div>
+        <h1>2022 할로윈 대소동</h1>
+        <div class="tab-area">  
+          <a href="/event/2022/10/19_halloween_1st/event.asp" target="_self">잭-오-랜턴 타이밍</a>
+        </div>
+        <div class="motion">
+          <i class="m1"></i>
+          <i class="m2"></i>
+          <i class="m3"></i>
+          <i class="m4 mist"></i>
+          <i class="m5 wings"></i>
+          <i class="m6 wings"></i>
+          <i class="m7 wings"></i>
+          <i class="m8 bounce"></i>
+          <i class="m9 bounce"></i>
+          <i class="m10 wings"></i><!-- 20221005 추가 -->
+          <i class="m11 wings"></i><!-- 20221005 추가 -->
+        </div>
+      </div>
+    </div>
+    <div class="evt-content">
+      <div class="content-body">
+        <div class="section01">
+          <div class="inner hide">
+            <h2>유령들과 함께 퀴즈놀이</h2>
+            <button class="btn btn-caution" onclick="popup('[data-popup-id=caution]')">이벤트 유의사항</button>
+            <!-- 20221014_2 수정 -->
+            <dl>
+              <dt>퀴즈놀이 시작하기</dt>
+                <dd>이벤트 기간 동안 공원의 고양이 유령 NPC를 통해 유령들과 퀴즈놀이를 진행할 수 있습니다.</dd>
+              <dt>유령 찾기와 정답 제출하기</dt>
+                <dd>퀴즈놀이가 시작되면 10분 동안 유령 찾기와 정답 입력 시간이 주어지며, 공원에서 정답에 대한 힌트를 주는 유령을 찾을 수 있습니다. (1개 회차에 최대 10개까지 힌트 유령을 찾을 수 있으며, 힌트가 없는 가짜 유령도 존재)</dd>
+              <dt>정답 보상받기</dt>
+                <dd>고양이 유령 NPC에게 정확하게 정답을 입력한 런너는 준비되어 있는 보상을 수령할 수 있으며, 다음 퀴즈놀이 시작 전까지 정답을 확인할 수 있습니다.</dd>
+            </dl>
+            <!-- //20221014_2 수정 -->
+  
+          </div>
+        </div>
+  
+        <div class="section02" id="section02">
+          <div class="inner hide">
+            <h2>유령의 선물 열어보기 이벤트</h2>
+            <div class="user-area">
+                          <p><strong>groovypark</strong> 님</p>
+              <ul>
+                <li><span class="hide">오늘 [힌트 유령 찾기] 횟수 :</span><strong>27</strong>회</li>
+                <li><span class="hide">오늘 [가짜 유령 찾기] 횟수 :</span><strong>19</strong>회</li>
+                <li><span class="hide">오늘 [정답 제출] 횟수 :</span><strong>2</strong>회</li>
+                <li><span class="hide">사용 가능한 [유령의 선물 교환권] :</span><strong>0</strong>개</li>
+              </ul>
+            </div>
+          
+            <h3>참여 방법</h3>
+            <ol>
+              <li>매일 [힌트 유령 찾기], [가짜 유령 찾기], [정답 제출]을 3회 달성 시 각 ‘유령의 선물 교환권‘을 1개씩 지급합니다. (1일 최대 3개까지 획득 가능, 정답 제출은 올바른 정답인 경우 인정)</li><!-- 20221014_2 수정 -->
+              <li>획득한 유령의 선물 교환권을 사용하여 하루 세 번까지 유령의 선물을 받을 수 있습니다.</li>
+              <li>유령의 선물을 열어볼 경우 안내된 아이템 중 1종을 확률적으로 획득할 수 있으며, 이벤트 종료 시까지 매일 참여할 수 있습니다. (단, 당일 미사용 교환권은 자정 이후 초기화)</li><!-- 20221014_2 수정 -->
+            </ol>
+  
+            <button class="btn-open" onclick="fnGetItem(1)">유령의 선물 열어보기</button>
+  
+            <h3>유의사항</h3>
+            <ul class="caution-list">
+              <li>유령의 선물 교환권은 매일 최대 3장씩 획득할 수 있으며, <br>획득 후 당일 사용하지 않은 교환권은 자정 이후 초기화되니 주의해 주세요.</li><!-- 20221014 수정 -->
+            </ul>
+  
+            <div class="motion">
+              <i class="v1 bounce"></i>
+              <i class="v2 bounce"></i>
+            </div>
+          </div>
+        </div>
+  
+        <div class="section03" id="section03">
+          <div class="inner hide">
+            <div class="counter"><span class="hide">누적 사용한 유령의 선물 교환권 :</span><strong>2</strong>개</div>
+  
+            <div class="reward-area">
+              <!-- [D] 받기 완료 시 li에 'complete' 클래스 추가 -->
+              <ul>
+                <li class="on"><span class="hide">교환권 누적 5개 이상 사용 </span><button class="btn btn-receive" onclick="fnGetItem(21)">받기</button></li>
+                <li class="on"><span class="hide">교환권 누적 10개 이상 사용</span><button class="btn btn-receive" onclick="fnGetItem(22)">받기</button></li>
+                <li class="on"><span class="hide">교환권 누적 15개 이상 사용</span><button class="btn btn-receive" onclick="fnGetItem(23)">받기</button></li>
+                <li class="on"><span class="hide">교환권 누적 20개 이상 사용</span><button class="btn btn-receive" onclick="fnGetItem(24)">받기</button></li>
+                <li class="on"><span class="hide">교환권 누적 30개이상 사용 </span><button class="btn btn-receive" onclick="fnGetItem(25)">받기</button></li>
+                <li class="on"><span class="hide">교환권 누적 40개이상 사용 </span><button class="btn btn-receive" onclick="fnGetItem(26)">받기</button></li>
+              </ul>
+              <div class="ico-q"><i></i><span></span></div>
+            </div>
+            
+            <a href="/community2/#ucc/list?category=event" target="_blank" class="btn btn-board">이벤트 게시판 바로 가기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="event_comment">
+      <div class="event_comment_in">
+      <!-- 댓글 본문 글씨 색 - color:#000 -->
+      <!-- 간격 Line 색상 Const TABLELINGCOLOR = "#e3e3e3" -->
+      <!-- 댓글남기기 버튼경로 - https://tr-image.game.onstove.com/web/Common/btn_reply_160323.jpg -->
+              <iframe src="/Comment/evtCmtConf.html" width="980" height="371" frameborder="0" allowtransparency="true" title="덧글게시판"></iframe>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    </div>
+  </div>
+  <div class="popup" data-popup-id="caution">
+    <button type="button" class="btn btn-close" onclick="popupClose($(this))">닫기</button>
+    <div class="popup-inner">
+      <h3>이벤트 유의사항</h3>
+      <!-- 20221014 수정 -->
+      <ul>
+        <li>- 유령의 선물 교환권은 이벤트 기간 중 1일 최대 3개까지 반복하여 획득할 수 있습니다.</li>
+        <li>- 획득 후 당일 사용하지 않은 유령의 선물 교환권은 자정 이후 소멸되오니, 획득한 교환권은 반드시 당일 내 사용해 주세요.</li>
+        <li>- 오늘 힌트 유령 찾기 횟수, 가짜 유령 찾기 횟수는 동일한 유령이 중복 집계되지 않습니다.</li>
+        <li>- 오늘 힌트 유령 찾기 횟수, 가짜 유령 찾기 횟수, 정답 제출 횟수는 회차 종료 시에 횟수가 갱신되며, 정답 제출 횟수는 올바른 정답을 제출한 경우에만 인정됩니다.</li>
+        <li>- 지급받은 아이템은 게임 내 선물함에서 확인하실 수 있으며, 아이템 보관 만료 기간은 2주입니다.</li>
+        <li>- 부정한 방법으로 이벤트 참여 및 아이템 수령 시 약관 및 정책에 따라 제재 혹은 회수될 수 있습니다.</li>
+      </ul>
+      <!-- //20221014 수정 -->
+    </div>
+  </div>
+  <div class="popup" data-popup-id="item">	
+    <div class="popup-inner">
+      <h3>축하 합니다.</h3>		
+      <div class="item-area">
+              <div class="item-img"><!-- 아이템 이미지 삽입 --></div>
+              <p class="item-name"><!-- 아이템명 삽입 --></p>
+              <p>아이템을 획득하였습니다.</p>
+        <button type="button" class="ico btn-confirm" onclick="popupClose(this)">확인</button>
+      </div>
+      <p class="txt">· 획득한 아이템은 게임 내 선물함에서 확인하실 수 있습니다.</p><!-- 20221014 수정 -->
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
