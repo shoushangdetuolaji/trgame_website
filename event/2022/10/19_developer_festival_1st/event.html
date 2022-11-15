@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>19_developer_festival_1st</title>
+  <script src="../../../../assets/common/js/jquery-1.7.2.js"></script>
+  <script src="../../../../assets/common/js/jquery.slides.min.js"></script>
+  <script src="../../../../assets/common/js/librarys.js"></script>
+  <link rel="stylesheet" href="../../../../assets/common/css/swiper.min.css">
+  <link rel="stylesheet" href="../../../../assets/common/css/base.css">
+  <link rel="stylesheet" href="./css/gnbWrapDiv.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="gnbWrapDiv">
+    <div id="hangame_gnb_basic"></div>
+  </div>
+  <div id="evt_wrap">
+    <div class="evt-header">
+      <div class="inner">
+        <div class="logo"><a href="/index.asp" title="테일즈런너 홈으로">테일즈런너</a></div>     			        
+              <h1 class="hide">2022 테런 개발자 페스티벌</h1>   
+  
+              <div class="motion">
+                  <i class="motion-title fade-up"></i>
+                  <i class="motion-obj01 fade-right" motion-speed="slow"></i>
+                  <i class="motion-obj02 fade-right" motion-speed="slow"></i>
+                  <i class="motion-obj03 fade-right" motion-speed="slow"></i>
+                  <i class="motion-obj04 fade-left" motion-speed="slow"></i>
+                  <i class="motion-obj05 fade-left" motion-speed="slow"></i>
+                  <i class="motion-obj06 fade-left" motion-speed="slow"></i>
+                  <i class="motion-character01 fade-right"></i>
+                  <i class="motion-character02 fade-left"></i>
+              </div>       
+          </div>     
+    </div>
+    <div class="evt-content">
+      <button class="ico btn-vod" onclick="popup('[data-popup-id=vod]');">첫 번째 페스티벌 영상 보기</button>
+          <ul class="tab-btn">
+            <li><a href="#n">첫 번째 페스티벌 신규 맵 &amp; 아이템 투표</a></li>
+          
+              <li><a href="/event/2022/11/02_developer_festival_2st/event.html" class="">두 번째 페스티벌 올스타 맵 안내</a></li>
+          
+          </ul>
+          <div class="section01" area-type="motion">
+        <div class="inner">
+                <h2 class="hide">개발자 페스티벌이 새로운 맵과 아이템으로 돌아왔습니다.</h2>
+                  <p class="hide">[신나게 달리기 채널]에서 방 생성 후 플레이</p>	
+                  <p class="hide">[2022 개발자 페스티벌 채널]에서 플레이: 레벨에 따라 신나게 달리기 채널에서 생성된 방으로 자동 입장</p>	
+        </div>
+      </div>
+          <div class="section02" area-type="motion">
+        <div class="inner">
+                  <div class="motion">
+                      <i class="character fade-right"></i>
+                  </div>
+  
+          <h2 class="hide">2022 개발자 맵을 달려보고 의견을 나눠보세요</h2>
+          <dl class="hide">
+            <dt>의견 등록 가능 기간</dt>
+            <dd>2022.10.19(수) ~ 2022.11.15(화)까지</dd><!-- 20221017 수정 -->
+            <dt>의견 등록 방법</dt>
+            <dd>
+              <ol>
+                <li>의견을 등록하고자 하는 맵 1회 이상 플레이하기</li>
+                <li>개발자 맵에 대한 자유로운 의견을 작성하여 등록하기</li>
+                <li>의견 등록 완료 보상받기</li>
+              </ol>
+            </dd>
+            <dt>의견 등록시 주의사항</dt>
+            <dd>
+              <ul>
+                <li>의견은 맵 당 1회만 등록 가능</li>
+                <li>의견 등록 후 수정이나 삭제 불가</li>
+                <li>인터넷 브라우저 팝업 허용 필요</li>
+              </ul>
+            </dd>
+          </dl>
+                  <ul class="map-list">
+                      <li class="hide">
+                        <p>1. 카운트다운</p>
+                          <span class="complete" id="1">의견등록 완료</span>
+                          <p>카운트다운이 끝나면 승자가 가려진다.</p>
+                          <dl>
+                            <dt>맵 타입</dt>
+                              <dd>트레이닝</dd>
+                              <dt>난이도</dt>
+                              <dd>★★★</dd>
+                              <dt>경기 유형</dt>
+                              <dd>아이템전/8인/30인</dd><!-- 20221017 수정 -->                                         
+                          </dl>
+                          
+                              <button class="ico btn-opinion" onclick="javascript:window.open('popup_opinion.asp?num=1','_blank','width=920 ,height=777,left=0,top=0,toolbar=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no');">의견 등록하기</button>
+                          
+                      </li>
+                      <li class="hide">
+                        <p>2. 앙리 4길</p>
+                          <span class="" id="2">의견등록 완료</span>
+                          <p>어두운 길 뿅 망치의 힘을 보여줘~!!</p>
+                          <dl>
+                            <dt>맵 타입</dt>
+                              <dd>트레이닝</dd>
+                              <dt>난이도</dt>
+                              <dd>★★★</dd>
+                              <dt>경기 유형</dt>
+                              <dd>노템전/8인/30인</dd>                            
+                          </dl>
+                          
+                              <button class="ico btn-opinion" onclick="javascript:window.open('popup_opinion.asp?num=2','_blank','width=920 ,height=777,left=0,top=0,toolbar=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no');">의견 등록하기</button>
+                          
+                      </li>
+                      <li class="hide">
+                        <p>3. 서유기: 사막의 미궁</p>
+                          <span class="complete" id="3">의견등록 완료</span>
+                          <p>숨겨진 사막의 미궁을 탐험해보자!</p>
+                          <dl>
+                            <dt>맵 타입</dt>
+                              <dd>트레이닝</dd>
+                              <dt>난이도</dt>
+                              <dd>★★★</dd>
+                              <dt>경기 유형</dt>
+                              <dd>노템전/8인</dd>
+                          </dl>
+                          
+                              <button class="ico btn-opinion" onclick="javascript:window.open('popup_opinion.asp?num=3','_blank','width=920 ,height=777,left=0,top=0,toolbar=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no');">의견 등록하기</button>
+                          
+                      </li>
+                      <li class="hide">
+                        <p>4. 지하감옥 서바이벌</p>
+                          <span class="complete" id="4">의견등록 완료</span>
+                          <p>이곳은 앙리 성 수많은 지하감옥 중에 하나~!!</p><!-- 20221017 수정 -->
+                          <dl>
+                            <dt>맵 타입</dt>
+                              <dd>서바이벌</dd>
+                              <dt>난이도</dt>
+                              <dd>★★★★</dd>
+                              <dt>경기 유형</dt>
+                              <dd>노템전/30인</dd>
+                          </dl>
+                          
+                              <button class="ico btn-opinion" onclick="javascript:window.open('popup_opinion.asp?num=4','_blank','width=920 ,height=777,left=0,top=0,toolbar=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no');">의견 등록하기</button>
+                          
+                      </li>
+                      <li class="hide">
+                        <p>5. (HC) 사라져욧</p>
+                          <span class="complete" id="5">의견등록 완료</span>
+                          <p>으아아앗~ 밟으면 사라지는 블럭을 조심해서 골인하세요!</p><!-- 20221017 수정 -->
+                          <dl>
+                            <dt>맵 타입</dt>
+                              <dd>하드코어</dd>
+                              <dt>난이도</dt>
+                              <dd>★★★★★</dd>
+                              <dt>경기 유형</dt>
+                              <dd>노템전/아이템전/8인</dd><!-- 20221017 수정 -->                                            
+                          </dl>
+                          
+                              <button class="ico btn-opinion" onclick="javascript:window.open('popup_opinion.asp?num=5','_blank','width=920 ,height=777,left=0,top=0,toolbar=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no');">의견 등록하기</button>
+                          
+                      </li>
+                      <li class="hide">
+                        <p>6. 랜덤 게임</p><!-- 20221017 수정 -->
+                          <span class="complete" id="6">의견등록 완료</span>
+                          <p>4개의 색다른 맵에서 즐기는 경주!</p><!-- 20221017_2 수정 -->
+                          <dl>
+                            <dt>맵 타입</dt>
+                              <dd>랜덤</dd><!-- 20221017 수정 -->
+                              <dt>난이도</dt>
+                              <dd>?</dd><!-- 20221017 수정 -->
+                              <dt>경기 유형</dt>
+                              <dd>노템전/30인</dd><!-- 20221017_2 수정 -->                    
+                          </dl>
+                          
+                              <button class="ico btn-opinion" onclick="javascript:window.open('popup_opinion.asp?num=6','_blank','width=920 ,height=777,left=0,top=0,toolbar=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no');">의견 등록하기</button>
+                          
+                      </li>
+                  </ul>
+        </div>
+          </div>
+          <div class="section03" area-type="motion">
+        <div class="inner">
+                  <div class="motion">
+                      <i class="character01 fade-left"></i>
+                      <i class="character02 fade-right"></i>
+                  </div>
+  
+          <h2 class="hide">정식 출시를 희망하는 맵에 투표해주세요.</h2>	
+                  <p class="hide">투표 가능 기간 : 2022.10.19(수) ~ 2022.11.15(화)까지</p><!-- 20221017 수정 -->
+  
+                  
+                      <ul class="my-info">
+                        <li class="name">groovypark님</li>
+                          <li><span class="hide">오늘 사용 가능한 투표권</span> 0개</li>
+                          <li><span class="hide">나의 누적 투표 횟수</span> 20회</li>
+                      </ul>
+                      
+  
+                  <p class="hide">2022 개발 코인 상자 1개</p><!-- 20221017 수정 -->
+                  <ul class="hide">
+                    <li>- 1회 투표할 때마다 '2022 개발 코인 1개'가 투표 보상으로 지급됩니다. </li>
+                      <li>- 개발자 페스티벌 채널 맵을 1회 이상 플레이 시 당일 사용 가능한 투표권 1개가 지급됩니다. (1일 최대 3개 획득 가능)</li>
+                      <li>- 투표는 이벤트 종료일까지 매일 최대 3번까지 반복하여 투표하실 수 있습니다.</li>
+            <li>- 투표 결과를 참고하여 득표수 상위 맵은 추후 정규 맵 편성 검토가 진행될 예정입니다.</li>
+                  </ul>
+                  <ul class="vote-list">
+                    <li>
+                          <input type="radio" name="mapSelect" id="map1" value="1">
+                        <label for="map1">카운트다운</label><!-- 20221017 수정 -->
+                      </li>
+                      <li>
+                          <input type="radio" name="mapSelect" id="map2" value="2">
+                        <label for="map2">앙리 4길</label>
+                      </li>
+                      <li>
+                          <input type="radio" name="mapSelect" id="map3" value="3">
+                        <label for="map3">서유기 : 사막의 미궁</label>
+                      </li>
+                      <li>
+                          <input type="radio" name="mapSelect" id="map4" value="4">
+                        <label for="map4">지하감옥 서바이벌</label><!-- 20221017 수정 -->
+                      </li>
+                      <li>
+                          <input type="radio" name="mapSelect" id="map5" value="5">
+                        <label for="map5">(HC) 사라져욧</label><!-- 20221017 수정 -->
+                      </li>
+                      <li>
+                          <input type="radio" name="mapSelect" id="map6" value="6">
+                        <label for="map6">랜덤 게임</label><!-- 20221017 수정 -->
+                      </li>
+                  </ul>
+                  <button class="ico btn-vote" onclick="fnSaveMapVote('M')">투표하기</button>
+                  <h3 class="hide">누적 투표 참여 보상받기</h3>
+                  <ul class="reward-list">
+                      <!-- [D] 받기 완료 시 complete 클래스 추가 -->
+                      <li class=""><em class="hide">누적 5회 투표 : 2022 개발 코인 상자 3개</em> <button type="button" class="ico btn-take" onclick="">받기</button></li>
+                      <li class="complete"><em class="hide">누적 10회 투표 : 2022 개발자의 보은 3개</em> <button type="button" class="ico btn-take" onclick="">받기</button></li>
+                      <li class="complete"><em class="hide">누적 15회 투표 : 2022 개발자 종합 박스 3개</em> <button type="button" class="ico btn-take" onclick="">받기</button></li>
+                      <li class="complete"><em class="hide">누적 20회 투표 : 개발자의 보은 5개</em> <button type="button" class="ico btn-take" onclick="">받기</button></li>
+                  </ul>
+                  <dl class="info-box">
+                      <dt>이벤트 유의사항</dt>
+                      <dd>
+                          <ul>
+                              <li class="highlight">2022 개발자 페스티벌 맵을 1회 플레이 시 1개의 투표권이 지급되며, 1일 최대 3개의 투표권을 획득할 수 있습니다.</li>
+                              <li class="highlight">투표권은 획득 후 당일 미사용 시 자정을 기준으로 초기화되오니, 반드시 당일 23시 59분 전까지 사용해 주세요.</li>
+                              <li>런너 여러분의 투표 결과를 참고하여 득표수 상위의 맵은 정규 맵 편성에 대해 검토가 진행될 예정입니다.</li>
+                              <li>2022 개발자 페스티벌 채널 맵 플레이 시 TR 및 EXP를 획득하지 못한 경우에는 플레이 횟수로 인정되지 않습니다.</li>
+                              <li>지급되는 보상 아이템은 게임 내 선물함으로 지급되며, 선물함 보관 만료 기간은 2주입니다.</li>
+                              <li>부정한 방법으로 이벤트 참여 및 아이템 수령 시 약관 및 정책에 따라 제재 또는 회수될 수 있습니다.</li>
+                           </ul>
+                      </dd>
+                  </dl>
+        </div>
+          </div>
+          <div class="section04" area-type="motion">
+              <div class="inner">
+                  <div class="motion">
+                      <i class="character01"></i>
+                      <i class="character02"></i>
+                      <i class="character03"></i>
+                      <i class="character04"></i>
+                      <i class="character05"></i>
+                  </div>
+  
+                  <h2 class="hide">개발자들의 창작혼이 담긴 새 아이템을 소개합니다.</h2>
+                  <ul class="item-list">
+                      <li class="hide">코로나 멈춰
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 0);">자세히 보기</button>
+                      </li>
+                      <li class="hide">골든 플레이트
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 1);">자세히 보기</button>
+                      </li>
+                      <li class="hide">내가 제일 잘 보여<!-- 20221017 수정 -->
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 2);">자세히 보기</button>
+                      </li>
+                      <li class="hide">벨리우스 던
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 3);">자세히 보기</button>
+                      </li>
+                      <li class="hide">저승 팜<!-- 20221017 수정 -->
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 4);">자세히 보기</button>
+                      </li>
+                      <li class="hide">뒹구르르
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 5);">자세히 보기</button>
+                      </li>
+                      <li class="hide">산호조개 쉼터
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 6);">자세히 보기</button>
+                      </li>
+                      <li class="hide">파자마 잠옷 &amp; 댄스 모션 3종<!-- 20221017 수정 -->
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 7);">자세히 보기</button>
+                      </li>
+                      <li class="hide">얼굴 표정 2종<!-- 20221017 수정 -->
+                      <button class="ico btn-item" onclick="popup('[data-popup-id=more]', 8);">자세히 보기</button>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="section05" area-type="motion">
+        <div class="inner">
+                  <div class="motion">
+                      <i class="character01 fade-left"></i>
+                      <i class="character02 fade-right"></i>
+                  </div>
+  
+          <h2 class="hide">이번 페스티벌의 TOP3 아이템을 선정해 주세요</h2>
+          <dl class="hide">
+            <dt>투표 가능 기간</dt>
+            <dd>2022.10.19(수) ~ 2022.11.15(화)까지</dd><!-- 20221017 수정 -->
+            <dt>아이템 투표 방법</dt>
+            <dd>
+              <ol>
+                <li>이벤트 기간 중 개발자 페스티벌 채널 맵을 10회 이상 플레이하기</li>
+                <li>3장의 투표용지에 마음에 드는 아이템 3개를 선택하여 투표하기(동일한 아이템으로 중복 투표도 가능)</li>
+                <li>투표 완료 보상 아이템 수령하기(아이템 투표는 이벤트 기간 중 1회만 가능)</li>
+              </ol>
+            </dd>
+            <dt>투표 완료 보상</dt>
+            <dd>저승컴퍼니 팜 상자 3개</dd>
+          </dl>
+                  <ul class="vote_choice">
+                      <li>                     
+                          <div id="select_box">
+                <label for="choice1">아이템 선택</label>
+                <select id="choice1" title="select choice">       
+                                  <option value="0">아이템 선택</option>
+                                  <option value="5">벨리우스 던</option><option value="1">코로나 멈춰</option><option value="2">골든 플레이트</option><option value="9">파자마 잠옷 &amp; 댄스 모션 3종</option><option value="3">내가 제일 잘 보여</option><option value="6">뒹구르르</option><option value="7">산호 조개 쉼터</option><option value="8">얼굴 표정 2종</option><option value="4">저승 팜</option>
+                </select>
+                          </div> 
+                      </li>
+                      <li>                       
+                          <div id="select_box">
+                <label for="choice2">아이템 선택</label>
+                <select id="choice2" title="select choice">       
+                                  <option value="0">아이템 선택</option>
+                                  <option value="5">벨리우스 던</option><option value="1">코로나 멈춰</option><option value="2">골든 플레이트</option><option value="9">파자마 잠옷 &amp; 댄스 모션 3종</option><option value="3">내가 제일 잘 보여</option><option value="6">뒹구르르</option><option value="7">산호 조개 쉼터</option><option value="8">얼굴 표정 2종</option><option value="4">저승 팜</option>
+                </select>
+                          </div> 
+                      </li>
+                      <li>
+                          <div id="select_box">
+                <label for="choice3">아이템 선택</label>
+                <select id="choice3" title="select choice">       
+                                  <option value="0">아이템 선택</option>
+                                  <option value="5">벨리우스 던</option><option value="1">코로나 멈춰</option><option value="2">골든 플레이트</option><option value="9">파자마 잠옷 &amp; 댄스 모션 3종</option><option value="3">내가 제일 잘 보여</option><option value="6">뒹구르르</option><option value="7">산호 조개 쉼터</option><option value="8">얼굴 표정 2종</option><option value="4">저승 팜</option>
+                </select>
+                          </div> 
+                      </li>
+                  </ul>
+                  <button class="ico btn-vote" onclick="fnSaveItemVote('I')">&gt;투표하기</button>
+                  <dl class="info-box">
+                      <dt>이벤트 유의사항</dt>
+                      <dd>
+                          <ul>
+                              <li class="highlight">아이템 투표는 이벤트 기간 중 2022 개발자 페스티벌 채널 맵을 10회 이상 플레이 시 가능하며, 1계정당 1회만 투표할 수 있습니다.</li>
+                              <li>런너 여러분의 투표 결과는 추후 런너 여러분께 더 유익한 아이템 개발 방향에 참고 자료로 활용될 예정입니다.</li>
+                              <li>2022 개발자 페스티벌 채널 맵 플레이 시 TR 및 EXP를 획득하지 못한 경우에는 플레이 횟수로 인정되지 않습니다.</li>
+                              <li>지급되는 보상 아이템은 게임 내 선물함으로 지급되며, 선물함 보관 만료 기간은 2주입니다.</li>
+                              <li>부정한 방법으로 이벤트 참여 및 아이템 수령 시 약관 및 정책에 따라 제재 또는 회수될 수 있습니다.</li>
+                          </ul>
+                      </dd>
+                  </dl>
+  
+        </div>
+          </div>
+    </div>
+    <div class="event_comment">
+      <h2 class="hide">올해 개발자 페스티벌도 재밌게 즐겨줘!</h2>
+      <div class="event_comment_in">
+        <iframe src="/Comment/evtCmtConf.html" width="980" height="371" frameborder="0" allowtransparency="true" title="덧글게시판"></iframe>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_copyright">© Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All Rights Reserved.</p>
+    </div>
+  </div>
+  <div class="popup" data-popup-id="vod">
+    <button type="button" class="ico btn-close" onclick="popupClose(this)">닫기</button>    
+    <div class="iframe"></div>
+  </div>
+  <div class="popup" data-popup-id="more">
+    <h3 class="more-title"></h3>
+    <dl class="more-type">
+        <dt>아이템 유형 : </dt>
+        <dd></dd>
+    </dl>
+    <div class="more-image"></div>
+    <p class="more-content"></p>
+    <button type="button" class="ico btn-close" onclick="popupClose(this)">닫기</button>  
+</div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
