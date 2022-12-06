@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>16_winter_pre</title>
+    <script src="../../../../assets/common/js/jquery-1.7.2.js"></script>
+    <script src="../../../../assets/common/js/jquery.slides.min.js"></script>
+    <script src="../../../../assets/common/js/librarys.js"></script>
+    <script src="../../../../assets/common/js/commonUtil.js"></script>
+    <link
+      rel="stylesheet"
+      href="../../../../assets/common/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="../../../../assets/common/css/base.css" />
+    <link rel="stylesheet" href="./css/gnbWrapDiv.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/capture.css" />
+    <script src="./js/html2canvas.js"></script>
+    <script src="./js/FileSaver.min.js"></script>
+    <script src="./js/es6-promise.auto.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  </head>
+  <body>
+    <div class="gnbWrapDiv">
+      <div id="hangame_gnb_basic"></div>
+    </div>
+    <div id="evt_wrap">
+      <div class="evt-header">
+        <i class="planet"></i>
+        <div class="star-box"></div>
+        <div class="piece-box">
+          <i class="sub-piece01"></i>
+          <i class="sub-piece02"></i>
+          <i class="sub-piece03"></i>
+          <i class="sub-piece04"></i>
+          <i class="sub-piece05"></i>
+          <i class="sub-piece06"></i>
+          <i class="sub-piece07"></i>
+          <i class="sub-piece08"></i>
+          <i class="sub-piece09"></i>
+          <i class="sub-piece10"></i>
+          <i class="sub-piece11"></i>
+          <i class="sub-piece12"></i>
+          <i class="sub-piece13"></i>
+          <i class="sub-piece14"></i>
+          <i class="main-piece01"></i>
+          <i class="main-piece02"></i>
+          <i class="main-piece03"></i>
+          <i class="main-piece04"></i>
+          <i class="main-piece05"></i>
+          <i class="main-piece06"></i>
+          <i class="main-piece07"></i>
+          <i class="main-piece08"></i>
+          <i class="main-piece09"></i>
+          <i class="main-piece10"></i>
+        </div>
+
+        <div class="inner">
+          <div class="logo">
+            <a href="/index.asp" title="테일즈런너 홈으로">테일즈런너</a>
+          </div>
+
+          <h1 class="hide">
+            디멘션 시그널 - 다른 차원 속 동화나라의 구조 신호
+          </h1>
+          <!-- 20221110 수정 -->
+          <p class="hide">겨울 업데이트 사전 등록 : 11월 16일 ~ 12월 6일까지</p>
+          <button
+            type="button"
+            class="ico btn-play"
+            onclick="popup('[data-popup-id=youtube]');"
+          >
+            Play
+          </button>
+        </div>
+      </div>
+      <div class="evt-content">
+        <div class="content-body">
+          <div class="section01">
+            <i class="motion-obg"></i>
+
+            <p class="hide">겨울 업데이트 사전 등록</p>
+            <h2 class="hide">구조 요청에 응답하기</h2>
+            <dl class="hide">
+              <dt>사전 등록 완료 시 즉시 지급</dt>
+              <dd>
+                <!-- 20221110 수정 -->
+                <ul>
+                  <li>레브 요원 코인 10개</li>
+                  <li>차원관리국 사전 캡슐 코인 10개</li>
+                  <li>차원관리국 사전 캡슐 상자 2개</li>
+                  <li>의문의 단서 2개</li>
+                  <li>어썸 테디 상자 3개</li>
+                </ul>
+                <!-- //20221110 수정 -->
+              </dd>
+              <dt>사전 등록 추가 보상</dt>
+              <dd>
+                <!-- 20221115 수정 --><!-- 내용 변경 -->
+                사전 등록을 완료한 런너에게는 디멘션 패스 혜택이 적용됩니다.
+                <ol>
+                  <li>
+                    사전 등록 완료자에게 차원관리국 굿즈 추첨 지급(총 100명)
+                  </li>
+                  <li>
+                    겨울 업데이트 점검일마다 차원관리국 채널 관련 아이템 추가
+                    지급
+                  </li>
+                </ol>
+                아이템 추가 지급은 12월 2차 점검부터 지급 예정
+                <!-- //20221115 수정 -->
+              </dd>
+            </dl>
+
+            <!-- [D] 받기 완료 시 button에 'complete' 클래스 추가 -->
+            <button
+              type="button"
+              class="ico btn-registration complete"
+              onclick=""
+            >
+              사전 등록
+            </button>
+
+            <ul class="info-list">
+              <!-- 20221115 수정 --><!-- 내용 변경 -->
+              <li>
+                · 위 경품 사진은 이해를 돕기 위한 이미지로, 실제 경품과 다를 수
+                있습니다.
+              </li>
+              <!-- 20221115 수정2 -->
+              <li>
+                · 지급받은 아이템은 게임 내 선물함에서 확인하실 수 있으며,
+                선물함 보관 만료 기간은 2주입니다.
+              </li>
+              <li>
+                · 디멘션 패스 혜택으로 지급되는 굿즈 추첨의 당첨자 발표는
+                12/16(금) 공식 홈페이지 내 [당첨자발표] 게시판을 통해 안내될
+                예정입니다.
+              </li>
+              <li>
+                · 12/7(수) 이후 진행되는 이벤트부터 적용되며, 일부 이벤트에서는
+                혜택이 제외될 수 있습니다.
+              </li>
+              <!-- 20221115 수정2 -->
+              <li>
+                · 부정한 방법으로 이벤트 참여 및 아이템 수령 시 약관 및 정책에
+                따라 제재 혹은 회수될 수 있습니다.
+              </li>
+              <!-- //20221115 수정 -->
+            </ul>
+          </div>
+
+          <div class="section02">
+            <i class="motion-obg obg01"></i>
+            <i class="motion-obg obg02"></i>
+
+            <p class="hide">SNS 공유 이벤트</p>
+            <h2 class="hide">차원통행증 발급받기</h2>
+            <!-- 20221110 수정 -->
+            <div class="pass-top-area">
+              <ol class="hide">
+                <li>
+                  겨울 업데이트 사전 등록을 완료하시면, 이벤트 페이지에
+                  차원통행증이 발급됩니다.
+                </li>
+                <li>
+                  발급된 차원통행증의 이미지를 내려받은 후 해시태그와 함께 SNS에
+                  등록해 주세요. (해시태그 : #테일즈런너 #차원관리국)
+                </li>
+                <!-- 20221110 수정 -->
+              </ol>
+              <div class="pass-data">
+                <h3 class="hide">차원통행증</h3>
+
+                <dl class="data-on">
+                  <dt class="hide">프로필</dt>
+                  <dd class="profile-area">
+                    <!-- [D] 광장 프로필 image 삽입 영역 -->
+                    <!-- 기본 이미지 -->
+                    <div class="profile-box">
+                      <img id="imagebox" src="./images/test.png" alt="" />
+                    </div>
+                  </dd>
+                  <dt class="hide">국적 / Nationality</dt>
+                  <dd>동화나라</dd>
+                  <dt class="hide">이름 / Name</dt>
+                  <dd>groovypark</dd>
+                  <dt class="hide">발행번호 / Passcard No.</dt>
+                  <dd>MADA-34696</dd>
+                  <dt class="hide">발급일 / Date of issue</dt>
+                  <dd>2022-12-02</dd>
+                </dl>
+              </div>
+              <div class="pass-btn">
+                <button
+                  type="button"
+                  class="ico btn-download-pop"
+                  onclick="popup('[data-popup-id=idCard]')"
+                >
+                  차원통행증 내려받기
+                </button>
+                <button
+                  type="button"
+                  class="ico btn-copy"
+                  data-clipboard-action="copy"
+                  data-clipboard-target="p.copy"
+                >
+                  해시태그 복사하기
+                  <p class="copy">#테일즈런너 #차원관리국</p>
+                </button>
+              </div>
+            </div>
+            <div class="pass-bottom-area">
+              <strong class="hide"
+                >SNS 등록을 완료한 런너 중 추첨을 통해 차원관리국의 굿즈 세트를
+                드립니다. (총 40명)</strong
+              ><!-- 20221110 수정 -->
+              <p class="hide">
+                다양한 SNS에 올릴수록 추첨 확률도 UP! 올라온 게시글은 삐에로가
+                모두 직접 확인할 예정이오니, 자유롭게 업로드해 주세요!
+                (굿즈세트: 차원관리국 여권 케이스, 쿠션 담요 세트)
+              </p>
+              <!-- 20221110 수정 -->
+              <ul class="info-list">
+                <li>
+                  · 위 경품 사진은 이해를 돕기 위한 이미지로, 실제 경품과 다를
+                  수 있습니다.
+                </li>
+                <!-- 20221115 수정3 --><!-- 내용 추가 -->
+                <li>
+                  · 이벤트 기간 내(11/16 ~ 12/6) 등록된 게시글에 한해 참여가
+                  인정됩니다.
+                </li>
+                <li>
+                  · 내려받은 이미지 파일은 복사하신 해시태그와 함께 SNS 게시글
+                  등록에 사용해 주세요.
+                </li>
+                <!-- 20221110 수정 -->
+                <li>
+                  · 당첨자 발표는 12/16(금)에 공식 홈페이지를 통해 안내될
+                  예정입니다.
+                </li>
+                <!-- 20221110 수정 -->
+                <li>
+                  · 필수 해시태그를 누락하여 SNS 게시글을 등록 시 이벤트
+                  대상에서 제외될 수 있습니다.
+                </li>
+                <li>
+                  · 본인이 직접 발급받은 이미지로만 응모가 가능하며, 발표 전까지
+                  등록한 SNS 게시글을 삭제 또는 비공개 전환 시 이벤트 대상에서
+                  제외될 수 있습니다.
+                </li>
+                <!-- 20221110 수정 -->
+              </ul>
+            </div>
+          </div>
+
+          <section class="section03">
+            <i class="motion-obg"></i>
+
+            <p class="hide">업데이트 미리 보기</p>
+            <h2 class="hide">차원을 넘나드는 새로운 이야기</h2>
+            <!-- 20221110 수정 -->
+            <ul class="story-list">
+              <li>
+                <h3 class="hide">차원관리국(M.A.D.A)</h3>
+                <p class="hide">
+                  신비로운 마법과 과학이 공존하는 곳. 다중 차원을 관리하는
+                  차원관리국입니다.
+                </p>
+                <button
+                  class="btn-more"
+                  onclick="popup('[data-popup-id=moreImage]');"
+                >
+                  자세히 보기
+                </button>
+              </li>
+              <li>
+                <h3 class="hide">차원관리국 웹툰 프롤로그</h3>
+                <!-- 20221110 수정4 -->
+                <p class="hide">
+                  차원관리국을 중심으로 새로운 이야기가 펼쳐집니다.
+                </p>
+                <a
+                  href="/archive/story/storyView.asp?pIdx=156"
+                  class="btn-more"
+                  target="_blank"
+                  >자세히 보기</a
+                >
+              </li>
+              <li>
+                <h3 class="hide">새로운 등장 인물</h3>
+                <p class="hide">
+                  다른 차원의 동화나라와 관련이 있는 의문의 인물이 등장할
+                  예정입니다.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="footer_copyright">
+          © Smilegate Megaport. All Rights Reserved. © RHAON Entertainment. All
+          Rights Reserved.
+        </p>
+      </div>
+    </div>
+    <div class="popup" data-popup-id="youtube">
+      <button type="button" class="ico btn-close" onclick="popupClose(this)">
+        닫기
+      </button>
+      <div class="popup-inner">
+        <div class="iframe"></div>
+        <button
+          type="button"
+          class="ico btn-today"
+          onclick="popupClose(this);fnTodayEndVideoView();"
+        >
+          다시 열지 않기
+        </button>
+      </div>
+    </div>
+    <div class="popup" data-popup-id="idCard">
+      <button type="button" class="ico btn-close" onclick="popupClose(this)">
+        닫기
+      </button>
+      <div class="popup-inner">
+        <strong class="hide">차원통행증</strong>
+        <script>
+          //이미지 capture download
+          function captureDownload() {
+            html2canvas($("#downloadImage"), {
+              useCORS: true,
+              allowTaint: true,
+            }).then(function (canvas) {
+              var img = canvas.toDataURL("image/jpg");
+              img.crossOrigin = "Anonymous";
+              if (navigator.msSaveBlob) {
+                var blob = canvas.msToBlob();
+                return navigator.msSaveBlob(blob, "mada_passcard.jpg");
+              } else {
+                canvas.toBlob(function (blob) {
+                  saveAs(blob, "mada_passcard.jpg");
+                });
+              }
+            });
+          }
+        </script>
+
+        <div class="capture-data" id="downloadImage">
+          <dl>
+            <dt class="hide">프로필</dt>
+            <dd class="profile-area">
+              <!-- [D] 광장 프로필 image 삽입 영역 -->
+              <!-- 기본 이미지 -->
+              <div class="profile-box">
+                <img
+                  id="imageId"
+                  src="data:image/png;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QMpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCMTVFQzkxOTA3QTMxMUUyOUVGNUQ5QkZCN0JFODIyOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCMTVFQzkxQTA3QTMxMUUyOUVGNUQ5QkZCN0JFODIyOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkIxNUVDOTE3MDdBMzExRTI5RUY1RDlCRkI3QkU4MjI4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkIxNUVDOTE4MDdBMzExRTI5RUY1RDlCRkI3QkU4MjI4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQAAgICAgICAgICAgMCAgIDBAMCAgME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"
+                  alt=""
+                />
+              </div>
+            </dd>
+            <dt class="hide">국적 / Nationality</dt>
+            <dd>동화나라</dd>
+            <dt class="hide">발행번호 / Passcard No.</dt>
+            <dd>MADA-34696</dd>
+            <dt class="hide">이름 / Name</dt>
+            <dd>groovypark</dd>
+            <dt class="hide">발급일 / Date of issue</dt>
+            <dd>2022-12-02</dd>
+          </dl>
+        </div>
+        <button
+          type="button"
+          class="ico btn-download"
+          onclick="captureDownload('tikitaka');gtag('event', '이미지받기', { 'event_category': '겨울사전이벤트', 'event_label': '이미지받기_tikitaka' });"
+        >
+          PC에 이미지 저장하기
+        </button>
+      </div>
+    </div>
+    <div class="popup" data-popup-id="moreImage">
+      <button type="button" class="ico btn-close" onclick="popupClose(this)">
+        닫기
+      </button>
+      <div class="popup-inner">
+        <div class="more-image"><!-- 이미지 --></div>
+      </div>
+    </div>
+    <script src="../../../../assets//common/js/svc_81plug.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
