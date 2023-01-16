@@ -1,0 +1,699 @@
+@import "https://tr-image.game.onstove.com/event/fonts/NotoSansKR/NotoSansKR.css";
+@import "https://tr-image.game.onstove.com/event/fonts/NanumSquare/NanumSquare.css";
+.ir,
+.blind {
+  display: block;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.inner {
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.full-wh {
+  width: 100%;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  word-break: break-word;
+  outline: 0;
+}
+html,
+body {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  background-color: #fff;
+  font-family: Noto Sans KR, malgun gothic, dotum, sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #000;
+  letter-spacing: -0.05em;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+blockquote,
+a,
+address,
+img,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+pre,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+input {
+  margin: 0;
+  padding: 0;
+  word-break: brake-all;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 400;
+  font-size: 100%;
+}
+hr {
+  display: none;
+}
+fieldset,
+iframe {
+  width: 100%;
+  border: 0 none;
+}
+ol,
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+i,
+em,
+address {
+  font-style: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+button,
+a,
+input,
+label,
+textarea,
+select {
+  vertical-align: middle;
+  letter-spacing: -0.05em;
+  font-size: 13px;
+  line-height: 1.2;
+  font-family: Noto Sans KR, malgun gothic, dotum, sans-serif;
+  word-break: break-all;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+button * {
+  position: relative;
+}
+a {
+  color: #454545;
+  text-decoration: none;
+}
+a:link,
+a:hover {
+  color: #454545;
+  text-decoration: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input::-ms-clear {
+  display: none;
+}
+legend,
+caption {
+  display: block;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999em;
+}
+.hide {
+  display: block;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+body {
+  min-height: auto !important;
+}
+#sideEvtNav *,
+#sideEvtNav *:before,
+#sideEvtNav *:after {
+  box-sizing: content-box;
+}
+#sideEvtNav .game-start .problem a {
+  font-size: 1em;
+  line-height: 24px;
+}
+#sideEvtNav .evt-lists ul li a span.name {
+  font-size: 12px;
+}
+@keyframes loading {
+  0%,
+  39%,
+  100% {
+    opacity: 0.22;
+  }
+  40% {
+    opacity: 1;
+    transform: scale(2);
+  }
+}
+#evt_wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  box-sizing: border-box;
+  background: #2b62ae;
+}
+#evt_wrap .logo {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  z-index: 100;
+}
+#evt_wrap .logo a {
+  display: block;
+  width: 82px;
+  height: 52px;
+  background: url("../images/logo.png?ver=0.012324217") no-repeat;
+  text-indent: -9999em;
+}
+#evt_wrap .evt-content {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+}
+#evt_wrap .content-body {
+  position: relative;
+}
+#evt_wrap * {
+  box-sizing: border-box;
+  font-family: Noto Sans KR, malgun gothic, dotum, sans-serif;
+  letter-spacing: -0.05em;
+}
+#evt_wrap .evt-header {
+  position: relative;
+  height: 1151px;
+  background: url("../images/bg_header.jpg?ver=0.012324217") no-repeat 50% 0;
+  text-align: center;
+}
+#evt_wrap .evt-header .bubble {
+  position: absolute;
+  top: 50px;
+  right: 314px;
+  width: 278px;
+  height: 96px;
+  background: url("../images/title_bubble.png?ver=0.012324217") no-repeat 50% 0;
+  animation: textBig infinite 1.4s ease-in;
+}
+#evt_wrap .evt-header .chat01 {
+  position: absolute;
+  bottom: 80px;
+  left: 368px;
+  width: 418px;
+  height: 226px;
+  background: url("../images/img_chat01.png?ver=0.012324217") no-repeat 50% 0;
+  transform: translateX(-30px);
+  opacity: 0;
+}
+#evt_wrap .evt-header .chat02 {
+  position: absolute;
+  bottom: 190px;
+  left: 599px;
+  width: 503px;
+  height: 396px;
+  background: url("../images/img_chat02.png?ver=0.012324217") no-repeat 50% 0;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+#evt_wrap .evt-header .chat03 {
+  position: absolute;
+  bottom: 326px;
+  left: 115px;
+  width: 672px;
+  height: 385px;
+  background: url("../images/img_chat03.png?ver=0.012324217") no-repeat 50% 0;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+#evt_wrap .evt-header .btn-caution {
+  position: absolute;
+  top: 520px;
+  right: 128px;
+  width: 135px;
+  height: 41px;
+  background-position: 0 -192px;
+  z-index: 5;
+}
+#evt_wrap .content-body .reward-area {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+#evt_wrap .content-body .reward-area::after {
+  content: "";
+  position: absolute;
+  left: 202px;
+  width: 162px;
+  height: 223px;
+  background: url("../images/ico_pierrot.png?ver=0.012324217") no-repeat 50% 0;
+}
+#evt_wrap .content-body .reward-area .reward-on {
+  opacity: 0;
+}
+#evt_wrap .content-body .reward-area.on::after {
+  animation: buzzMo 0.7s linear 1;
+}
+#evt_wrap .content-body .reward-area.on .reward-on {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.2s;
+}
+#evt_wrap .content-body .reward-area.on .btn-item {
+  display: none;
+}
+#evt_wrap .content-body .reward-area .btn {
+  position: absolute;
+  height: 85px;
+}
+#evt_wrap .content-body .reward-area .btn-item {
+  width: 338px;
+  right: 211px;
+  background-position: 0 0;
+  z-index: 5;
+}
+#evt_wrap .content-body .reward-area .btn-complete {
+  width: 344px;
+  right: 110px;
+  background-position: 0 -95px;
+  cursor: default;
+}
+#evt_wrap .content-body .section01 {
+  height: 1132px;
+  background: url("../images/bg_section01.jpg?ver=0.012324217") no-repeat 50% 0;
+}
+#evt_wrap .content-body .section01 .reward-on {
+  position: relative;
+  width: 1004px;
+  height: calc(100% - 250px);
+  margin: 250px auto 0;
+  padding-left: 274px;
+  background: url("../images/reward_on01.jpg?ver=0.012324217") no-repeat 274px 0;
+}
+#evt_wrap .content-body .section01 .reward-area::after {
+  bottom: 92px;
+}
+#evt_wrap .content-body .section01 .btn {
+  bottom: 97px;
+}
+#evt_wrap .content-body .section02 {
+  height: 1177px;
+  background: url("../images/bg_section02.jpg?ver=0.012324217") no-repeat 50% 0;
+}
+#evt_wrap .content-body .section02 .reward-on {
+  position: relative;
+  width: 1004px;
+  height: calc(100% - 250px);
+  margin: 250px auto 0;
+  padding-left: 274px;
+  background: url("../images/reward_on02.jpg?ver=0.012324217") no-repeat 274px 0;
+}
+#evt_wrap .content-body .section02 .reward-area::after {
+  bottom: 106px;
+}
+#evt_wrap .content-body .section02 .btn {
+  bottom: 112px;
+}
+#evt_wrap .content-body .section03 {
+  height: 1147px;
+  background: url("../images/bg_section03.jpg?ver=0.012324217") no-repeat 50% 0;
+}
+#evt_wrap .content-body .section03 .reward-on {
+  position: relative;
+  width: 1004px;
+  height: calc(100% - 250px);
+  margin: 250px auto 0;
+  padding-left: 274px;
+  background: url("../images/reward_on03.jpg?ver=0.012324217") no-repeat 274px 0;
+}
+#evt_wrap .content-body .section03 .reward-area::after {
+  bottom: 107px;
+}
+#evt_wrap .content-body .section03 .btn {
+  bottom: 112px;
+}
+#evt_wrap .content-body .section04 {
+  height: 1132px;
+  background: url("../images/bg_section04.jpg?ver=0.012324217") no-repeat 50% 0;
+}
+#evt_wrap .content-body .section04 .reward-on {
+  position: relative;
+  width: 1004px;
+  height: calc(100% - 250px);
+  margin: 250px auto 0;
+  padding-left: 274px;
+  background: url("../images/reward_on04.jpg?ver=0.012324217") no-repeat 274px 0;
+}
+#evt_wrap .content-body .section04 .reward-area::after {
+  bottom: 92px;
+}
+#evt_wrap .content-body .section04 .btn {
+  bottom: 97px;
+}
+#evt_wrap .content-body .section05 {
+  height: 1177px;
+  background: url("../images/bg_section05.jpg?ver=0.012324217") no-repeat 50% 0;
+}
+#evt_wrap .content-body .section05 .reward-on {
+  position: relative;
+  width: 1004px;
+  height: calc(100% - 250px);
+  margin: 250px auto 0;
+  padding-left: 274px;
+  background: url("../images/reward_on05.jpg?ver=0.012324217") no-repeat 274px 0;
+}
+#evt_wrap .content-body .section05 .reward-area::after {
+  bottom: 106px;
+}
+#evt_wrap .content-body .section05 .btn {
+  bottom: 112px;
+}
+#evt_wrap .content-body .section06 {
+  height: 1141px;
+  background: url("../images/bg_section06.jpg?ver=0.012324217") no-repeat 50% 0;
+}
+#evt_wrap .content-body .section06 .reward-on {
+  position: relative;
+  width: 1004px;
+  height: calc(100% - 250px);
+  margin: 250px auto 0;
+  padding-left: 274px;
+  background: url("../images/reward_on06.jpg?ver=0.012324217") no-repeat 274px 0;
+}
+#evt_wrap .content-body .section06 .reward-area::after {
+  bottom: 101px;
+}
+#evt_wrap .content-body .section06 .btn {
+  bottom: 107px;
+}
+#evt_wrap .content-body .section07 {
+  height: 1005px;
+  background: url("../images/bg_section07.jpg?ver=0.012324217") no-repeat 50% 0;
+}
+#evt_wrap .content-body .section07 .reward-on {
+  position: relative;
+  width: 1040px;
+  height: calc(100% - 230px);
+  margin: 230px auto 0;
+  padding-left: 295px;
+  background: url("../images/reward_on07.jpg?ver=0.012324217") no-repeat 295px 0;
+}
+#evt_wrap .content-body .section07 .btn-item {
+  right: 207px;
+}
+#evt_wrap .content-body .section07 .btn-complete {
+  right: 128px;
+}
+#evt_wrap .content-body .section07 .reward-area::after {
+  bottom: 99px;
+}
+#evt_wrap .content-body .section07 .btn {
+  bottom: 106px;
+}
+.inner {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.event_comment {
+  background: #fdfdfd url("../images/bbs_bg.jpg?ver=0.012324217") no-repeat 50%
+    0;
+}
+.event_comment .event_comment_in {
+  width: 980px;
+  margin: 0 auto;
+  padding: 169px 0 0 0;
+}
+#evt_wrap .footer {
+  position: relative;
+  height: 60px;
+  background: #fdfdfd;
+  line-height: 60px;
+}
+#evt_wrap .footer .footer_copyright {
+  width: 100%;
+  text-align: center;
+  font-family: "Tahoma", "Geneva", "sans-serif";
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #666;
+}
+.ico,
+.btn {
+  display: inline-block;
+  background: url("../images/ico_spr.png?ver=0.012324217") no-repeat 0 0;
+  text-indent: -9999em;
+}
+.default .btn-receive,
+.btn-receive.default {
+  background-position: 0 0%;
+}
+.on .btn-receive,
+.btn-receive.on {
+  background-position: 0 50%;
+  cursor: pointer;
+}
+.complete .btn-receive,
+.btn-receive.complete {
+  background-position: 0 100%;
+}
+body.dimmed {
+  width: 100%;
+  height: 100%;
+}
+body.dimmed:before {
+  z-index: 100000000;
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body.dimmed #evt_wrap {
+  position: relative;
+  top: 0;
+}
+body.modal {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+body.modal:after {
+  z-index: 120000000;
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.popup {
+  z-index: 110000000;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, 0) scale(0);
+  transition: transform 0.2s ease;
+  background: #fff;
+}
+.popup,
+.popup * {
+  box-sizing: border-box;
+  font-family: Noto Sans KR, malgun gothic, dotum, sans-serif;
+  letter-spacing: -0.05em;
+}
+.popup.show {
+  transform: translate(-50%, 0) scale(1);
+  opacity: 1;
+}
+.popup .btn-area {
+  position: absolute;
+  right: 0;
+  bottom: 38px;
+  left: 0;
+  text-align: center;
+}
+[data-popup-id="caution"] {
+  width: 950px;
+}
+[data-popup-id="caution"] .btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 32px;
+  height: 32px;
+  background: url("../images/btn_close.png?ver=0.012324217") no-repeat;
+  text-indent: -9999em;
+}
+[data-popup-id="caution"] .popup-inner {
+  padding: 37px 92px 50px 50px;
+}
+[data-popup-id="caution"] h3 {
+  height: 36px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: #252525;
+  font-weight: bold;
+  border-bottom: 1px solid #a4a4a4;
+}
+[data-popup-id="caution"] h3::before {
+  display: inline-block;
+  margin-right: 8px;
+  width: 5px;
+  height: 5px;
+  background-color: #252525;
+  content: "";
+  vertical-align: 7px;
+}
+[data-popup-id="caution"] li {
+  padding: 5px 0;
+  padding-left: 8px;
+  text-indent: -8px;
+  font-size: 15px;
+  color: #434343;
+  letter-spacing: -0.05em;
+  line-height: 22px;
+}
+[data-popup-id="caution"] li em {
+  color: red;
+}
+@keyframes buzzMo {
+  10%,
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20%,
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50%,
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60%,
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes textBig {
+  0%,
+  70%,
+  84%,
+  98%,
+  100% {
+    transform: scale(1);
+  }
+  76% {
+    transform: scale(1.08);
+  }
+  90% {
+    transform: scale(1.05);
+  }
+  96% {
+    transform: scale(1.01);
+  }
+} /*# sourceMappingURL=event.min.css.map */
