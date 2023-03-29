@@ -8,6 +8,7 @@
 
 - 2022/09/06 css文件通过sass处理了，不能直接扒，需要找源文件并美化
 - [aos.js](https://michalsnik.github.io/aos/)   css3页面滚动动画插件
+- 2023/03/29 gsap滚屏动画scroll https://greensock.com
 
 ### 更近
 
