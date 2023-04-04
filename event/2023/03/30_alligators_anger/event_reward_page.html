@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30_alligators_anger_reward_page</title>
+    <script src="../../../../assets/common/js/jquery-1.7.2.js"></script>
+    <script src="../../../../assets/common/js/jquery.slides.min.js"></script>
+    <script src="../../../../assets/common/js/librarys.js"></script>
+    <script src="../../../../assets/common/js/commonUtil.js"></script>
+    <link rel="stylesheet" href="../../../../assets/common/css/base.css" />
+    <link rel="stylesheet" href="./css/gnbWrapDiv.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="gnbWrapDiv">
+      <div id="hangame_gnb_basic"></div>
+    </div>
+    <div id="evt_wrap">
+      <div class="evt-header">
+        <div class="inner">
+          <div class="logo">
+            <a href="/index.asp" title="테일즈런너 홈으로">테일즈런너</a>
+          </div>
+          <h1 class="title">잭-오-랜턴과 함께하는 할로윈 개근왕</h1>
+          <p class="hide">
+            2021년 10월 13일(수) 10시 00분 ~ 11월 07일(일) 23시 59분까지
+          </p>
+
+          <!-- 악어 상태값 변경 함수 호출 changeChar(type)
+                    a00 : 미 로그인 or 조건 미 충족
+                    b01 : 로그인 후 기본 악어
+                    c00 : 유저 아이템 획득 실패 화면
+                    c01 : 유저 성공 화면 (1~2단계)
+                    c02 : 유저 성공 화면 (3~4단계)
+                    c03 : 유저 성공 화면 (5단계)
+                -->
+          <script>
+            $(function () {
+              //악어 상태 표시
+              //openMouth();
+              changeChar("c02");
+
+              /* 악어 입벌리는 모션 노출 시 실행
+                 모션없이 바로 입벌린 상태 노출의 경우 changeChar('b01')만 호출 */
+              // openMouth();
+            });
+          </script>
+
+          <div class="character" data-state="c02">
+            <!-- 20211013 수정 --><!-- 'bounce' 클래스 삭제 -->
+            <span class="cha-img">
+              <span class="a00" style="opacity: 0"></span>
+              <span class="a01" style="opacity: 0"></span>
+              <span class="b01" style="opacity: 0"></span>
+              <span class="b02" style="opacity: 0"></span>
+              <span class="b03" style="opacity: 0"></span>
+              <span class="c00" style="opacity: 0"></span>
+              <span class="c01" style="opacity: 0"></span>
+              <span class="c02" style="opacity: 1"></span>
+              <span class="c03" style="opacity: 0"></span>
+            </span>
+            <div class="loop">
+              <span class="m1"></span>
+              <span class="m2"></span>
+              <span class="m3"></span>
+              <span class="m4"></span>
+              <span class="m5"></span>
+              <span class="m6"></span>
+              <span class="m7"></span>
+              <span class="m8"></span>
+              <span class="m9"></span>
+              <span class="m10"></span>
+              <!-- <span class="m11"></span> -->
+            </div>
+            <div class="btns" style="display: none">
+              <button type="button" class="btn01 complete">
+                <span>1</span>
+              </button>
+              <button type="button" class="btn02" onclick="fnClickTooth(102);">
+                <span>2</span>
+              </button>
+              <button type="button" class="btn03" onclick="fnClickTooth(103);">
+                <span>3</span>
+              </button>
+              <button type="button" class="btn04" onclick="fnClickTooth(104);">
+                <span>4</span>
+              </button>
+              <button type="button" class="btn05 complete">
+                <span>5</span>
+              </button>
+              <button type="button" class="btn06 complete">
+                <span>6</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="btn-area">
+            <button
+              type="button"
+              class="ico btn-process"
+              onclick="popup('[data-popup-id=process]');gtag('event', '게임방법', { 'event_category': '악어', 'event_label': 'tikitaka' });"
+            >
+              게임 방법
+            </button>
+            <button
+              type="button"
+              class="ico btn-caution"
+              onclick="popup('[data-popup-id=caution]');gtag('event', '유의사항', { 'event_category': '악어', 'event_label': 'tikitaka' });"
+            >
+              유의 사항
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="evt-content">
+        <div class="content-body">
+          <div class="section01">
+            <div class="inner">
+              <!-- 화면 타입 data-user-type
+                            로그인 전 : 1
+                            캐릭터 미생성 : 2
+                            로그인 후 : 3
+                            아이템 획득 후 : 4
+                        -->
+
+              <div class="user-area" data-user-type="4">
+                <h2 class="tit">오늘 획득 가능한 보물</h2>
+                <div class="btn-login">
+                  <button onclick="fnLogin();">로그인버튼</button>
+                </div>
+                <dl>
+                  <dt class="hide">오늘 도전 가능 횟수</dt>
+                  <dd><em>2</em></dd>
+                  <dt class="hide day">신나게 달리기 플레이 횟수</dt>
+                  <dd class="today">120</dd>
+                </dl>
+              </div>
+
+              <div class="reward-area">
+                <!-- 현재 단계 표시 li에 'on' 클래스 추가 -->
+
+                <ul class="today">
+                  <li class="on">
+                    <span class="txt-step">3단계 완료 보상</span>
+                    <span class="img"
+                      ><img
+                        src="//tr-image.game.onstove.com/event/202303/30_alligators_anger/images/items/item16.png"
+                        alt="item"
+                    /></span>
+                    <span class="txt-name">암흑이 깃든 목걸이<br />7일</span>
+                  </li>
+                </ul>
+
+                <button type="button" class="ico btn-receive">
+                  아이템 받기
+                </button>
+              </div>
+
+              <ul class="hide">
+                <li>
+                  5단계 완료 전 [아이템 받기]를 선택할 경우 다음 단계의 도전이
+                  불가능하니 신중히 선택하세요.
+                </li>
+                <li>
+                  5단계 성공 or 실패의 경우 [아이템 받기]를 클릭하지 않아도 결정
+                  시 지급됩니다.
+                </li>
+                <!-- 20211021 수정 -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="section02">
+            <div class="inner">
+              <h2>
+                인내의 열매
+                <span class="subText">런너 님의 도전 정신! 응원합니다.</span>
+              </h2>
+              <div class="sign">
+                <ul class="graph">
+                  <li class="gauge" style="width: 15%"></li>
+                  <li class="title">
+                    <img
+                      src="//tr-image.game.onstove.com/event/202303/30_alligators_anger/images/graph-icon.png"
+                      alt=""
+                    />
+                    <h4>
+                      인내의 열매 보상까지 남은 누적 도전 실패 횟수
+                      <em>3</em>/20
+                    </h4>
+                  </li>
+                </ul>
+                <ul class="item">
+                  <li>
+                    <span
+                      ><img
+                        src="//tr-image.game.onstove.com/event/202303/30_alligators_anger/images/section02-item01.jpg"
+                        alt="히든 변경권 상자"
+                    /></span>
+                    <span class="item_name">히든 변경권 상자</span>
+                    <span class="item_count">1개</span>
+                    <input type="radio" id="item1" name="items" value="101" />
+                    <label for="item1"><span></span></label>
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="//tr-image.game.onstove.com/event/202303/30_alligators_anger/images/section02-item02.png"
+                        alt="마벨러스 청염 상자"
+                    /></span>
+                    <span class="item_name">마벨러스 청염 상자</span>
+                    <span class="item_count">1개</span>
+                    <input type="radio" id="item2" name="items" value="102" />
+                    <label for="item2"><span></span></label>
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="//tr-image.game.onstove.com/event/202303/30_alligators_anger/images/section02-item03.png"
+                        alt="신시아의 달빛 상자"
+                    /></span>
+                    <span class="item_name">신시아의 달빛 상자</span>
+                    <span class="item_count">1개</span>
+                    <input type="radio" id="item3" name="items" value="103" />
+                    <label for="item3"><span></span></label>
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="//tr-image.game.onstove.com/event/202303/30_alligators_anger/images/section02-item04.png"
+                        alt="에이스 요원 증표"
+                    /></span>
+                    <span class="item_name">에이스 요원 증표</span>
+                    <span class="item_count">1개</span>
+                    <input type="radio" id="item4" name="items" value="104" />
+                    <label for="item4"><span></span> </label>
+                  </li>
+                </ul>
+                <!-- 완료 시 button에 'complete' 클래스 추가  -->
+                <div class="btn-patience">
+                  <button
+                    class="btn-fruit on"
+                    onclick="fnGetItem(100);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="event_comment">
+        <div class="event_comment_in">
+          <!-- 댓글 본문 글씨 색 - color:#555 -->
+          <!-- 간격 Line 색상  Const TABLELINGCOLOR = "#e3e3e3" -->
+          <!-- 댓글남기기 버튼경로 - http://tr.image.nopp.co.kr/web/Common/reply_btn_20140306.gif -->
+          <iframe
+            src="/Comment/evtCmtConf.html"
+            width="980"
+            height="371"
+            frameborder="0"
+            allowtransparency="true"
+            title="덧글게시판"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="footer_copyright">
+          © Smilegate. All Rights Reserved. RHAON Entertainment. All Rights
+          Reserved.
+        </p>
+      </div>
+    </div>
+    <script src="./js/ui.js"></script>
+  </body>
+</html>
