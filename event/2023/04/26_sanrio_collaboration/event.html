@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>26_sanrio_collaboration</title>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/jquery-1.7.2.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/jquery.slides.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/librarys.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/commonUtil.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../assets/common/css/base.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../event/fonts/NanumSquare/NanumSquare.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../event/fonts/NotoSansKR/NotoSansKR.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/gnbWrapDiv.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="gnbWrapDiv">
+      <div id="hangame_gnb_basic"></div>
+    </div>
+    <div id="evt_wrap">
+      <div class="evt-lnb">
+        <button type="button" class="btn-control">
+          <span class="blind">열기/닫기</span>
+        </button>
+        <div class="lnb-data">
+          <div class="lnb-link">
+            <a href="/index.asp" title="테일즈런너 홈"
+              ><span class="blind">테일즈런너</span></a
+            >
+            <a
+              href="https://www.youtube.com/channel/UCuj3jmAgWCxF_Go10OluE0g/"
+              title="유튜브"
+              target="_blank"
+              ><span class="blind">유튜브</span></a
+            >
+            <a
+              href="https://www.facebook.com/talesrunner.kr"
+              title="페이스북"
+              target="_blank"
+              ><span class="blind">페이스북</span></a
+            >
+          </div>
+          <div class="lnb-list" data-scrollbar="true" tabindex="-1">
+            <div class="scroll-content">
+              <ul>
+                <!-- new 뱃지 추가시 new 클래스 추가 -->
+                <!-- 활성화 상태시 active 클래스 추가 -->
+                <!-- 오픈회차 li에 data-state="open" -->
+                <li class="active" data-state="open">
+                  <a
+                    href="#n"
+                    onclick="popupClose_web('[data-popup-id=youtube]', true);"
+                    class="lnb-item"
+                    ><span class="blind">기다려! 동화나라로 놀러 갈게!</span></a
+                  >
+                </li>
+                <li data-type="goods">
+                  <a
+                    href="javascript:popup('[data-popup-id=goods]')"
+                    class="lnb-item"
+                    ><span class="blind">디지털 굿즈 DOWNLOAD</span></a
+                  >
+                </li>
+                <li class="new">
+                  <a
+                    href="/event/2023/05/17_sanrio_brand_1st/event.asp"
+                    class="lnb-item"
+                    ><span class="blind"
+                      >5월 17일 시나모롤 &amp; 헬로키티 UPDATE</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <span class="lnb-item"
+                    ><span class="blind"
+                      >6월 14일 쿠로미 &amp; 폼폼푸린 COMING SOON</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span class="lnb-item"
+                    ><span class="blind"
+                      >7월 19일 마이멜로디 &amp; 구데타마 COMING SOON</span
+                    ></span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="scrollbar-track scrollbar-track-x show">
+              <div class="scrollbar-thumb scrollbar-thumb-x"></div>
+            </div>
+            <div class="scrollbar-track scrollbar-track-y show">
+              <div class="scrollbar-thumb scrollbar-thumb-y"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="evt-content">
+        <!-- 이벤트 콘텐츠 -->
+        <div class="motion">
+          <i class="motion-bg"></i>
+          <i class="motion01"></i>
+          <i class="motion02"></i>
+          <i class="motion03"></i>
+        </div>
+        <div class="event-sanrio">
+          <h1 class="title">
+            <span class="blind">테일즈런너 X SANRIO CHARACTERS</span>
+            <i class="tr"></i><i class="collaboration"></i
+            ><i class="sanrio"></i>
+          </h1>
+          <h2 class="sub-title">
+            <span class="blind"
+              >SPECIAL COLLABORATION <em>COMING SOON!</em></span
+            >
+          </h2>
+          <div class="btn-box">
+            <button
+              type="button"
+              class="btn btn-play"
+              onclick="popup_web('[data-popup-id=youtube]',popupYoutubeId);"
+            >
+              <span class="blind">play</span>
+            </button>
+            <button type="button" class="btn btn-share" onclick="toClip(); ">
+              <span class="blind">링크 복사</span>
+            </button>
+          </div>
+          <i class="character-tr01"></i>
+          <i class="character-tr02"></i>
+          <i class="character-tr03"></i>
+
+          <div class="bubble-box">
+            <div class="bubble" data-index="bubble01">
+              <span class="blind">5월 17일에 놀러 올게~</span>
+            </div>
+            <div class="bubble" data-index="bubble02">
+              <span class="blind">5월 17! 기대해 줘!</span>
+            </div>
+            <div class="bubble" data-index="bubble03">
+              <span class="blind">6월 14일! 커밍순!</span>
+            </div>
+            <div class="bubble" data-index="bubble04">
+              <span class="blind">6월 14일! 같이 놀자!</span>
+            </div>
+            <div class="bubble" data-index="bubble05">
+              <span class="blind">7월 19일! 멜로디를 기다려 줘</span>
+            </div>
+            <div class="bubble" data-index="bubble06">
+              <span class="blind">7월 19일! 7월 19일이래...</span>
+            </div>
+          </div>
+          <div class="character-box">
+            <div class="character active" data-index="bubble01">
+              <span class="blind">시나모롤</span>
+            </div>
+            <div class="character active" data-index="bubble02">
+              <span class="blind">헬로키티</span>
+            </div>
+            <div class="character active" data-index="bubble03">
+              <span class="blind">쿠로미</span>
+            </div>
+            <div class="character active" data-index="bubble04">
+              <span class="blind">폼폼푸린</span>
+            </div>
+            <div class="character active" data-index="bubble05">
+              <span class="blind">마이멜로디</span>
+            </div>
+            <div class="character active" data-index="bubble06">
+              <span class="blind">쿠데타마</span>
+            </div>
+          </div>
+        </div>
+        <!-- //이벤트 콘텐츠 -->
+
+        <!-- popup -->
+        <!-- 유튜브 -->
+        <div class="popup" data-popup-id="youtube">
+          <h2 class="blind">SANRIO CHARACTERS IS COMING!</h2>
+          <div class="iframe" id="player"></div>
+          <button
+            type="button"
+            class="btn-close"
+            onclick="popupClose_web(this);"
+          >
+            <span class="blind">X</span>
+          </button>
+          <!-- active 클래스 추가시 체크 -->
+          <button
+            type="button"
+            class="btn-anymore"
+            onclick="javascript:popupClose(this); fnEndView();"
+          >
+            <span class="blind">다시 보지 않기</span>
+          </button>
+        </div>
+
+        <!-- 디지털 굿즈 -->
+        <div class="popup" data-popup-id="goods">
+          <button
+            type="button"
+            class="btn btn-close"
+            onclick="popupClose(this);"
+          >
+            <span>X</span>
+          </button>
+          <strong class="blind">1920X1080</strong>
+          <a
+            href="//tr-image.game.onstove.com/event/202304/26_sanrio_collaboration/pc/assets/images/download/PC_TRxSANRIO CHARACTERS.zip"
+            download="PC_TRxSANRIO CHARACTERS.zip"
+            class="btn btn-download"
+            ><span class="blind">이미지 내려받기</span></a
+          >
+          <strong class="blind">720X1280</strong>
+          <a
+            href="//tr-image.game.onstove.com/event/202304/26_sanrio_collaboration/pc/assets/images/download/MO_My Melody POMPOMPURIN.zip"
+            download="MO_My Melody+POMPOMPURIN.zip"
+            class="btn btn-download"
+            ><span class="blind">이미지 내려받기</span></a
+          >
+          <a
+            href="//tr-image.game.onstove.com/event/202304/26_sanrio_collaboration/pc/assets/images/download/MO_CINNAMOROLL gudetama.zip"
+            download="MO_CINNAMOROLL+gudetama.zip"
+            class="btn btn-download"
+            ><span class="blind">이미지 내려받기</span></a
+          >
+          <a
+            href="//tr-image.game.onstove.com/event/202304/26_sanrio_collaboration/pc/assets/images/download/MO_KUROMI HELLO KITTY.zip"
+            download="MO_KUROMI+HELLO KITTY.zip"
+            class="btn btn-download"
+            ><span class="blind">이미지 내려받기</span></a
+          >
+        </div>
+        <!-- //popup -->
+      </div>
+      <div class="footer">
+        <a
+          href="#"
+          class="btn btn-not-today"
+          onclick="javascript:fnTodayEndView();"
+          >오늘 하루 열지 않기</a
+        >
+        <p class="footer_copyright">
+          <span class="blind"
+            >© Smilegate. © RHAON Entertainment. © 2023 SANRIO CO.,
+            LTD.(Appl.No.KHK2300253)</span
+          >
+        </p>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="./assets/js/smooth-scrollbar.js"
+    ></script>
+    <script type="text/javascript" src="./assets/js/ui.js"></script>
+    <script type="text/javascript">
+      var popupYoutubeId = "I1P8HNmZ6oU";
+      var player;
+      var YouTub_event;
+      $(document).ready(function () {
+        popup("[data-popup-id=youtube]", popupYoutubeId);
+        initHeight("c" + "2");
+        //네비 접힘
+        // sideEvtNavClose();
+      });
+      //높이 동적 체크
+      $(window).resize(function () {
+        // sideEvtNavClose();
+      });
+      // 同步阻塞原因 如果没外网的话，这里是要求的埋点作用吧 调用油管的api
+      //[D] 유튜브 팝업 다시 열지 않기 버튼 클릭시 notToday=true로 값 세팅
+
+      // function onYouTubePlayerAPIReady() {
+      //   player = new YT.Player("player", {
+      //     height: "100%",
+
+      //     width: "100%",
+
+      //     videoId: popupYoutubeId,
+
+      //     playerVars: { autoplay: 0, controls: 1, html5: 1 },
+
+      //     events: {
+      //       onReady: onPlayerReady,
+      //       onStateChange: onPlayerStateChange,
+      //     },
+      //   });
+      // }
+      // function onPlayerReady(event) {
+      //   YouTub_event = event;
+      // }
+
+      // function onPlayerStateChange(event) {
+      //   // 类似埋点的东西
+      //   if (event.data === 1) {
+      //     gtag("event", "Pc_유튜브_재생_티저", {
+      //       event_category: "산리오_브랜드",
+      //       user_level: "95",
+      //       user_nick: "groovypark",
+      //     });
+      //   }
+      // }
+
+      function popup_web(obj, url) {
+        $popup = $(obj);
+        var targetY = $(window).scrollTop() + 190;
+        (h = $popup.outerHeight() / 2), (w = $popup.outerWidth() / 2);
+        $(".evt-content").addClass("dimmed");
+        $popup.addClass("show").css({ top: targetY, opacity: 1 });
+
+        if (!!notToday) {
+          $(".btn-anymore").hide();
+        }
+        $popup.find(".iframe").remove();
+        if (
+          $popup.attr("data-popup-id") == "youtube" ||
+          $popup.attr("data-popup-id") == "youtube2"
+        ) {
+          $popup.append('<div class="iframe" id="player">');
+          $popup
+            .find(".iframe")
+            .empty()
+            .append(
+              '<iframe src="https://www.youtube.com/embed/' +
+                url +
+                '?autoplay=0&rel=0&amp;controls=1&amp;showinfo=0&amp;color=white" allow="autoplay; encrypted-media" width="100%" height="100%" allowfullscreen></iframe>'
+            );
+        }
+      }
+
+      function popupClose_web(that, isSelf) {
+        var $isSelf = isSelf;
+        var $popup = $isSelf ? $(that) : $(that).parents(".popup");
+        var $type = $popup.attr("data-popup-id");
+
+        $(".evt-content").removeClass("dimmed").unbind("touchmove");
+        $popup.removeAttr("style").removeClass("show");
+
+        $popup.find(".iframe iframe").remove();
+        if (!isMotionView) {
+          startMotion();
+          isMotionView = true;
+        }
+        if (YouTub_event != null) {
+          YouTub_event.target.stopVideo();
+          $popup.find(".iframe").remove();
+        }
+      }
+      function fnTodayEndView() {
+        // setCookieDay("gatePage", "on", 1);
+        document.location.href = "/index.asp";
+      }
+      function fnEndView() {
+        notToday = true;
+        // setCookieDay("gatePage_movie", "on", 180);
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/clipboard.min.js"
+    ></script>
+    <script type="text/javascript">
+      function toClip() {
+        var copyUrl;
+
+        copyUrl = window.location.href;
+
+        var bResult = false;
+
+        if (window.clipboardData) {
+          // IE
+          bResult = window.clipboardData.setData("Text", copyUrl);
+        } else {
+          clipboard.copy(copyUrl).then(
+            function () {
+              alert("링크가 복사되었습니다.");
+            },
+            function (err) {
+              alert("클립보드에 복사하려면 엑세스를 허용해주세요.");
+            }
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
