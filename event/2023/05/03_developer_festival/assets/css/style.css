@@ -1,14 +1,4 @@
-@charset "euc-kr";
-@import url("https://tr-image.game.onstove.com/event/fonts/NotoSansKR/NotoSansKR.css");
-@import url("https://tr-image.game.onstove.com/event/fonts/NanumSquare/NanumSquare.css");
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 400;
-  font-display: swap;
-  src: local("Pretendard Regular"),
-    url("../css/fonts/woff2/Pretendard-Regular.woff2") format("woff2"),
-    url("../css/fonts/woff/Pretendard-Regular.woff") format("woff");
-}
+@import "./fonts.css";
 
 /* reset */
 *,
