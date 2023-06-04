@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>17_sanrio_brand_1st</title>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/jquery-1.7.2.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/jquery.slides.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/librarys.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/commonUtil.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../assets/common/css/base.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../event/fonts/NanumSquare/NanumSquare.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../event/fonts/NotoSansKR/NotoSansKR.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/gnbWrapDiv.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="gnbWrapDiv">
+      <div id="hangame_gnb_basic"></div>
+    </div>
+    <div id="evt_wrap">
+      <div class="evt-lnb">
+        <button type="button" class="btn-control"><span class="blind">열기/닫기</span></button>
+        <div class="lnb-data">
+          <div class="lnb-link">
+            <a href="/index.asp" title="테일즈런너 홈"><span class="blind">테일즈런너</span></a>
+            <a href="https://www.youtube.com/channel/UCuj3jmAgWCxF_Go10OluE0g/" title="유튜브" target="_blank"><span class="blind">유튜브</span></a>
+            <a href="https://www.facebook.com/talesrunner.kr" title="페이스북" target="_blank" ss><span class="blind">페이스북</span></a>
+          </div>
+          <div class="lnb-list" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;"><div class="scroll-content" >
+            <ul>
+              <!-- new 뱃지 추가시 new 클래스 추가 -->
+              <!-- 활성화 상태시 active 클래스 추가 -->
+              <!-- 오픈회차 li에 data-state="open" -->
+                        <li class="active"><a href="/event/2023/04/26_sanrio_collaboration/event.asp" class="lnb-item"><span class="blind">기다려! 동화나라로 놀러 갈게!</span></a></li>
+              <li class="" data-type="goods"><a href="javascript:popup('[data-popup-id=goods]')" class="lnb-item"><span class="blind">디지털 굿즈 DOWNLOAD</span></a></li>
+              <li class="new" data-state="open"><a href="#" class="lnb-item"><span class="blind">5월 17일 시나모롤 &amp; 헬로키티 UPDATE</span></a></li><!-- 20230516_3 수정 -->
+              <li><span class="lnb-item"><span class="blind">6월 14일 쿠로미 &amp; 폼폼푸린 COMING SOON</span></span></li>
+              <li><span class="lnb-item"><span class="blind">7월 19일 마이멜로디 &amp; 구데타마 COMING SOON</span></span></li>
+            </ul>
+          </div><div class="scrollbar-track scrollbar-track-x show" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-x" ></div></div><div class="scrollbar-track scrollbar-track-y" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-y"></div></div></div>
+        </div>
+      </div>
+      <div class="evt-content">
+        <div class="event-sanrio">
+          <div class="sanrio-inner">
+            <div class="data-area" style="transform: matrix(1, 0, 0, 1, 77.5, 0);">
+              <div class="title-box">
+                <h1 class="title"><span class="blind">테일즈런너 X SANRIO CHARACTERS 시나모롤 &amp; 헬로키티</span></h1>
+                <div class="title-btns">
+    
+                  <button class="btn-item" onclick="popup('[data-popup-id=item]');"><span class="blind">아이템 획득 방법</span></button>
+                  <button class="btn-gift" onclick="popup('[data-popup-id=gift]');"><span class="blind">경품이벤트</span></button>
+                </div>
+              </div>
+              <div class="btn-box">
+                <button type="button" class="btn btn-play" onclick="notToday=true;popup('[data-popup-id=youtube]',popupYoutubeId);"><span class="blind">play</span></button>
+                <button type="button" class="btn btn-share" onclick="toClip();"><span class="blind">링크 복사</span></button>
+              </div>
+              <a href="#" class="btn btn-not-today">다시 보지 않기</a>
+                        <span class="info-text"><span class="blind">마우스 포인트를 "!" 위에 올리시면 아이템 획득 정보를 확인하실 수 있습니다.</span></span><!-- 20230515 수정 -->
+            </div>
+            <div class="character-area">
+              <div class="character photo">
+                <div class="item-box">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <!-- 20230511 수정 -->
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion_photo.mp4" type="video/mp4">
+                      </video>
+                      <!--// 20230511 수정 -->
+                    </div>
+                    <div class="item-title">시나모롤 포토존</div>
+                    <div class="item-text">공원 입장 시 시나모롤 포토존을 <br>이용할 수 있습니다.</div><!-- 20230511 수정 -->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index01">
+                <div class="item-box">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion01.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="item-title">시나모롤 낚시 인형</div><!-- 20230512_2 수정-->
+                    <div class="item-text">획득 방법 : 산리오캐릭터즈 퍼스널 뽑기판 및 우클릭 교환상점</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index02">
+                <div class="item-box">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion02.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                                    <div class="item-title">시나모롤 의상 장착</div><!-- 20230511 수정 -->
+                                    <div class="item-text">획득 방법 : 산리오캐릭터즈 퍼스널 뽑기판 및 우클릭 교환상점</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index03">
+                <div class="item-box">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion03.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="item-title">시나모롤과 함께 춤을</div><!-- 20230512_2 수정-->
+                    <div class="item-text">획득 방법 : 시나모롤 출석 상자(기간제), <br>시나모롤&amp;헬로키티 쿠폰 우클릭 교환상점</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index04">
+                <div class="item-box">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <!-- 20230511 수정 -->
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion04.mp4" type="video/mp4">
+                      </video>
+                      <!--// 20230511 수정 -->
+                    </div>
+                    <div class="item-title">시나모롤 입장 이펙트</div>
+                    <div class="item-text">획득 방법 : 시나모롤 테마 패키지 구매</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index05">
+                <div class="item-box">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <!-- 20230511 수정 -->
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion05.mp4" type="video/mp4">
+                      </video>
+                      <!--// 20230511 수정 -->
+                    </div>
+                    <div class="item-title">시나모롤 회전목마</div>
+                    <div class="item-text">획득 방법 : 산리오캐릭터즈 퍼스널 뽑기판 및 우클릭 교환상점</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index06">
+                <div class="item-box" data-color="red">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion06.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="item-title">헬로키티와 함께</div><!-- 20230512_2 수정-->
+                    <div class="item-text">획득 방법 : 시나모롤 출석 상자(기간제), <br>시나모롤&amp;헬로키티 쿠폰 우클릭 교환상점</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index07">
+                <div class="item-box" data-color="red">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <!-- 20230511 수정 -->
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion07.mp4" type="video/mp4">
+                      </video>
+                      <!--// 20230511 수정 -->
+                    </div>
+                    <div class="item-title">시나모롤 대시 이펙트</div>
+                    <div class="item-text">획득 방법 : 시나모롤 테마 패키지 구매</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index08">
+                <div class="item-box" data-color="red">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion08.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="item-title">헬로키티 의상 장착</div><!-- 20230511 수정 -->
+                    <div class="item-text">획득 방법 : 산리오캐릭터즈 퍼스널 뽑기판 및 우클릭 교환상점</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+              <div class="character" data-index="index09">
+                <div class="item-box" data-color="red"><!-- 20230511 수정 / data-color="red" 추가 -->
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <!-- 20230511 수정 -->
+                      <video autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+                        <!--[D] 개발 시 절대경로로 변경 -->
+                        <source src="//tr-image.game.onstove.com/event/202305/17_sanrio_brand_1st/pc/assets/images/item_motion09.mp4" type="video/mp4">
+                      </video>
+                      <!--// 20230511 수정 -->
+                    </div>
+                    <div class="item-title">시나모롤 피크닉 포즈</div>
+                    <div class="item-text">획득 방법 : 시나모롤 테마 패키지 구매</div><!-- 20230512_2 수정-->
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <button class="btn-left" style="display: block;"><span class="blind">처음</span></button>
+            <button class="btn-right active" style="display: block;"><span class="blind">마지막</span></button>
+    
+            <!-- 푸터 -->
+            <div class="footer">
+              <p class="footer_copyright"><span class="blind">© Smilegate. © RHAON Entertainment. © 2023 SANRIO CO., LTD.(Appl.No.KHK2300253)</span></p>
+            </div>
+            <!--// 푸터 -->
+          </div> 
+        </div>
+        <!-- //이벤트 콘텐츠 -->
+    
+        <!-- popup -->
+        <!-- 유튜브 -->
+        <div class="popup" data-popup-id="youtube">
+          <div class="popup-inner">
+            <div class="popup-content">
+              <h2 class="blind">산리오캐릭터즈! 지금 동화나라 도착 ♥</h2><!-- 20230516 수정-->
+              <div class="iframe-area"><div id="player" class="iframe"><!-- youtube 삽입 영역 --></div></div>
+            </div>
+            <!-- active 클래스 추가시 체크 -->
+            <button type="button" class="btn-anymore" onclick="popupClose(this);"><span class="blind">다시 보지 않기</span></button>
+            <button type="button" class="btn-close" onclick="popupClose(this);"><span class="blind">X</span></button>
+          </div>
+        </div>
+    
+        <!-- 디지털 굿즈 -->
+        <div class="popup" data-popup-id="goods">
+          <div class="popup-inner">
+              <strong class="blind">1920X1080</strong>
+              <a href="//tr-image.game.onstove.com/event/202304/26_sanrio_collaboration/pc/assets/images/download/PC_TRxSANRIO CHARACTERS.zip" download="PC_TRxSANRIO CHARACTERS.zip" onclick="fnGtagClick('PC_TRxSANRIO_CHARACTERS_다운', '산리오_브랜드', '', '');" class="btn btn-download"><span class="blind">이미지 내려받기</span></a>
+              <strong class="blind">720X1280</strong>
+              <a href="//tr-image.game.onstove.com/event/202304/26_sanrio_collaboration/pc/assets/images/download/MO_My Melody POMPOMPURIN.zip" download="MO_My Melody+POMPOMPURIN.zip" onclick="fnGtagClick('MO_My_Melody_POMPOMPURIN_다운', '산리오_브랜드', '', '');" class="btn btn-download"><span class="blind">이미지 내려받기</span></a>
+              <a href="//tr-image.game.onstove.com/event/202304/26_sanrio_collaboration/pc/assets/images/download/MO_CINNAMOROLL gudetama.zip" download="MO_CINNAMOROLL+gudetama.zip" onclick="fnGtagClick('MO_CINNAMOROLL_gudetama_다운', '산리오_브랜드', '', '');" class="btn btn-download"><span class="blind">이미지 내려받기</span></a>
+              <a href="//tr-image.game.onstove.com/event/202304/26_sanrio_collaboration/pc/assets/images/download/MO_KUROMI HELLO KITTY.zip" download="MO_KUROMI+HELLO KITTY.zip" onclick="fnGtagClick('MO_KUROMI_HELLO', '산리오_브랜드', '', '');" class="btn btn-download"><span class="blind">이미지 내려받기</span></a>
+            <button type="button" class="btn btn-close" onclick="popupClose(this);"><span>X</span></button>
+          </div>
+        </div>
+    
+        <!-- 경품 이벤트 -->
+        <div class="popup" data-popup-id="gift">
+          <div class="popup-inner">
+            <div class="popup-content">
+              <!-- 20230511 수정 -->
+              <h2 class="blind">경품 이벤트 안내</h2>
+              <dl class="blind">
+                <dt>이벤트 참여 기간</dt>
+                <dd>5월 17일 점검 후 ~ 6월 14일 점검 전까지</dd>
+                <dt>참여 방법</dt>
+                <dd>이벤트 기간 중 커뮤니티 &gt; 창작게시판 &gt; 이벤트 게시판에 말머리 [산리오캐릭터즈 1차]를 포함한 자유로운 제목 및 코디룩 이미지로 게시글을 등록해 주세요.</dd><!-- 20230516_3 수정-->
+                <dt>겸품 안내</dt>
+                <dd>콜라보 기념으로 산리오캐릭터즈 코디룩을 인증한 런너 중 100분을 선정하여 산리오캐릭터즈 마우스 장패드를 드립니다.</dd><!-- 20230512_2 수정-->
+                <dt>유의사항</dt>
+                <dd>
+                  <ul>
+                    <li>당첨자 발표는 6월 19일 공식 홈페이지를 통해 발표됩니다.</li>
+                    <li>산리오캐릭터즈 마우스 장패드 이미지는 실제와 다를 수 있습니다.</li><!-- 20230516_3 수정 -->
+                                    <li>예시 이미지처럼 자유롭게 코디룩을 완성해 보세요.</li><!-- 20230512_2 수정 / 내용 추가-->
+                  </ul>
+                </dd>
+              </dl>
+              <!--// 20230511 수정 -->
+            </div>
+            <a href="/community2/#ucc/list?category=event" class="bth-get-gift"><span class="blind">이벤트 참여하기</span></a>
+            <button type="button" class="btn btn-close" onclick="popupClose(this);"><span>X</span></button>
+          </div>
+        </div>
+    
+        <!-- 아이템 획득 방법 -->
+        <div class="popup" data-popup-id="item">
+          <div class="popup-inner">
+            <div class="popup-content">
+              <h2 class="blind">아이템 획득 방법</h2>
+              <strong class="blind">시나모롤 테마 패키지</strong><!-- 20230511 수정 -->
+              <dl>
+                <dt class="blind">판매 기간</dt>
+                <dd class="blind">5월 17일 점검 후 ~ 6월 14일 점검 전까지</dd><!-- 20230512_2 수정-->
+                <dt class="blind">아이템</dt>
+                <dd class="blind">시나모롤 테마 패키지 9,900 CASH</dd><!-- 20230512_2 수정-->
+                <dt class="blind">구성품</dt>
+                <dd>
+                  <ul>
+                    <li class="blind">시나모롤 테마권</li><!-- 20230512_2 수정-->
+                    <li class="blind">시나모롤 피크닉 포즈 (내구도)</li>
+                    <li class="blind">시나모롤 대시 이펙트 (내구도)</li>
+                    <li class="blind">시나모롤 입장 이펙트 (내구도)</li>
+                    <li>
+                      <span class="blind">시나모롤&amp;헬로키티 상자 10개</span><!-- 20230511 수정 -->
+                      <div class="alert-box">
+                        <div class="box-popup">
+                          <p class="blind">구성품 20개 중 랜덤하게 2개 획득 가능</p>
+                          <ul class="blind">
+                            <li>시나모롤 회전목마 (내구도)</li>
+                            <li>시나모롤 낚시 인형 (내구도)</li>
+                            <li>리틀 헬로키티 (내구도)</li>
+                            <li>리틀 시나모롤 (내구도)</li>
+                            <li>내 등에 헬로키티 인형 (내구도)</li>
+                            <li>내 등에 시나모롤 인형 (내구도)</li>
+                            <li>내 머리에 헬로키티 인형 (내구도)</li><!-- 20230516 수정-->
+                            <li>내 머리에 시나모롤 인형 (내구도)</li><!-- 20230516 수정-->
+                            <li>내 손에 헬로키티 인형 (내구도)</li><!-- 20230516 수정-->
+                            <li>내 손에 시나모롤 인형 (내구도)</li><!-- 20230516 수정-->
+                            <li>헬로키티 우산 (내구도)</li>
+                            <li>시나모롤 우산 (내구도)</li>
+                            <li>헬로키티 슈즈 (내구도)</li>
+                            <li>시나모롤 슈즈 (내구도)</li>
+                            <li>헬로키티 맨투맨 (내구도)</li>
+                            <li>시나모롤 맨투맨 (내구도)</li>
+                            <li>헬로키티 가디건 (내구도)</li>
+                            <li>시나모롤 가디건 (내구도)</li><!-- 20230516 수정-->
+                            <li>시나모롤&amp;헬로키티 뽑기판 2개</li>
+                            <li>시나모롤&amp;헬로키티 뽑기판 1개</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="blind">시나모롤&amp;헬로키티 쿠폰 10개</li><!-- 20230516 수정-->
+                    <li class="blind">시나모롤 팜 교환권 5개</li><!-- 20230512_2 수정-->
+                    <li class="blind">시나모롤 팜 상자 5개</li><!-- 20230512_2 수정 / 내용추가 -->
+                  </ul>
+                </dd>
+              </dl>
+              <strong class="blind">시나모롤&amp;헬로키티 뽑기판</strong><!-- 20230511 수정 -->
+              <dl class="blind">
+                <dt>이용 기간</dt>
+                <dd>5월 17일 점검 후 ~ 00월 00일 점검 전까지</dd>
+                <dt>아이템</dt>
+                <dd>
+                  <ul>
+                    <li>선택 뽑기 15,000 CASH</li>
+                    <li>판 흔들기 7,500 CASH</li>
+                  </ul>
+                </dd>
+                <dt>주요 구성품</dt><!-- 20230512_2 수정-->
+                <dd>
+                  <ul>
+                    <li>시나모롤 회전목마 (내구도)</li>
+                    <li>시나모롤 낚시 인형 (내구도)</li>
+                    <li>리틀 헬로키티 (내구도)</li>
+                  </ul>
+                  총 19개의 시나모롤 및 헬로키티 아이템 중 1개를 랜덤으로 획득하실 수 있습니다.
+                </dd><!-- 20230512_2 수정-->
+              </dl>
+              <strong class="blind">시나모롤 출석 상자</strong>
+              <!-- 20230512_2 수정-->
+              <dl class="blind">
+                <dt>획득 기간</dt>
+                <dd>5월 17일 점검 후 ~ 6월 13일까지</dd><!-- 20230523 수정 -->
+                <dt>아이템</dt>
+                <dd>무료</dd>
+                <dt>주요 구성품</dt>
+                <dd>
+                  <ul>
+                    <li>시나모롤과 함께 춤을 (3일)</li>
+                    <li>헬로키티와 함께 (3일)</li>
+                    <li>시나모롤과 함께 (3일)</li>
+                  </ul>
+                  총 8개의 아이템 중 2개를 랜덤으로 획득하실 수 있습니다.
+                </dd>
+              </dl>
+              <!-- //20230512_2 수정-->
+              <p class="blind">컴플리트 보상: 산리오캐릭터즈 뽑기판 1등 포즈 아이템 3종을 모두 보유 시 게임 내 미션으로 [다함께 피크닉 포즈]가 지급됩니다. 각 회차별 콜라보 아이템은 해당 기간에만 판매 or 획득하실 수 있는 한정판으로 이후 재판매 되지 않습니다.</p><!-- 20230516 수정-->
+            </div>
+            <a href="/news/update.asp?seq=9476514" class="bth-get-item"><span class="blind">업데이트 아이템 보기</span></a>
+            <button type="button" class="btn btn-close" onclick="popupClose(this);"><span>X</span></button>
+          </div>
+        </div>
+        <!-- //popup -->
+      </div>
+    </div>
+    <script type="text/javascript" src="./assets/js/smooth-scrollbar.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-scroll.js""></script>
+    <script
+      type="text/javascript"
+      src="../../../../assets/common/js/clipboard.min.js"
+    ></script>
+    <script>
+      //[D] 유튜브 팝업 다시 열지 않기 버튼 클릭시 notToday=true로 값 세팅
+      var popupYoutubeId = "0pzPsJ95PCs";
+    
+      // gtag용 코드
+      var player;
+      var YouTub_event;
+      $(document).ready(function () {
+        //네비 접힘
+        // sideEvtNavClose();
+
+        //[D] navTopInit() 함수와 동일하게 initHeight()함수에 채널사별 인수 삽입하여 호출 부탁드립니다.  ex)initHeight('c1');
+        initHeight('c' + '2');
+    
+        var tag = document.createElement('script');
+    
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+        if (readCookie('gatePage_movie_1st') == null) {
+          //[D] isGtagMode가 필요한 경우 isGtagMode true가 되도록 함수 호출
+          popup('[data-popup-id=youtube]', popupYoutubeId, 'isGtagMode');
+        } else {
+          notToday = true
+        }
+      });
+    
+      // function onYouTubePlayerAPIReady() {
+      //   player = new YT.Player('player', {
+      //   height: '100%',
+      //   width: '100%',
+      //   videoId: popupYoutubeId,
+      //   playerVars: { 'autoplay': 0, 'controls': 1, 'html5': 1 },
+      //   events: {
+      //     'onReady': onPlayerReady,
+      //     'onStateChange': onPlayerStateChange
+      //   }
+      //   });
+      // }
+    
+      function toClip() {
+        var copyUrl
+        copyUrl = window.location.href;
+
+        var bResult = false;
+
+        if (window.clipboardData)  // IE
+        {
+          bResult = window.clipboardData.setData("Text", copyUrl);
+        }
+        else {
+          clipboard.copy(copyUrl).then(
+            function () {             
+              alert("링크가 복사되었습니다.");
+            },
+            function (err) { 
+              alert('클립보드에 복사하려면 엑세스를 허용해주세요.'); 
+            }
+          );
+        }
+      }
+    
+    </script>
+  </body>
+</html>
